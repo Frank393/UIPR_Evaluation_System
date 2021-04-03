@@ -7,21 +7,41 @@ package evaluation;
 
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.event.*;
 
 public class Login_backend {
 
 	
-	
+	@FXML BorderPane borderPane = new BorderPane();
+	@FXML AnchorPane anchorPane = new AnchorPane();
 	@FXML private PasswordField passwordField;
 	@FXML private TextField numeroFacultad_textField;
 	//private JButton btnNewButton;
 	static String userName;
 	@FXML Button botonInicioSesion;
 	@FXML Button botonRegistrarse;
+	@FXML StackPane logPane = new StackPane();
+	@FXML StackPane regPane = new StackPane();
+	@FXML BorderPane bp = new BorderPane();
+	
 	public Login_backend() {
 		initialize();
 
@@ -152,17 +172,29 @@ public class Login_backend {
 		if (found == 1) {
 			
 
-		}else
-		{
+		}else{
 			
-		
 		}
-		
-
-}
+	}
+	
 	public void pass(ActionEvent event) {    // Pass Field
         
-        System.out.println("fuck you");
+        System.out.println("fcuk you");
     }
 	
-}
+	public void login() {
+		logPane.setVisible(true);
+		regPane.setVisible(false);
+	}
+	
+	public void register() {
+		logPane.setVisible(false);
+		regPane.setVisible(true);
+	}
+	
+	public void mainMenu() {
+		MainMenu_GUI mm = new MainMenu_GUI();
+		mm.start();
+	}
+	
+} 
