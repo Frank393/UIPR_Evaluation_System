@@ -17,11 +17,11 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			//primaryStage.initStyle(StageStyle.UNDECORATED);
-			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/login.fxml")); // set pane
+			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/MainMenu.fxml")); // set pane
 			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-			int width = 504;
-			int height = 454;
-			Scene scene = new Scene(root,width,height);
+			//int width = 504;
+			//int height = 454;
+			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("UIPR Evaluation System");
