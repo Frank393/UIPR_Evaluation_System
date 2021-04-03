@@ -197,6 +197,7 @@ public class Login_backend {
 		Main main = new Main();
 		
 		mm.start();
+		main.close();
 	}
 	
 } 
