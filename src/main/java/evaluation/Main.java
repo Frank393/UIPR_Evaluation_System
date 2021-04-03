@@ -13,6 +13,9 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
+	
+	Stage st = new Stage();
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -27,6 +30,7 @@ public class Main extends Application {
 			primaryStage.setTitle("UIPR Evaluation System");
 			primaryStage.show();
 			primaryStage.setResizable(false);
+			st = primaryStage;
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -34,5 +38,9 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+	}
+	
+	public void close() {
+		st.hide();
 	}
 }
