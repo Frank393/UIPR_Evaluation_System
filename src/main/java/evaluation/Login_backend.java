@@ -194,6 +194,8 @@ public class Login_backend {
 	
 	public void mainMenu() {
 		MainMenu_GUI mm = new MainMenu_GUI();
+		Main main = new Main();
+		
 		mm.start();
 	}
 	
