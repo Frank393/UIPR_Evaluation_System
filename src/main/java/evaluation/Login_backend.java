@@ -8,13 +8,19 @@ package evaluation;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -32,6 +38,9 @@ public class Login_backend {
 	static String userName;
 	@FXML Button botonInicioSesion;
 	@FXML Button botonRegistrarse;
+	@FXML StackPane logPane = new StackPane();
+	@FXML StackPane regPane = new StackPane();
+	@FXML BorderPane bp = new BorderPane();
 	
 	public Login_backend() {
 		initialize();
@@ -170,52 +179,26 @@ public class Login_backend {
 		}
 		
 
-}
+	}
+	
 	public void pass(ActionEvent event) {    // Pass Field
         
         System.out.println("fuck you");
     }
 	
-	@FXML TextField tf;
-	@FXML PasswordField tf2;
-	
-	public static String[] holder = new String[2];
-	
-	// Register screen
-	public void RegisterStage(ActionEvent event) throws IOException {
-	    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("reg.fxml"));
-	    Pane registerPane = (Pane) fxmlLoader.load();
-	    try {
-	    	getText();
-	        borderPane.getChildren().clear();
-	        borderPane.getChildren().add(registerPane);
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-	} 
-	
-	public void getText() {
-		holder[0] = tf.getText();
-    	holder[1] = tf2.getText();
-		System.out.println(holder[0]+" and "+holder[1]);
+	public void login() {
+		logPane.setVisible(true);
+		regPane.setVisible(false);
 	}
 	
-	@FXML public void setText() {
-		System.out.println(holder[0]+" and "+holder[1]);
-		tf.setText(holder[0]);
-        tf2.setText(holder[1]);
+	public void register() {
+		logPane.setVisible(false);
+		regPane.setVisible(true);
 	}
 	
-	// Login screen
-	public void loginStage(ActionEvent event) throws IOException {
-	    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
-	    Pane loginPane = (Pane) fxmlLoader.load();
-	    try {
-	        anchorPane.getChildren().clear();
-	        anchorPane.getChildren().add(loginPane);
-	        setText();
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-	} 
-}
+	public void mainMenu() {
+		MainMenu_GUI mm = new MainMenu_GUI();
+		mm.start();
+	}
+	
+} 

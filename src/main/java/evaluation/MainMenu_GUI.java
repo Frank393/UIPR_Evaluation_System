@@ -1,12 +1,19 @@
 package evaluation;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 public class MainMenu_GUI {
 	@FXML TextField tf = new TextField();
@@ -31,6 +38,21 @@ public class MainMenu_GUI {
 	@FXML private StackPane pane_borrar = new StackPane();
 	@FXML private StackPane pane_config = new StackPane();
 	@FXML private StackPane pane_salir = new StackPane();
+	
+	public void start() {
+		try {
+			Stage primaryStage = new Stage();
+			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/MainMenu.fxml")); // set pane
+			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("UIPR Evaluation System");
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+			}
+	}
 	
 	public void tgl_info() {
 		pane_info.setVisible(true);
