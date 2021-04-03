@@ -39,6 +39,7 @@ public class MainMenu_GUI {
 	@FXML private StackPane pane_config = new StackPane();
 	@FXML private StackPane pane_salir = new StackPane();
 	
+	// Abre ventana Main Menu
 	public void start() {
 		try {
 			Stage primaryStage = new Stage();

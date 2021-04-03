@@ -172,18 +172,14 @@ public class Login_backend {
 		if (found == 1) {
 			
 
-		}else
-		{
+		}else{
 			
-		
 		}
-		
-
 	}
 	
 	public void pass(ActionEvent event) {    // Pass Field
         
-        System.out.println("fuck you");
+        System.out.println("fcuk you");
     }
 	
 	public void login() {
