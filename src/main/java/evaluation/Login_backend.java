@@ -34,6 +34,13 @@ public class Login_backend {
 	@FXML AnchorPane anchorPane = new AnchorPane();
 	@FXML private PasswordField passwordField;
 	@FXML private TextField numeroFacultad_textField;
+	
+	
+	@FXML private TextField Nombre_textField;
+	@FXML private TextField Apellido_textField;
+	@FXML private TextField numeroFacultadRe_textField;
+	@FXML private TextField PasswordRe_textField;
+	@FXML private TextField PasswordReCom_textField;
 	//private JButton btnNewButton;
 	static String userName;
 	@FXML Button botonInicioSesion;
@@ -147,6 +154,15 @@ public class Login_backend {
 		numeroFacultad_textField = new TextField();
 		 botonInicioSesion = new Button();
 		 botonRegistrarse = new Button();
+		 
+		 
+		 
+		 
+		Nombre_textField = new TextField();
+		Apellido_textField = new TextField();
+		numeroFacultadRe_textField= new TextField();
+		PasswordRe_textField= new TextField();
+		PasswordReCom_textField= new TextField();
 	}
 			
 
@@ -157,23 +173,50 @@ public class Login_backend {
 	
 	public void Login(ActionEvent event ) {
 
+		MainMenu_GUI mm = new MainMenu_GUI();
+		Main main = new Main();
+		
 
 		userName = numeroFacultad_textField.getText();
 		String test = userName;
 		String pass = passwordField.getText();
 		int found = 0;
-
-		System.out.print("you mom gay");
+		
+		
 
 		fileManager  file = new fileManager();
 		found =	file.login(getID(), pass);
 
-
+		
 		if (found == 1) {
 			
+			mm.start();
+			main.close();
 
 		}else{
 			
+		}
+	}
+	
+	public void Register(ActionEvent event ) {
+		
+		
+		String ID = numeroFacultadRe_textField.getText();
+		String pass = PasswordRe_textField.getText();
+		String passCom = PasswordReCom_textField.getText();
+		String name = Nombre_textField.getText();
+		String lastName = Apellido_textField.getText(); 
+		
+		
+		
+		fileManager  file = new fileManager();
+		if (pass.equals(passCom)) {
+	    file.register(ID, pass, name, lastName);
+	    login();
+		}
+		else
+		{
+			 System.out.println("password not the same");
 		}
 	}
 	
@@ -193,11 +236,19 @@ public class Login_backend {
 	}
 	
 	public void mainMenu() {
-		MainMenu_GUI mm = new MainMenu_GUI();
-		Main main = new Main();
-		
-		mm.start();
-		main.close();
+//		MainMenu_GUI mm = new MainMenu_GUI();
+//		Main main = new Main();
+//		
+//		mm.start();
+//		main.close();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 } 

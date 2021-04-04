@@ -14,8 +14,7 @@ public class fileManager {
 		int found = 0;
 		File loginCreds;
 		Scanner scanner;
-
-
+	
 		try {
 			loginCreds = new File("./credencials.csv");
 			scanner = new Scanner(loginCreds);
@@ -49,7 +48,6 @@ public class fileManager {
 	public int register(String IDT , String passT, String name , String lastName) {
 
 		File registerCreds;
-
 
 		try {
 			registerCreds = new File("./credencials.csv");

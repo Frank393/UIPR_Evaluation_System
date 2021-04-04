@@ -38,7 +38,7 @@
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="tf" alignment="TOP_LEFT" layoutX="47.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" />
+                        <TextField fx:id="numeroFacultad_textField" alignment="TOP_LEFT" layoutX="47.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" />
                         <Text layoutX="47.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
                            <font>
                               <Font size="18.0" />
@@ -50,8 +50,8 @@
                               <Font size="15.0" />
                            </font>
                         </CheckBox>
-                        <PasswordField fx:id="tf2" layoutX="47.0" layoutY="127.0" prefHeight="25.0" prefWidth="200.0" />
-                        <Button fx:id="botonInicioSesion" layoutX="44.0" layoutY="206.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="31.0" prefWidth="76.0" text="Login" />
+                        <PasswordField fx:id="passwordField" layoutX="47.0" layoutY="127.0" prefHeight="25.0" prefWidth="200.0" />
+                        <Button fx:id="botonInicioSesion" layoutX="44.0" layoutY="206.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="76.0" text="Login" />
                         <ImageView fitHeight="115.0" fitWidth="257.0" layoutX="27.0" layoutY="-103.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../evaluation/unnamed.png" />
@@ -76,21 +76,21 @@
                            </font>
                         </Text>
                         <Text layoutX="29.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
-                        <TextField layoutX="29.0" layoutY="74.0" />
+                        <TextField fx:id="Nombre_textField" layoutX="29.0" layoutY="74.0" />
                         <Text layoutX="29.0" layoutY="118.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:" />
-                        <TextField layoutX="29.0" layoutY="122.0" />
+                        <TextField fx:id="Apellido_textField" layoutX="29.0" layoutY="122.0" />
                         <Text layoutX="29.0" layoutY="164.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de Facultad:" />
-                        <TextField layoutX="29.0" layoutY="168.0" />
+                        <TextField fx:id="numeroFacultadRe_textField" layoutX="29.0" layoutY="168.0" />
                         <Text layoutX="29.0" layoutY="212.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" />
-                        <TextField layoutX="29.0" layoutY="216.0" />
+                        <TextField fx:id="PasswordRe_textField" layoutX="29.0" layoutY="216.0" />
                         <Text layoutX="29.0" layoutY="261.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Contraseña:" />
-                        <TextField layoutX="29.0" layoutY="265.0" />
+                        <TextField fx:id="PasswordReCom_textField" layoutX="29.0" layoutY="265.0" />
                         <ImageView fitHeight="93.0" fitWidth="208.0" layoutX="26.0" layoutY="-79.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../evaluation/unnamed.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="29.0" layoutY="307.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="80.0" text="Registrarse" />
+                        <Button layoutX="29.0" layoutY="307.0" mnemonicParsing="false" onAction="#Register" prefHeight="28.0" prefWidth="80.0" text="Registrarse" />
                         <Button layoutX="138.0" layoutY="307.0" mnemonicParsing="false" onAction="#login" prefHeight="28.0" prefWidth="80.0" text="Cancelar" />
                      </children>
                   </Group>
