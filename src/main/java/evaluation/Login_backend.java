@@ -173,7 +173,7 @@ public class Login_backend {
 	
 	public void Login(ActionEvent event ) {
 
-		MainMenu_GUI mm = new MainMenu_GUI();
+		Instruments mm = new Instruments();
 		Main main = new Main();
 		
 
