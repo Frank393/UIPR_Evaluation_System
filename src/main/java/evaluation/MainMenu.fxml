@@ -24,7 +24,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evaluation.MainMenu_GUI">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evaluation.Instruments">
    <children>
       <Pane layoutX="-9.0" layoutY="23.0" prefHeight="768.0" prefWidth="156.0" style="-fx-background-color: #C0C0C0;" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="-9.0" AnchorPane.topAnchor="23.0">
          <children>
@@ -188,7 +188,7 @@
                                                 <Text layoutX="22.0" layoutY="2307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Participacion en conferencias, congresos o institutos." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Recurso en conferencias y charlas" wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Educacion post-doctoral, educacion continua." wrappingWidth="211.048828125" />
-                                                <Button layoutX="234.0" layoutY="2402.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="179.0" text="CALCULAR">
+                                                <Button layoutX="234.0" layoutY="2402.0" mnemonicParsing="false" onAction="#testsave" prefHeight="52.0" prefWidth="179.0" text="CALCULAR">
                                                    <font>
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
@@ -330,18 +330,18 @@
                                     <Font name="System Bold" size="32.0" />
                                  </font>
                               </Text>
-                              <TextField fx:id="tf" layoutX="223.0" layoutY="117.005859375" />
-                              <TextField layoutX="223.0" layoutY="154.005859375" />
-                              <TextField layoutX="223.0" layoutY="241.005859375" />
-                              <TextField layoutX="223.0" layoutY="279.005859375" />
-                              <ComboBox layoutX="223.0" layoutY="198.005859375" prefWidth="150.0" />
-                              <ComboBox layoutX="223.0" layoutY="324.005859375" prefWidth="150.0" />
-                              <DatePicker layoutX="223.0" layoutY="377.005859375" prefHeight="25.0" prefWidth="150.0" />
-                              <Spinner layoutX="100.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
-                              <Spinner layoutX="268.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
-                              <ComboBox layoutX="137.0" layoutY="550.0" prefWidth="150.0" />
-                              <TextField layoutX="230.0" layoutY="689.0" />
-                              <TextField layoutX="230.0" layoutY="648.0" />
+                              <TextField fx:id="Unidadacademica_textField" layoutX="223.0" layoutY="117.005859375" />
+                              <TextField fx:id="nombre_prof_textField" layoutX="223.0" layoutY="154.005859375" />
+                              <TextField fx:id="departamento_textField" layoutX="223.0" layoutY="241.005859375" />
+                              <TextField fx:id="disiplina_textField" layoutX="223.0" layoutY="279.005859375" />
+                              <ComboBox fx:id="rangoAcademico_comboBox" layoutX="223.0" layoutY="198.005859375" prefWidth="150.0" />
+                              <ComboBox fx:id="objetivo_eval_comboBox" layoutX="223.0" layoutY="324.005859375" prefWidth="150.0" />
+                              <DatePicker fx:id="periodo_evaluado_textField" layoutX="223.0" layoutY="377.005859375" prefHeight="25.0" prefWidth="150.0" />
+                              <Spinner fx:id="jornada_comple_comboBox" layoutX="100.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
+                              <Spinner fx:id="jornada_parcial_comboBox" layoutX="268.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
+                              <ComboBox fx:id="contrato_comboBox" layoutX="137.0" layoutY="550.0" prefWidth="150.0" />
+                              <TextField fx:id="tutulo_del_curso_textField" layoutX="230.0" layoutY="689.0" />
+                              <TextField fx:id="codigo_textField" layoutX="230.0" layoutY="648.0" />
                               <Group layoutX="10.0" layoutY="121.05078125">
                                  <children>
                                     <Text layoutX="27.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Del Profesor" wrappingWidth="130.265625" />
