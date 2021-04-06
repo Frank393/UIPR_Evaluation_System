@@ -35,13 +35,14 @@ import javafx.event.*;
 
 
 public class Instruments  {
-
+	int tipo ;
 	static String[] values = new String[162];
 	int[] I2re = new int[21];
 
 	ObservableList<String> objetivo = FXCollections.observableArrayList("Formativa","Sumativa"); // String array for choice box 1
 	ObservableList<String> rangoAcademico = FXCollections.observableArrayList("Rango Catedratico","Rango Catedratico Asociado","Rango Catedratico Auxiliar"); // String array for choice box 2
 	ObservableList<String> contrato = FXCollections.observableArrayList("Temporero","Sustituto","Probatorio","Permanente"); 
+	ObservableList<String> TipoEv = FXCollections.observableArrayList("Online","Manual"); 
 	// Spinner value factory
 	SpinnerValueFactory<Integer> spin1list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
 	SpinnerValueFactory<Integer> spin2list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
@@ -76,6 +77,26 @@ public class Instruments  {
 	SpinnerValueFactory<Integer> spin30list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 4,0);
 	SpinnerValueFactory<Integer> spin31list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 4,0);
 	
+	SpinnerValueFactory<Integer> spin1Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin2Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin3Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin4Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin5Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin6Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin7Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin8Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin9Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin10Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin11Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin12Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin13Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin14Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin15Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin16Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin17Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	SpinnerValueFactory<Integer> spin18Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	
+	
 	@FXML private TextField Unidadacademica_textField;
 	@FXML private TextField nombre_prof_textField;
 	@FXML private TextField departamento_textField;
@@ -83,6 +104,27 @@ public class Instruments  {
 	@FXML private DatePicker periodo_evaluado_textField;
 	@FXML private TextField codigo_textField;
 	@FXML private TextField tutulo_del_curso_textField;
+	
+	
+	@FXML private TextField InsRe_1;
+	@FXML private TextField InsRe_2;
+	@FXML private TextField InsRe_3;
+	@FXML private TextField InsRe_4;
+	@FXML private TextField InsRe_5;
+	@FXML private TextField InsRe_6;
+	@FXML private TextField InsRe_7;
+	@FXML private TextField InsRe_8;
+	@FXML private TextField InsRe_9;
+	@FXML private TextField InsRe_10;
+	@FXML private TextField InsRe_11;
+	@FXML private TextField InsRe_12;
+	@FXML private TextField InsRe_13;
+	@FXML private TextField InsRe_14;
+	@FXML private TextField InsRe_15;
+	@FXML private TextField InsRe_16;
+	@FXML private TextField InsRe_17;
+	@FXML private TextField InsRe_18;
+	
 
 	//private JLabel titulo_curso_lblNewLabel;
 
@@ -91,6 +133,7 @@ public class Instruments  {
 
 	@FXML private ComboBox<String> rangoAcademico_comboBox = new ComboBox<String>();
 	@FXML private ComboBox<String> objetivo_eval_comboBox = new ComboBox<String>();
+	@FXML private ComboBox<String> Tipo_EV = new ComboBox<String>();
 	@FXML private Spinner<Integer> jornada_comple_comboBox = new Spinner<Integer>();
 	@FXML private Spinner<Integer> jornada_parcial_comboBox = new Spinner<Integer>();
 	@FXML private ComboBox<String> contrato_comboBox = new ComboBox<String>();
@@ -126,9 +169,30 @@ public class Instruments  {
 	
 	
 	
+	@FXML private Spinner<Integer> instrument2_1 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_2 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_3 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_4 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_5 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_6 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_7 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_8 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_9 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_10 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_11 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_12 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_13 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_14 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_15 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_16 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_17 = new Spinner<Integer>();
+	@FXML private Spinner<Integer> instrument2_18 = new Spinner<Integer>();
+	
+	
 	@FXML private void initialize() { // For initializing lists of things
 		rangoAcademico_comboBox.setItems(rangoAcademico);
 		objetivo_eval_comboBox.setItems(objetivo);
+		Tipo_EV.setItems(TipoEv);
 		contrato_comboBox.setItems(contrato);
 		jornada_comple_comboBox.setValueFactory(spin1list);
 		jornada_parcial_comboBox.setValueFactory(spin2list);
@@ -161,6 +225,25 @@ public class Instruments  {
 		instrument1_27.setValueFactory(spin29list);
 		instrument1_28.setValueFactory(spin30list);
 		instrument1_29.setValueFactory(spin31list);	
+		
+		instrument2_1.setValueFactory(spin1Ins2);
+		instrument2_2.setValueFactory(spin2Ins2);
+		instrument2_3.setValueFactory(spin3Ins2);
+		instrument2_4.setValueFactory(spin4Ins2);
+		instrument2_5.setValueFactory(spin5Ins2);
+		instrument2_6.setValueFactory(spin6Ins2);
+		instrument2_7.setValueFactory(spin7Ins2);
+		instrument2_8.setValueFactory(spin8Ins2);
+		instrument2_9.setValueFactory(spin9Ins2);
+		instrument2_10.setValueFactory(spin10Ins2);
+		instrument2_11.setValueFactory(spin11Ins2);
+		instrument2_12.setValueFactory(spin12Ins2);
+		instrument2_13.setValueFactory(spin13Ins2);
+		instrument2_14.setValueFactory(spin14Ins2);
+		instrument2_15.setValueFactory(spin15Ins2);
+		instrument2_16.setValueFactory(spin16Ins2);
+		instrument2_17.setValueFactory(spin17Ins2);
+		instrument2_18.setValueFactory(spin18Ins2);
 	}
 	
 //	private JComboBox comboBox = new JComboBox();
@@ -1452,7 +1535,7 @@ public class Instruments  {
 //	}
 	
 	public void testsave(ActionEvent event ) {
-		
+	 
 //		int valueID;
 //		int value ;
 //		int j = 0;
@@ -1495,8 +1578,16 @@ public class Instruments  {
 		values [10] = codigo_textField.getText();
 		values [11] = tutulo_del_curso_textField.getText();
 		
+		 
+		 if (Tipo_EV.getValue().toString().equals("Manual")) {
+			 tipo = 1;
+			 
+		 }
+		 else {
+			 tipo = 0;
+		 }
 		
-
+		values [13] = Tipo_EV.getValue().toString();
 		values [14] =instrument1_1.getValue().toString();
 		values [15] =instrument1_2.getValue().toString();
 		values [16] =instrument1_3.getValue().toString();
@@ -1563,6 +1654,64 @@ public class Instruments  {
 		
 		
 		
+		
+	}
+	
+	public void calcular(ActionEvent event ) {
+		
+		try {
+			
+			System.out.println("DataView2: "+values[1]);
+			DataView DV = new DataView(values[1]);
+			int r =0;
+			//r = Integer.parseInt(spinner.getValue());
+			//System.out.println(spinner.getValue()+ "soy yo tu padre ");
+
+
+			
+			I2re[0] = DV.EvidenceCalc((int)instrument2_1.getValue());
+			I2re[1] = DV.EvidenceCalc((int)instrument2_2.getValue());
+			I2re[2] = DV.EvidenceCalc((int)instrument2_3.getValue());
+			I2re[3] = DV.EvidenceCalc((int) instrument2_4.getValue());
+			I2re[4] = DV.EvidenceCalc((int) instrument2_5.getValue());
+			I2re[5] = DV.EvidenceCalc((int) instrument2_6.getValue());
+			I2re[6] = DV.EvidenceCalc((int)instrument2_7.getValue());
+			I2re[7] = DV.EvidenceCalc((int)instrument2_8.getValue());
+			I2re[8] = DV.EvidenceCalc((int) instrument2_9.getValue());
+			I2re[9] = DV.EvidenceCalc((int) instrument2_10.getValue());
+			I2re[10] = DV.EvidenceCalc((int)instrument2_11.getValue());
+			I2re[11] = DV.EvidenceCalc((int) instrument2_12.getValue());
+			I2re[12] = DV.EvidenceCalc((int)instrument2_13.getValue());
+			I2re[13] = DV.EvidenceCalc((int)instrument2_14.getValue());
+			I2re[14] = DV.EvidenceCalc((int) instrument2_15.getValue());
+			I2re[15] = DV.EvidenceCalc((int)instrument2_16.getValue());
+			I2re[16] = DV.EvidenceCalc((int) instrument2_17.getValue());
+			I2re[17] = DV.EvidenceCalc((int) instrument2_18.getValue());
+			
+			
+			InsRe_1.setText(String.valueOf(I2re[0]));
+			InsRe_2.setText(String.valueOf(I2re[1]));
+			InsRe_3.setText(String.valueOf(I2re[2]));
+			InsRe_4.setText(String.valueOf(I2re[3]));
+			InsRe_5.setText(String.valueOf(I2re[4]));
+			InsRe_6.setText(String.valueOf(I2re[5]));
+			InsRe_7.setText(String.valueOf(I2re[6]));
+			InsRe_8.setText(String.valueOf(I2re[7]));
+			InsRe_9.setText(String.valueOf(I2re[8]));
+			InsRe_10.setText(String.valueOf(I2re[9]));
+			InsRe_11.setText(String.valueOf(I2re[10]));
+			InsRe_12.setText(String.valueOf(I2re[11]));
+			InsRe_13.setText(String.valueOf(I2re[12]));
+			InsRe_14.setText(String.valueOf(I2re[13]));
+			InsRe_15.setText(String.valueOf(I2re[14]));
+			InsRe_16.setText(String.valueOf(I2re[15]));
+			InsRe_17.setText(String.valueOf(I2re[16]));
+			InsRe_18.setText(String.valueOf(I2re[17]));
+
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 	}
 
@@ -2064,4 +2213,10 @@ public class Instruments  {
 		return values;
 
 	}
+	
+	public int gettipo() {
+		return tipo;
+
+	}
+	
 }
