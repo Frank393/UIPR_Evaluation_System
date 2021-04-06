@@ -20,8 +20,9 @@ public class ValenciasRubrica{
 	}
 	
 	double[] CalidadDocente(int choice, int status)  throws IOException{
-		Evaluation e = new Evaluation();
-		onlineEvaluation d = new onlineEvaluation();
+		
+		
+		Instruments mm = new Instruments();
 		String[] fac = new String[162];
 		fac = status == 1 ? e.getvalue() : d.getvalue();
 		

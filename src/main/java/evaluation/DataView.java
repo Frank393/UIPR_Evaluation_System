@@ -5,10 +5,8 @@ import java.util.*;
 
 
 public class DataView {
-	Evaluation ev = new Evaluation();
-	onlineEvaluation ov = new onlineEvaluation();
 	
-	MainMenu mm = new MainMenu();
+	Instruments mm = new Instruments();
 	
 	File file = new File("./instrumentos.csv");
 	File file2 = new File("./temp.csv"); // Holds non-deletable data
@@ -23,7 +21,7 @@ public class DataView {
 		Scanner counter ;
 		counter = new Scanner(file);
 		
-		fac = mm.gettype() == 1 ? ev.values[1] : ov.values[1];
+		fac = mm.gettipo() == 1 ? mm.values[1] : mm.values[1];
 		
 		FileWriter writer = new FileWriter(file2);
 		writer.write("header\n");
