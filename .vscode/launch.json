@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Css2Bin",
+            "request": "launch",
+            "mainClass": "com.sun.javafx.css.parser.Css2Bin",
+            "projectName": "UIPR_Evaluation_System"
+        },
+        {
+            "vmArgs": "--module-path C:/Users/Zef/Documents/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "evaluation.Main",
+            "projectName": "UIPR_Evaluation_System"
+        },
+        {
+            "type": "java",
+            "name": "Launch Results1",
+            "request": "launch",
+            "mainClass": "evaluation.Results1",
+            "projectName": "UIPR_Evaluation_System"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "evaluation.test",
+            "projectName": "UIPR_Evaluation_System"
+        }
+    ]
+}
