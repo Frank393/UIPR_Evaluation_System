@@ -316,7 +316,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_info" layoutX="215.0" layoutY="-524.0" prefHeight="1819.0" prefWidth="443.0" AnchorPane.bottomAnchor="1266.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="-524.0">
+                  <StackPane fx:id="pane_info" layoutX="215.0" layoutY="-524.0" prefHeight="1819.0" prefWidth="443.0" visible="false" AnchorPane.bottomAnchor="1266.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="-524.0">
                      <children>
                         <Group>
                            <children>
@@ -372,7 +372,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst1" layoutX="163.0" layoutY="-387.0" visible="false" AnchorPane.bottomAnchor="387.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="-387.0">
+                  <StackPane fx:id="pane_inst1" layoutX="163.0" layoutY="-387.0" AnchorPane.bottomAnchor="387.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="-387.0">
                      <children>
                         <Group>
                            <children>
@@ -406,8 +406,8 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="127.0" prefHeight="25.0" prefWidth="69.0" />
-                              <Spinner layoutX="458.0" layoutY="168.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_1" layoutX="458.0" layoutY="127.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_2" layoutX="458.0" layoutY="168.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="76.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El prontuario del curso. Utiliza la siguiente clave para las preguntas 3 y 4:">
                                  <font>
                                     <Font name="System Bold Italic" size="12.0" />
@@ -423,13 +423,13 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="307.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_3" layoutX="458.0" layoutY="307.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. El profesor discute el prontuario al inicio del curso." wrappingWidth="383.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="358.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_4" layoutX="458.0" layoutY="358.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="73.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollo de la clase. Utiliza la siguiente clave para las preguntas 5 al 17:">
                                  <font>
                                     <Font name="System Bold Italic" size="12.0" />
@@ -445,79 +445,79 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="483.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_5" layoutX="458.0" layoutY="483.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. El profesor demuestra conocer el material de la clase." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="521.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_6" layoutX="458.0" layoutY="521.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. El profesor me hace pensar y reflexionar sobre los temas del curso." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="568.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_7" layoutX="458.0" layoutY="568.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. La forma en que el profesor enseña el contenido del curso ha aumentado mi entendimiento de esta materia." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="615.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_8" layoutX="458.0" layoutY="615.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Hasta el presente, se han logrado los objetivos del curso comforme al prontuario." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="663.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_9" layoutX="458.0" layoutY="663.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. El profesor utiliza diversas formas o maneras de enseñanza para presentar el contenido del curso." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="715.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_10" layoutX="458.0" layoutY="715.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="769.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. El profesor utiliza materiales educativos relacionados con el contenido del curso." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="762.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_11" layoutX="458.0" layoutY="762.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Cuando es oportuno, el profesor enriquece la clase con recursos tecnologicos y audiovisuales." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="809.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_12" layoutX="458.0" layoutY="809.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="863.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. El profesor escucha y discute con respeto los planteamientos." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="847.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_13" layoutX="458.0" layoutY="847.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="896.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. El profesor toma medidas para asegurarse que yo entienda el material." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="889.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_14" layoutX="458.0" layoutY="889.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="946.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. El profesor relaciona las ideas y temas presentadas en el curso." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="939.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_15" layoutX="458.0" layoutY="939.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="995.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. El profesor promueve la participacion de los estudiantes." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="979.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_16" layoutX="458.0" layoutY="979.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1032.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. El profesor miestra interes por el parovechamiento academico." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1025.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_17" layoutX="458.0" layoutY="1025.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="142.0" layoutY="1097.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerencia del proceso de enseñanza de aprendizaje">
                                  <font>
                                     <Font name="System Bold Italic" size="12.0" />
@@ -533,73 +533,73 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1162.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_18" layoutX="458.0" layoutY="1162.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. El profesor explica el material con claridad." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1200.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_19" layoutX="458.0" layoutY="1200.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. El profesor comple con el horario de clase." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1237.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_20" layoutX="458.0" layoutY="1237.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21. El profesor explica claramente como los estudiantes seran evaluados conforme al prontuario." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1282.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_21" layoutX="458.0" layoutY="1282.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22. Los examenes y trabajos responden al contenido del curso." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1320.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_22" layoutX="458.0" layoutY="1320.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23. El profesor utiliza diversos metodos para evaluar el aprendizaje." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1365.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_23" layoutX="458.0" layoutY="1365.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24. El profesor corrige los examenes y trabajos, segun los criterios establecidos en el prontuario." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1413.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_24" layoutX="458.0" layoutY="1413.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25. El profesor hace recomendaciones sobre los trabajos que presentan los estudiantes." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1462.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_25" layoutX="458.0" layoutY="1462.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="26. El profesor informa el resultados de los examenes y los trabajos corregidos, preferiblemente en o antes de dos semanas." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1512.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_26" layoutX="458.0" layoutY="1512.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27. El profesor discute el resultado de las evaluaciones con los estudiantes." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1560.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_27" layoutX="458.0" layoutY="1560.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1614.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28. El profesor exhorta a los estudiantes a comunicarse con el, en caso de que surjan dudas relacionadas con los temas del curso y sus evaluaciones." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1616.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_28" layoutX="458.0" layoutY="1616.0" prefHeight="25.0" prefWidth="69.0" />
                               <Text layoutX="23.0" layoutY="1681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29. El profesor provee la oportunidad de reunirse con el en sus horas de oficina." wrappingWidth="404.3671875">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Spinner layoutX="458.0" layoutY="1674.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner fx:id="instrument1_29" layoutX="458.0" layoutY="1674.0" prefHeight="25.0" prefWidth="69.0" />
                               <Separator layoutX="9.0" layoutY="1077.0" prefHeight="2.0" prefWidth="529.0" />
                               <Separator layoutX="9.0" layoutY="400.0" prefHeight="2.0" prefWidth="529.0" />
                               <Separator layoutX="9.0" layoutY="216.0" prefHeight="2.0" prefWidth="529.0" />
