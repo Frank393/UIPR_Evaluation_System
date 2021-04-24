@@ -53,7 +53,7 @@
             <DropShadow />
          </effect>
       </Pane>
-      <ScrollPane hbarPolicy="ALWAYS" layoutX="147.0" layoutY="23.0" prefHeight="760.0" prefWidth="878.0" styleClass="anchor" stylesheets="@application.css" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="23.0">
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="147.0" layoutY="23.0" prefHeight="760.0" prefWidth="878.0" styleClass="anchor" stylesheets="@application.css" vbarPolicy="ALWAYS" vvalue="0.03" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="23.0">
          <content>
             <AnchorPane prefHeight="5188.0" prefWidth="874.0" styleClass="anchor" stylesheets="@application.css">
                <children>
@@ -318,9 +318,9 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375">
+                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375" visible="false">
                      <children>
-                        <Group>
+                        <Group visible="false">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="699.0" layoutX="3.0" layoutY="52.005859375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="418.0">
                                  <effect>
@@ -376,7 +376,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst3" layoutX="149.0" layoutY="14.0" visible="false">
+                  <StackPane fx:id="pane_inst3" layoutX="149.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
@@ -385,14 +385,13 @@
                                     <DropShadow />
                                  </effect>
                               </Rectangle>
-                              <ComboBox layoutX="498.0" layoutY="5985.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="196.0" layoutY="1520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visita al salon de clase">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
                                  </font>
                               </Text>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff7c" height="286.0" layoutX="60.0" layoutY="1574.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="485.0" />
-                              <Text layoutX="71.0" layoutY="1594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4- El profesor demuestra que cumple totalment con el criterio y no requiere recomendaciones correctivas. " wrappingWidth="422.154296875">
+                              <Text layoutX="71.0" layoutY="1594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4- El profesor demuestra que cumple totalmente con el criterio y no requiere recomendaciones correctivas. " wrappingWidth="422.154296875">
                                  <font>
                                     <Font name="System Italic" size="12.0" />
                                  </font>
@@ -422,7 +421,7 @@
                                     <Font name="System Italic" size="12.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="78.0" layoutY="1799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0- El profesor no cumple con el criterio y requiere recomndaciones correctivas extraordinarias." wrappingWidth="422.154296875">
+                              <Text layoutX="78.0" layoutY="1799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0- El profesor no cumple con el criterio y requiere recomendaciones correctivas extraordinarias." wrappingWidth="422.154296875">
                                  <font>
                                     <Font name="System Italic" size="12.0" />
                                  </font>
@@ -587,7 +586,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="31.0" layoutY="5359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Fomenta la colaboraci\u00F3n y el trabajo en equipo entre los estudiantes." wrappingWidth="425.64453125">
+                              <Text layoutX="31.0" layoutY="5359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Fomenta la colaboración y el trabajo en equipo entre los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -597,7 +596,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="32.0" layoutY="5565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Utiliza recursos de apoyo (pizarra, materiales educativos o tecnol\u00F3gicos) adecuados para desarrollar la clase." wrappingWidth="425.64453125">
+                              <Text layoutX="32.0" layoutY="5565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Utiliza recursos de apoyo (pizarra, materiales educativos o tecnológicos) adecuados para desarrollar la clase." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -627,25 +626,26 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <ComboBox layoutX="498.0" layoutY="1883.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2094.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2333.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2549.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2778.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2992.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3206.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3426.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="3630.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3837.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="4053.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="494.0" layoutY="4266.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="4463.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="4675.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="496.0" layoutY="4893.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="494.0" layoutY="5122.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5343.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5558.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5769.0" prefHeight="11.0" prefWidth="80.0" />
+                              <Spinner layoutX="513.0" layoutY="1882.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="2093.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="2329.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="2545.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="2774.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="2980.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="3202.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="3417.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="3629.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="3834.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="4051.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="4263.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="4462.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="4676.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="4893.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="5130.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="5351.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="5554.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="513.0" layoutY="5767.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="516.0" layoutY="5986.0" prefHeight="25.0" prefWidth="65.0" />
                            </children>
                         </Group>
                      </children>
@@ -924,7 +924,6 @@
                                     <DropShadow />
                                  </effect>
                               </Rectangle>
-                              <ComboBox layoutX="508.0" layoutY="6462.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="196.0" layoutY="1530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluacion del Director">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
@@ -933,7 +932,7 @@
                               <Group layoutX="58.0" layoutY="1593.0">
                                  <children>
                                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff7c" height="286.0" layoutY="-12.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="485.0" />
-                                    <Text layoutX="11.0" layoutY="7.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="4- El profesor demuestra que cumple totalment con el criterio y no requiere recomendaciones correctivas. " wrappingWidth="422.154296875">
+                                    <Text layoutX="11.0" layoutY="7.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="4- El profesor demuestra que cumple totalmente con el criterio y no requiere recomendaciones correctivas. " wrappingWidth="422.154296875">
                                        <font>
                                           <Font name="System Italic" size="12.0" />
                                        </font>
@@ -958,19 +957,19 @@
                                           <Font name="System Italic" size="12.0" />
                                        </font>
                                     </Text>
-                                    <Text layoutX="15.0" layoutY="262.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A- No se puede evalkuar porque el criterio no aplica a la clase visitada." wrappingWidth="422.154296875">
+                                    <Text layoutX="15.0" layoutY="262.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A- No se puede evaluar porque el criterio no aplica a la clase visitada." wrappingWidth="422.154296875">
                                        <font>
                                           <Font name="System Italic" size="12.0" />
                                        </font>
                                     </Text>
                                  </children>
                               </Group>
-                              <Text layoutX="22.0" layoutY="1911.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Cumple con las horas de oficina seg\u00FAn establecidas.">
+                              <Text layoutX="22.0" layoutY="1911.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Cumple con las horas de oficina según establecidas.">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="22.0" layoutY="2114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejer\u00EDa acad\u00E9mica ofrecida a sus estudiantes, seg\u00FAn definida en el Manual de la Facultad." wrappingWidth="425.64453125">
+                              <Text layoutX="22.0" layoutY="2114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejería académica ofrecida a sus estudiantes, según definida en el Manual de la Facultad." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1000,7 +999,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="21.0" layoutY="2598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Informa al Director del Departamento c\u00F3mo repone sus ausencias." wrappingWidth="425.64453125">
+                              <Text layoutX="21.0" layoutY="2598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Informa al Director del Departamento cómo repone sus ausencias." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1035,7 +1034,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="22.0" layoutY="3233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Cumple con las normas y procedimientos de la Instituci\u00F3n. Somete dentro del tiempo establecido por la Universidad y la unidad acad\u00E9mica, los siguientes documentos: el cotejo de listas, el informe de estudiantes que nunca han las calificaciones finales, la remoci\u00F3n de incompletos, la notificaci\u00F3n de extramuros, los horarios de clase, entre otros, y sigue el calendario acad\u00E9mico." wrappingWidth="425.64453125">
+                              <Text layoutX="22.0" layoutY="3233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Cumple con las normas y procedimientos de la Institución. Somete dentro del tiempo establecido por la Universidad y la unidad académica, los siguientes documentos: el cotejo de listas, el informe de estudiantes que nunca han las calificaciones finales, la remoción de incompletos, la notificación de extramuros, los horarios de clase, entre otros, y sigue el calendario académico." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1055,7 +1054,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="21.0" layoutY="3751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Est\u00E1 disponible para ofrecer cursos, seg\u00FAn las necesidades establecidas en el horario de clases para la oferta acad\u00E9mica del t\u00E9rmino." wrappingWidth="425.64453125">
+                              <Text layoutX="21.0" layoutY="3751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Está disponible para ofrecer cursos, según las necesidades establecidas en el horario de clases para la oferta académica del término." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1065,12 +1064,12 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="3972.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Participa en comit\u00E9s departamentales, de la unidad acad\u00E9mica, institucional o en organismos universitarios cuando as\u00ED se le solicita." wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="3972.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Participa en comités departamentales, de la unidad académica, institucional o en organismos universitarios cuando así se le solicita." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="28.0" layoutY="4214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. Asiste a las convocatorias de facultad, tales como actividades de reconocimientos acad\u00E9micos a estudiantes, el Servicio de Graduaci\u00F3n, la Graduaci\u00F3n, entre otros" wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="4214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. Asiste a las convocatorias de facultad, tales como actividades de reconocimientos académicos a estudiantes, el Servicio de Graduación, la Graduación, entre otros" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1080,7 +1079,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="4451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Asiste a actividades de desarrollo profesional como congresos, seminarios, cursos de educaci\u00F3n continuada, entre otros. " wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="4451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Asiste a actividades de desarrollo profesional como congresos, seminarios, cursos de educación continuada, entre otros. " wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1090,7 +1089,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="4722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Mantiene un clima de respeto con los colegas y con los compa\u00F1eros de trabajo." wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="4722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Mantiene un clima de respeto con los colegas y con los compañeros de trabajo." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1110,7 +1109,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="5224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. Contribuye al enriquecimiento de los recursos del Centro de Acceso a la Informaci\u00F3n." wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="5224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. Contribuye al enriquecimiento de los recursos del Centro de Acceso a la Información." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1120,75 +1119,56 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="5471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Contribuye al mejoramiento y actualizaci\u00F3n de su disciplina o de la materia que ense\u00F1a, a trav\u00E9s del dise\u00F1o de cursos nuevos, la preparaci\u00F3n de materiales educativos o de prontuarios, proyectos innovadores, entre otros." wrappingWidth="455.64453125">
+                              <Text layoutX="28.0" layoutY="5471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Contribuye al mejoramiento y actualización de su disciplina o de la materia que enseña, a través del diseño de cursos nuevos, la preparación de materiales educativos o de prontuarios, proyectos innovadores, entre otros." wrappingWidth="455.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="5543.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextArea layoutX="50.0" layoutY="5538.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="27.0" layoutY="5729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Est\u00E1 disponible para ense\u00F1ar cursos en diferentes modalidades de estudio (por ejemplo, estudio independiente, contrato, cursos en l\u00EDnea, combinados, entre otros)." wrappingWidth="425.64453125">
+                              <Text layoutX="27.0" layoutY="5729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Está disponible para enseñar cursos en diferentes modalidades de estudio (por ejemplo, estudio independiente, contrato, cursos en línea, combinados, entre otros)." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="70.0" layoutY="5785.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextArea layoutX="50.0" layoutY="5785.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="5985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Trabaja con sus compa\u00F1eros en tareas de equipo cuando es necesario." wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="5985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Trabaja con sus compañeros en tareas de equipo cuando es necesario." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="6032.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextArea layoutX="45.0" layoutY="6024.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="6218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. Evidencia en sus cursos el uso de los resultados del \u201Cassessment\u201D de los cursos y del programa para el mejoramiento de los logros en el aprendizaje de los estudiantes." wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="6218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. Evidencia en sus cursos el uso de los resultados del assessment de los cursos y del programa para el mejoramiento de los logros en el aprendizaje de los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="6269.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextArea layoutX="39.0" layoutY="6266.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="28.0" layoutY="6462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. Colabora con el fortalecimiento de los programas acad\u00E9micos20. Colabora con el fortalecimiento de los programas acad\u00E9micos" wrappingWidth="425.64453125">
+                              <Text layoutX="28.0" layoutY="6462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. Colabora con el fortalecimiento de los programas académicos." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="74.0" layoutY="6517.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextArea layoutX="39.0" layoutY="6513.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <ComboBox layoutX="508.0" layoutY="1893.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2114.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2332.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2589.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2802.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3012.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3271.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3542.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3751.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3972.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4214.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4442.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4682.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4967.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5215.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5481.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5729.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5976.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="6218.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="92.0" layoutY="6711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" textAlignment="CENTER" wrappingWidth="425.64453125">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
@@ -1214,7 +1194,7 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
-                              <Text layoutX="39.0" layoutY="7151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recomendaci\u00F3n para el Plan de Acci\u00F3n del profesor evaluado:" wrappingWidth="425.64453125">
+                              <Text layoutX="39.0" layoutY="7151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recomendación para el Plan de Acción del profesor evaluado:" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -1224,6 +1204,26 @@
                                     <Font size="12.0" />
                                  </font>
                               </TextArea>
+                              <Spinner layoutX="503.0" layoutY="1892.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="2112.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="2345.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="2587.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="2801.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="3011.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="3255.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="3537.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="498.0" layoutY="3749.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="3970.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="511.0" layoutY="4212.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="4457.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="511.0" layoutY="4711.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="4966.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="5213.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="5477.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="511.0" layoutY="5727.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="5974.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="501.0" layoutY="6216.0" prefHeight="25.0" prefWidth="65.0" />
+                              <Spinner layoutX="503.0" layoutY="6448.0" prefHeight="25.0" prefWidth="65.0" />
                            </children>
                         </Group>
                      </children>
