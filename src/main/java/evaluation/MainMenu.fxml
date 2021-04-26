@@ -14,7 +14,6 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -74,7 +73,7 @@
                                              <children>
                                                 <Text layoutX="14.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Dominio de la disciplina que enseña." />
                                                 <Spinner fx:id="instrument2_1" layoutX="252.0" layoutY="112.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="369.0" layoutY="81.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_1" layoutX="369.0" layoutY="81.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="195.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experiencia y Calidad Docente">
                                                    <font>
                                                       <Font name="System Bold" size="18.0" />
@@ -87,22 +86,22 @@
                                                 <Text layoutX="26.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I. Experiencia y Calidad Docente" />
                                                 <Text layoutX="12.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Habilidad para organizar el contenido y presentarlo en forma clara, logica e imaginativa." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_2" layoutX="250.0" layoutY="210.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="369.0" layoutY="180.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_2" layoutX="369.0" layoutY="180.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="12.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Conocimiento de los desarrollos actuales de la disciplina." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_3" layoutX="250.0" layoutY="309.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="369.0" layoutY="279.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_3" layoutX="369.0" layoutY="279.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="12.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Habilidad para relacionar la discplina con otras esferas del conocimiento." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_4" layoutX="250.0" layoutY="408.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="369.0" layoutY="378.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_4" layoutX="369.0" layoutY="378.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="11.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Halilidad para promover y ampliar el interes del estudiante en la disciplina" wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_5" layoutX="249.0" layoutY="508.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="368.0" layoutY="478.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_5" layoutX="372.0" layoutY="477.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="12.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Habilidad para desarrollar y utilizar metodos y estrategias adecuadas, incluyendo el &quot;assessment&quot; para una enseñanza efectiva." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_6" layoutX="249.0" layoutY="607.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="368.0" layoutY="577.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_6" layoutX="372.0" layoutY="575.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="12.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Disponibilidad y eficacia en la orientacion academica del estudiante" wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_7" layoutX="250.0" layoutY="710.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="368.0" layoutY="679.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_7" layoutX="372.0" layoutY="679.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="12.0" layoutY="735.0" strokeType="OUTSIDE" strokeWidth="0.0" text="h. Posesion de los atributos de integridad, laboriosidad, liberalidad y objetividad en la ensenñanza." wrappingWidth="211.048828125" />
                                                 <Separator layoutY="805.0" prefHeight="4.0" prefWidth="651.0" />
                                                 <Text layoutX="220.0" layoutY="840.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sevicio a la Institucion" textAlignment="CENTER">
@@ -116,18 +115,18 @@
                                                 <Text layoutX="464.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
                                                 <Text layoutX="29.0" layoutY="879.0" strokeType="OUTSIDE" strokeWidth="0.0" text="II. Servicio a la institucion" />
                                                 <Spinner fx:id="instrument2_8" layoutX="259.0" layoutY="924.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="376.0" layoutY="894.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_8" layoutX="376.0" layoutY="894.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="26.0" layoutY="932.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Trabajo en comites de facultad a nivel departamental." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_9" layoutX="259.0" layoutY="1032.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="376.0" layoutY="1002.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_9" layoutX="376.0" layoutY="1002.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="26.0" layoutY="1006.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Participacion y aportacion a reuniones de faultad y de comites a nivel de recinto." wrappingWidth="211.048828125" />
                                                 <Text layoutX="26.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Servicio en comites y en organizaciones a nivel institucional." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_10" layoutX="257.0" layoutY="1137.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="375.0" layoutY="1107.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_10" layoutX="375.0" layoutY="1107.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="25.0" layoutY="1129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Colaboracion en actividades estudiantiles." wrappingWidth="211.048828125" />
                                                 <Text layoutX="25.0" layoutY="1167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Asistencia a actos oficiales." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_11" layoutX="257.0" layoutY="1245.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="375.0" layoutY="1215.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_11" layoutX="375.0" layoutY="1215.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="26.0" layoutY="1221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Designacion como director(a) de departamento, presidente de comite y otras." wrappingWidth="211.048828125" />
                                                 <Text layoutX="26.0" layoutY="1282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Participacion en organismos de gobierno, tales como: El Senado y Consejo Universitario." wrappingWidth="211.048828125" />
                                                 <Separator layoutX="-3.0" layoutY="1330.0" prefHeight="4.0" prefWidth="651.0" />
@@ -142,7 +141,7 @@
                                                 <Text layoutX="461.0" layoutY="1403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
                                                 <Text layoutX="26.0" layoutY="1404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="III. Servicio a la Comunidad" />
                                                 <Spinner fx:id="instrument2_12" layoutX="259.0" layoutY="1478.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="376.0" layoutY="1447.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_12" layoutX="376.0" layoutY="1447.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="1442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Servicio en el campo profesional del profesor como consultor o investigador." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="1503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participacion activa en gestiones politicas, religiosas o civicas." wrappingWidth="211.048828125" />
                                                 <Separator layoutY="1567.0" prefHeight="4.0" prefWidth="651.0" />
@@ -157,13 +156,13 @@
                                                 <Text layoutX="464.0" layoutY="1640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
                                                 <Text layoutX="29.0" layoutY="1641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IV. Investigacion y Trabajo Creativo" />
                                                 <Spinner fx:id="instrument2_13" layoutX="260.0" layoutY="1703.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="1672.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_13" layoutX="377.0" layoutY="1672.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="1720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Publicaciones" wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_14" layoutX="260.0" layoutY="1805.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="1774.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_14" layoutX="377.0" layoutY="1774.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="1805.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Presentaciones y trabajos creativos relacionados con la disciplina que enseña." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_15" layoutX="260.0" layoutY="1909.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="1878.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_15" layoutX="377.0" layoutY="1878.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="1884.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Propuestas diseñadas y presentadas." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="1909.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Concesion de ayudas para investigacion y proyectos." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="1950.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Invenciones, patentes, labor artistica y actuacion." wrappingWidth="211.048828125" />
@@ -179,14 +178,14 @@
                                                 <Text layoutX="459.0" layoutY="2046.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
                                                 <Text layoutX="7.0" layoutY="2048.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V. Crecimiento y Desarrollo Profesional" />
                                                 <Spinner fx:id="instrument2_16" layoutX="260.0" layoutY="2106.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="2075.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_16" layoutX="377.0" layoutY="2075.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="2081.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Obtencion de premios, ayudas y becas." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Nombramiento como asesor(a) en agencias del gobierno estatal o federal." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Propuestas diseñadas y presentadas." wrappingWidth="211.048828125" />
                                                 <Spinner fx:id="instrument2_17" layoutX="259.0" layoutY="2211.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="2181.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_17" layoutX="377.0" layoutY="2181.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Spinner fx:id="instrument2_18" layoutX="259.0" layoutY="2318.0" prefHeight="25.0" prefWidth="63.0" />
-                                                <TextArea layoutX="377.0" layoutY="2288.0" prefHeight="86.0" prefWidth="252.0" />
+                                                <TextField fx:id="Comment_2_18" layoutX="377.0" layoutY="2288.0" prefHeight="86.0" prefWidth="252.0" />
                                                 <Text layoutX="22.0" layoutY="2307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Participacion en conferencias, congresos o institutos." wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Recurso en conferencias y charlas" wrappingWidth="211.048828125" />
                                                 <Text layoutX="22.0" layoutY="2344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Educacion post-doctoral, educacion continua." wrappingWidth="211.048828125" />
@@ -318,7 +317,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375">
+                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375" visible="false">
                      <children>
                         <Group>
                            <children>
@@ -385,7 +384,7 @@
                                     <DropShadow />
                                  </effect>
                               </Rectangle>
-                              <ComboBox layoutX="498.0" layoutY="5985.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_20" layoutX="498.0" layoutY="5985.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="196.0" layoutY="1520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visita al salon de clase">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
@@ -432,16 +431,16 @@
                                     <Font name="System Italic" size="12.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="55.0" layoutY="1922.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_1" layoutX="55.0" layoutY="1922.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <TextArea layoutX="60.0" layoutY="2128.0" prefHeight="147.0" prefWidth="453.0">
+                              </TextField>
+                              <TextField fx:id="Comment_3_2" layoutX="60.0" layoutY="2128.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="63.0" layoutY="1568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rubrica">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
@@ -452,76 +451,76 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="60.0" layoutY="2369.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_3" layoutX="60.0" layoutY="2369.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="2556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Relaciona la utilidad del tema con otros cursos o areas del conocimiento." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="55.0" layoutY="2581.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_4" layoutX="55.0" layoutY="2581.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="2793.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Presenta el tema en forma actualizada." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="54.0" layoutY="2811.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_5" layoutX="54.0" layoutY="2811.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="32.0" layoutY="3007.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Incorpora en la clase las nuevas tendencias de la disciplina." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="56.0" layoutY="3022.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_6" layoutX="56.0" layoutY="3022.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <TextArea layoutX="60.0" layoutY="3238.0" prefHeight="147.0" prefWidth="453.0">
+                              </TextField>
+                              <TextField fx:id="Comment_3_7" layoutX="60.0" layoutY="3238.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="32.0" layoutY="3221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Presenta el material de la clase en forma organizada y coherente." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="3455.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_8" layoutX="63.0" layoutY="3455.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="32.0" layoutY="3444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Utiliza el vocabulario propio de la materia." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="59.0" layoutY="3663.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_9" layoutX="59.0" layoutY="3663.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="3648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Cumple con los objetivos establecidos para la clase." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="56.0" layoutY="3875.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_10" layoutX="56.0" layoutY="3875.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="32.0" layoutY="3853.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Utiliza el tiempo de la clase de acuerdo con los objetivos establecidos" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
@@ -532,120 +531,120 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="4091.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_11" layoutX="63.0" layoutY="4091.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="4282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Estimula la participacion de los estudiantes en la clase" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="4297.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_12" layoutX="63.0" layoutY="4297.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="4481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Mantiene un clima de confianza y respeto." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="62.0" layoutY="4498.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_13" layoutX="62.0" layoutY="4498.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="4684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. Facilita relacionar el contenido de la clase con las experiencias del estudiante en su  diario vivir." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="4714.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_14" layoutX="63.0" layoutY="4714.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="30.0" layoutY="4901.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. Promueve la discusion para complementar, aclarar o enriquecer la clase." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="4934.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_15" layoutX="63.0" layoutY="4934.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="5119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Promueve en los estudiantes la busqueda de informacion y otras experiensas que enriquezcan sus conocimientos y estimulen el pensamiento critico." wrappingWidth="455.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="62.0" layoutY="5173.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_16" layoutX="62.0" layoutY="5173.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="5359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Fomenta la colaboración y el trabajo en equipo entre los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="5391.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_17" layoutX="63.0" layoutY="5391.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="32.0" layoutY="5565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Utiliza recursos de apoyo (pizarra, materiales educativos o tecnológicos) adecuados para desarrollar la clase." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="5595.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_18" layoutX="63.0" layoutY="5595.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="31.0" layoutY="5778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. Utiliza estrategias y metodos que promueven el aprendizaje de los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="59.0" layoutY="5809.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_19" layoutX="59.0" layoutY="5809.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="30.0" layoutY="5994.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. Utiliza estrategias para verificar si los estudiantes entienden el material durante el transcurso de la clase." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="63.0" layoutY="6034.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_3_20" layoutX="63.0" layoutY="6034.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <ComboBox layoutX="498.0" layoutY="1883.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2094.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2333.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2549.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2778.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="2992.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3206.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3426.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="3630.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="3837.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="4053.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="494.0" layoutY="4266.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="4463.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="498.0" layoutY="4675.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="496.0" layoutY="4893.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="494.0" layoutY="5122.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5343.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5558.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="497.0" layoutY="5769.0" prefHeight="11.0" prefWidth="80.0" />
+                              </TextField>
+                              <ComboBox fx:id="instrument3_1" layoutX="498.0" layoutY="1883.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_2" layoutX="498.0" layoutY="2094.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_3" layoutX="498.0" layoutY="2333.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_4" layoutX="498.0" layoutY="2549.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_5" layoutX="498.0" layoutY="2778.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_6" layoutX="498.0" layoutY="2992.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_7" layoutX="498.0" layoutY="3206.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_8" layoutX="498.0" layoutY="3426.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_9" layoutX="497.0" layoutY="3630.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_10" layoutX="498.0" layoutY="3837.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_11" layoutX="497.0" layoutY="4053.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_12" layoutX="494.0" layoutY="4266.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_13" layoutX="497.0" layoutY="4463.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_14" layoutX="498.0" layoutY="4675.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_15" layoutX="496.0" layoutY="4893.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_16" layoutX="494.0" layoutY="5122.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_17" layoutX="497.0" layoutY="5343.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_18" layoutX="497.0" layoutY="5558.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument3_19" layoutX="497.0" layoutY="5769.0" prefHeight="11.0" prefWidth="80.0" />
                            </children>
                         </Group>
                      </children>
@@ -885,7 +884,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_borrar" layoutX="101.0" visible="false">
+                  <StackPane fx:id="pane_borrar" layoutX="101.0">
                      <children>
                         <Group>
                            <children>
@@ -894,22 +893,22 @@
                                     <DropShadow />
                                  </effect>
                               </Rectangle>
-                              <TableView fixedCellSize="2.0" layoutX="5.0" layoutY="1669.0" prefHeight="460.0" prefWidth="578.0">
+                              <TableView fx:id="tv" fixedCellSize="2.0" layoutX="5.0" layoutY="1669.0" prefHeight="460.0" prefWidth="578.0">
                                 <columns>
-                                  <TableColumn prefWidth="138.0" text="Nombre" />
-                                  <TableColumn prefWidth="178.0" text="Profesor Evaluado" />
-                                    <TableColumn prefWidth="149.0" text="Modalidad" />
-                                    <TableColumn prefWidth="112.0" text="Termino" />
+                                  <TableColumn fx:id="Id" prefWidth="138.0" text="ID" />
+                                  <TableColumn fx:id="Profesor" prefWidth="178.0" text="Profesor Evaluado" />
+                                    <TableColumn fx:id="Modalidad" prefWidth="149.0" text="Modalidad" />
+                                    <TableColumn fx:id="Termino" prefWidth="112.0" text="Termino" />
                                 </columns>
                               </TableView>
-                              <Button layoutX="93.0" layoutY="2195.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="117.0" text="Cargar" />
+                              <Button layoutX="93.0" layoutY="2195.0" mnemonicParsing="false" onAction="#comboboxItems" prefHeight="39.0" prefWidth="117.0" text="Cargar" />
                               <Button layoutX="377.0" layoutY="2195.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="117.0" text="Retroceder" />
                               <Text layoutX="75.0" layoutY="1633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleciona una Evaluación para Teminar">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="219.0" layoutY="2156.0" />
+                              <TextField fx:id="CotiBor" layoutX="219.0" layoutY="2156.0" />
                               <Text layoutX="210.0" layoutY="2152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de Evaluación a Cargar" />
                            </children>
                         </Group>
@@ -924,7 +923,7 @@
                                     <DropShadow />
                                  </effect>
                               </Rectangle>
-                              <ComboBox layoutX="508.0" layoutY="6462.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_20" layoutX="508.0" layoutY="6462.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="196.0" layoutY="1530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluacion del Director">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
@@ -975,16 +974,16 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="1932.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_1" layoutX="45.0" layoutY="1932.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <TextArea layoutX="50.0" layoutY="2161.0" prefHeight="147.0" prefWidth="453.0">
+                              </TextField>
+                              <TextField fx:id="Comment_4_2" layoutX="50.0" layoutY="2161.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="61.0" layoutY="1575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rubrica">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
@@ -995,76 +994,76 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="2403.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_3" layoutX="45.0" layoutY="2403.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="21.0" layoutY="2598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Informa al Director del Departamento cómo repone sus ausencias." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="2632.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_4" layoutX="45.0" layoutY="2632.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="22.0" layoutY="2820.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Contribuye a las deliberaciones de las reuniones de su Departamento." wrappingWidth="459.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="2841.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_5" layoutX="45.0" layoutY="2841.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="21.0" layoutY="3030.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Colabora en las actividades que desarrolla el Departamento." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="3052.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_6" layoutX="45.0" layoutY="3052.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <TextArea layoutX="50.0" layoutY="3363.0" prefHeight="147.0" prefWidth="453.0">
+                              </TextField>
+                              <TextField fx:id="Comment_4_7" layoutX="50.0" layoutY="3363.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="22.0" layoutY="3233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Cumple con las normas y procedimientos de la Institución. Somete dentro del tiempo establecido por la Universidad y la unidad académica, los siguientes documentos: el cotejo de listas, el informe de estudiantes que nunca han las calificaciones finales, la remoción de incompletos, la notificación de extramuros, los horarios de clase, entre otros, y sigue el calendario académico." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="46.0" layoutY="3579.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_8" layoutX="46.0" layoutY="3579.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="22.0" layoutY="3551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Atiende las indicaciones, memorandos y recomendaciones del personal gerencial" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="45.0" layoutY="3802.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_9" layoutX="45.0" layoutY="3802.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="21.0" layoutY="3751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Está disponible para ofrecer cursos, según las necesidades establecidas en el horario de clases para la oferta académica del término." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="57.0" layoutY="4024.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_10" layoutX="57.0" layoutY="4024.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="3972.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Participa en comités departamentales, de la unidad académica, institucional o en organismos universitarios cuando así se le solicita." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
@@ -1075,120 +1074,120 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="57.0" layoutY="4258.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_11" layoutX="57.0" layoutY="4258.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="4451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Asiste a actividades de desarrollo profesional como congresos, seminarios, cursos de educación continuada, entre otros. " wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="56.0" layoutY="4512.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_12" layoutX="56.0" layoutY="4512.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="4722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Mantiene un clima de respeto con los colegas y con los compañeros de trabajo." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="59.0" layoutY="4782.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_13" layoutX="59.0" layoutY="4782.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="27.0" layoutY="4985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. Mantiene un clima de respeto con los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="59.0" layoutY="5028.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_14" layoutX="59.0" layoutY="5028.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="5224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. Contribuye al enriquecimiento de los recursos del Centro de Acceso a la Información." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="59.0" layoutY="5274.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_15" layoutX="59.0" layoutY="5274.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="5471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Contribuye al mejoramiento y actualización de su disciplina o de la materia que enseña, a través del diseño de cursos nuevos, la preparación de materiales educativos o de prontuarios, proyectos innovadores, entre otros." wrappingWidth="455.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="5543.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_16" layoutX="78.0" layoutY="5551.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="27.0" layoutY="5729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Está disponible para enseñar cursos en diferentes modalidades de estudio (por ejemplo, estudio independiente, contrato, cursos en línea, combinados, entre otros)." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="70.0" layoutY="5785.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_17" layoutX="70.0" layoutY="5785.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="5985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Trabaja con sus compañeros en tareas de equipo cuando es necesario." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="6032.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_18" layoutX="72.0" layoutY="6032.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="6218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. Evidencia en sus cursos el uso de los resultados del assessment de los cursos y del programa para el mejoramiento de los logros en el aprendizaje de los estudiantes." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="6269.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_19" layoutX="72.0" layoutY="6269.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="28.0" layoutY="6462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. Colabora con el fortalecimiento de los programas académicos." wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="74.0" layoutY="6517.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_20" layoutX="74.0" layoutY="6517.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
-                              <ComboBox layoutX="508.0" layoutY="1893.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2114.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2332.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2589.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="2802.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3012.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3271.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3542.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3751.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="3972.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4214.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4442.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4682.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="4967.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5215.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5481.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5729.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="5976.0" prefHeight="11.0" prefWidth="80.0" />
-                              <ComboBox layoutX="508.0" layoutY="6218.0" prefHeight="11.0" prefWidth="80.0" />
+                              </TextField>
+                              <ComboBox fx:id="instrument4_1" layoutX="508.0" layoutY="1893.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_2" layoutX="508.0" layoutY="2114.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_3" layoutX="508.0" layoutY="2332.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_4" layoutX="508.0" layoutY="2589.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_5" layoutX="508.0" layoutY="2802.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_6" layoutX="508.0" layoutY="3012.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_7" layoutX="508.0" layoutY="3271.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_8" layoutX="508.0" layoutY="3542.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_9" layoutX="508.0" layoutY="3751.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_10" layoutX="508.0" layoutY="3972.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_11" layoutX="508.0" layoutY="4214.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_12" layoutX="508.0" layoutY="4442.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_13" layoutX="508.0" layoutY="4707.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_14" layoutX="508.0" layoutY="4967.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_15" layoutX="508.0" layoutY="5215.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_16" layoutX="508.0" layoutY="5481.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_17" layoutX="508.0" layoutY="5729.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_18" layoutX="508.0" layoutY="5976.0" prefHeight="11.0" prefWidth="80.0" />
+                              <ComboBox fx:id="instrument4_19" layoutX="508.0" layoutY="6218.0" prefHeight="11.0" prefWidth="80.0" />
                               <Text layoutX="92.0" layoutY="6711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" textAlignment="CENTER" wrappingWidth="425.64453125">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
@@ -1199,31 +1198,31 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="74.0" layoutY="6761.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_21" layoutX="74.0" layoutY="6761.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="39.0" layoutY="6943.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Areas que debe mejorar:" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="74.0" layoutY="6966.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_22" layoutX="74.0" layoutY="6966.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                               <Text layoutX="39.0" layoutY="7151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recomendación para el Plan de Acción del profesor evaluado:" wrappingWidth="425.64453125">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <TextArea layoutX="72.0" layoutY="7182.0" prefHeight="147.0" prefWidth="453.0">
+                              <TextField fx:id="Comment_4_23" layoutX="72.0" layoutY="7182.0" prefHeight="147.0" prefWidth="453.0">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
-                              </TextArea>
+                              </TextField>
                            </children>
                         </Group>
                      </children>

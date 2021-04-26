@@ -11,8 +11,11 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -26,21 +29,35 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.*;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class Instruments  {
 	int tipo ;
 	static String[] values = new String[162];
 	int[] I2re = new int[21];
-
+	Login_backend user = new Login_backend();
+	String User = user.getID();
+	String[] ag = new String[160];
+	int size = 0;
 	ObservableList<String> objetivo = FXCollections.observableArrayList("Formativa","Sumativa"); // String array for choice box 1
 	ObservableList<String> rangoAcademico = FXCollections.observableArrayList("Rango Catedratico","Rango Catedratico Asociado","Rango Catedratico Auxiliar"); // String array for choice box 2
 	ObservableList<String> contrato = FXCollections.observableArrayList("Temporero","Sustituto","Probatorio","Permanente"); 
 	ObservableList<String> TipoEv = FXCollections.observableArrayList("Online","Manual"); 
+	ObservableList<String> Instrument3 = FXCollections.observableArrayList("N/A","1","2","3","4"); 
 	// Spinner value factory
 	SpinnerValueFactory<Integer> spin1list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
 	SpinnerValueFactory<Integer> spin2list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
@@ -93,6 +110,56 @@ public class Instruments  {
 	SpinnerValueFactory<Integer> spin16Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
 	SpinnerValueFactory<Integer> spin17Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
 	SpinnerValueFactory<Integer> spin18Ins2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
+	
+	// Config table
+	@FXML private TableView<tableColum> tv;
+	
+	@FXML private TableColumn<tableColum, String> Id = new TableColumn<tableColum, String>("Id");;
+	@FXML private TableColumn<tableColum, String> Profesor = new TableColumn<tableColum, String>("Profesor");;
+	@FXML private TableColumn<tableColum, String> Modalidad = new TableColumn<tableColum, String>("Modalidad");;
+	@FXML private TableColumn<tableColum, String> Termino= new TableColumn<tableColum, String>("Termino");;
+	
+	@FXML private ComboBox<String> instrument3_1 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_2 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_3 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_4 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_5 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_6 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_7 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_8 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_9 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_10 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_11 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_12 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_13 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_14 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_15 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_16 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_17 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_18 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_19 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument3_20 = new ComboBox<String>();
+	
+	@FXML private ComboBox<String> instrument4_1 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_2 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_3 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_4 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_5 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_6 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_7 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_8 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_9 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_10 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_11 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_12 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_13 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_14 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_15 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_16 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_17 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_18 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_19 = new ComboBox<String>();
+	@FXML private ComboBox<String> instrument4_20 = new ComboBox<String>();
 	
 	
 	@FXML private TextField Unidadacademica_textField;
@@ -187,7 +254,99 @@ public class Instruments  {
 	@FXML private Spinner<Integer> instrument2_18 = new Spinner<Integer>();
 	
 	
+	
+	@FXML private TextField Comment_3_1;
+	@FXML private TextField Comment_3_2;
+	@FXML private TextField Comment_3_3;
+	@FXML private TextField Comment_3_4;
+	@FXML private TextField Comment_3_5;
+	@FXML private TextField Comment_3_6;
+	@FXML private TextField Comment_3_7;
+	@FXML private TextField Comment_3_8;
+	@FXML private TextField Comment_3_9;
+	@FXML private TextField Comment_3_10;
+	@FXML private TextField Comment_3_11;
+	@FXML private TextField Comment_3_12;
+	@FXML private TextField Comment_3_13;
+	@FXML private TextField Comment_3_14;
+	@FXML private TextField Comment_3_15;
+	@FXML private TextField Comment_3_16;
+	@FXML private TextField Comment_3_17;
+	@FXML private TextField Comment_3_18;
+	@FXML private TextField Comment_3_19;
+	@FXML private TextField Comment_3_20;
+	
+	@FXML private TextField Comment_4_1;
+	@FXML private TextField Comment_4_2;
+	@FXML private TextField Comment_4_3;
+	@FXML private TextField Comment_4_4;
+	@FXML private TextField Comment_4_5;
+	@FXML private TextField Comment_4_6;
+	@FXML private TextField Comment_4_7;
+	@FXML private TextField Comment_4_8;
+	@FXML private TextField Comment_4_9;
+	@FXML private TextField Comment_4_10;
+	@FXML private TextField Comment_4_11;
+	@FXML private TextField Comment_4_12;
+	@FXML private TextField Comment_4_13;
+	@FXML private TextField Comment_4_14;
+	@FXML private TextField Comment_4_15;
+	@FXML private TextField Comment_4_16;
+	@FXML private TextField Comment_4_17;
+	@FXML private TextField Comment_4_18;
+	@FXML private TextField Comment_4_19;
+	@FXML private TextField Comment_4_20;
+	@FXML private TextField Comment_4_21;
+	@FXML private TextField Comment_4_22;
+	@FXML private TextField Comment_4_23;
+	
+	@FXML private TextField Comment_2_1;
+	@FXML private TextField Comment_2_2;
+	@FXML private TextField Comment_2_3;
+	@FXML private TextField Comment_2_4;
+	@FXML private TextField Comment_2_5;
+	@FXML private TextField Comment_2_6;
+	@FXML private TextField Comment_2_7;
+	@FXML private TextField Comment_2_8;
+	@FXML private TextField Comment_2_9;
+	@FXML private TextField Comment_2_10;
+	@FXML private TextField Comment_2_11;
+	@FXML private TextField Comment_2_12;
+	@FXML private TextField Comment_2_13;
+	@FXML private TextField Comment_2_14;
+	@FXML private TextField Comment_2_15;
+	@FXML private TextField Comment_2_16;
+	@FXML private TextField Comment_2_17;
+	@FXML private TextField Comment_2_18;
+	@FXML private TextField Comment_2_19;
+	@FXML private TextField Comment_2_20;
+	
+	
+	@FXML private TextField CotiBor;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@FXML private void initialize() { // For initializing lists of things
+		tv.setFixedCellSize(25);
+		//tv.prefHeightProperty().bind(Bindings.size(tv.getItems()).multiply(tv.getFixedCellSize()).add(30));
+		Id.setCellValueFactory(new PropertyValueFactory<tableColum,String>("Id"));
+	    Profesor.setCellValueFactory(new PropertyValueFactory<tableColum,String>("Profesor"));
+	    Modalidad.setCellValueFactory(new PropertyValueFactory<tableColum,String>("Modalidad"));
+	    Termino.setCellValueFactory(new PropertyValueFactory<tableColum,String>("Termino")); 
+		 
+		    // load table data
+		    
+		    tv.setItems(SetEval());
+		
 		rangoAcademico_comboBox.setItems(rangoAcademico);
 		objetivo_eval_comboBox.setItems(objetivo);
 		Tipo_EV.setItems(TipoEv);
@@ -242,8 +401,142 @@ public class Instruments  {
 		instrument2_16.setValueFactory(spin16Ins2);
 		instrument2_17.setValueFactory(spin17Ins2);
 		instrument2_18.setValueFactory(spin18Ins2);
+		
+		
+		instrument3_1.setItems(Instrument3);
+		instrument3_2.setItems(Instrument3); 
+		instrument3_3.setItems(Instrument3); 
+		instrument3_4.setItems(Instrument3);
+		instrument3_5.setItems(Instrument3); 
+		instrument3_6.setItems(Instrument3); 
+		instrument3_7.setItems(Instrument3);
+		instrument3_8.setItems(Instrument3);
+		instrument3_9.setItems(Instrument3); 
+		instrument3_10.setItems(Instrument3); 
+		instrument3_11.setItems(Instrument3); 
+		instrument3_12.setItems(Instrument3); 
+		instrument3_13.setItems(Instrument3); 
+		instrument3_14.setItems(Instrument3); 
+		instrument3_15.setItems(Instrument3);
+		instrument3_16.setItems(Instrument3);
+		instrument3_17.setItems(Instrument3);
+		instrument3_18.setItems(Instrument3); 
+		instrument3_19.setItems(Instrument3);
+		instrument3_20.setItems(Instrument3);
+		
+		
+		
+		//set();
+		System.out.println("im in ininininin");
+		 // Column setup
+		//Load();
+	 
 	}
 	
+	
+	
+//	// Config table
+//		@FXML private TableView<tableColum> tv;
+//		@FXML private TableColumn<tableColum, String> Id;
+//		@FXML private TableColumn<tableColum, String> Profesor;
+//		@FXML private TableColumn<tableColum, String> Modalidad;
+//		@FXML private TableColumn<tableColum, String> Termino;
+	
+	
+	
+
+            
+    
+	
+	
+	
+	
+//	 public void bruh() {
+//
+//		    TableView tableView = new TableView();
+//
+//		    TableColumn<tableColum, String> column1 = new TableColumn<tableColum, String>("First Name");
+//		    column1.setCellValueFactory(new PropertyValueFactory<tableColum,String>("firstName"));
+//		    
+//		    TableColumn<tableColum, String> column2 = new TableColumn<tableColum, String>("First Name");
+//		    column1.setCellValueFactory(new PropertyValueFactory<tableColum,String>("firstName"));
+//		    
+//		    
+//		    TableColumn<tableColum, String> column3 = new TableColumn<tableColum, String>("First Name");
+//		    column1.setCellValueFactory(new PropertyValueFactory<tableColum,String>("firstName"));
+//
+//		    TableColumn<tableColum, String> column4 = new TableColumn<tableColum, String>("Last Name");
+//		    column2.setCellValueFactory(new PropertyValueFactory<tableColum,String>("lastName"));
+//
+//
+//		    tableView.getColumns().add(column1);
+//		    tableView.getColumns().add(column2);
+//		    tableView.getColumns().add(column3);
+//		    tableView.getColumns().add(column4);
+//
+//		    tableView.getItems().add(new tableColum("John", "Doe", "ffe", "fef"));
+//		    tableView.getItems().add(new tableColum("Jane", "Deer", "fefe", "fef"));
+//
+//		   
+//		  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+//@FXML public void set() { // For initializing lists of things
+//        
+//	 
+//}
+	
+	
+	
+	public ObservableList<tableColum> SetEval() { // Create observable list
+		ObservableList<tableColum> eval = FXCollections.observableArrayList();
+		System.out.print("set eval");
+		Load();
+		for(int i = 0; i <size ;i++) {
+
+			fileManager continuar = new fileManager();
+			ag = continuar.combobox(User,i);
+
+			System.out.println("Numero de evaluacion: "+ag[12]+" \tProfesor evaluado: "+ag[1]+" \tModalidad: "+ag[13]+ " \tPeriodo: "+ag[6]);
+			
+			if(ag[1] != null) {
+				
+				
+				    eval.add(new tableColum(ag[12], ag[1],ag[13],ag[6]));
+				 
+				    
+			}
+
+		}	
+		
+	   
+	    
+	    return eval;
+
+}
+//	
 //	private JComboBox comboBox = new JComboBox();
 //	private JComboBox comboBox_1 = new JComboBox();
 //	private JComboBox comboBox_3 = new JComboBox();
@@ -1364,29 +1657,7 @@ public class Instruments  {
 //				values [120] = textPane_1_2_1_3_1.getText();
 //
 //
-//				values [121] = textPane_1_7_4.getText();
-//				values [122] = textPane_1_7_1_2.getText();
-//				values [123] = textPane_1_7_1_1_1.getText();
-//				values [124] = textPane_1_7_4_1.getText();
-//				values [125] = textPane_1_7_4_2.getText();
-//				values [126] = textPane_1_7_4_3.getText();
-//				values [127] = textPane_1_7_3.getText();
-//				values [128] = textPane_1_7_3_1.getText();
-//				values [129] = textPane_1_7_3_1_1.getText();
-//				values [130] = textPane_1_7_3_2.getText();
-//				values [131] = textPane_1_7_3_2_1.getText();
-//				values [132] = textPane_1_7_3_2_1_1.getText();
-//				values [133] = textPane_1_7_3_3.getText();
-//				values [134] = textPane_1_7_3_3_1.getText();
-//				values [135] = textPane_1_7_3_3_2.getText();
-//				values [136] = textPane_1_7_3_3_2_1.getText();
-//				values [137] = textPane_1_7_3_3_2_1_1.getText();
-//				values [138] = textPane_1_7_3_3_2_2.getText();
-//				values [139] = textPane_1_7_3_3_2_2_1.getText();
-//				values [140] = textPane_1_7_3_3_2_2_1_1.getText();
-//				values [141] = textPane_1_7_3_3_2_3.getText();
-//				values [142] = textPane_1_7_3_3_2_3_1.getText();
-//				values [143] = textPane_1_7_3_3_2_3_1_1.getText();
+//				 
 //
 //
 //				values [144] = textArea.getText();
@@ -1562,6 +1833,18 @@ public class Instruments  {
 //		fileManager IDgen = new fileManager();
 //		ag = IDgen.IDGen();
 		
+		String[] ag = new String[160];
+		
+		fileManager IDgen = new fileManager();	
+		ag = IDgen.IDGen();
+//
+//		//Informacion a ingresar
+//		System.out.println("woooooooooooooooooooow ");
+	System.out.println(ag[12]);
+//		//				for (int i = 0; i < ag.length; i++) {
+//		//					System.out.println("Test " + i + ": " +ag[i]);
+//		//				}
+		
 		
 		values [0] = Unidadacademica_textField.getText();
 		values [1] = nombre_prof_textField.getText();
@@ -1584,7 +1867,7 @@ public class Instruments  {
 		 else {
 			 tipo = 0;
 		 }
-		
+		values [12] = ag[12];
 		values [13] = Tipo_EV.getValue().toString();
 		values [14] =instrument1_1.getValue().toString();
 		values [15] =instrument1_2.getValue().toString();
@@ -1616,9 +1899,132 @@ public class Instruments  {
 		values [41] =instrument1_28.getValue().toString();
 		values [42] =instrument1_29.getValue().toString(); 
 		
+		values [43] = instrument2_1.getValue().toString();
+		values [44] = instrument2_2.getValue().toString();
+		values [45] = instrument2_3.getValue().toString();
+		values [46] = instrument2_4.getValue().toString();
+		values [47] = instrument2_5.getValue().toString();
+		values [48] = instrument2_6.getValue().toString();
+		values [49] = instrument2_7.getValue().toString();
+		values [50] = instrument2_8.getValue().toString();
+		values [51] = instrument2_9.getValue().toString();
+		values [52] = instrument2_10.getValue().toString();
+		values [53] = instrument2_11.getValue().toString();
+		values [54] = instrument2_12.getValue().toString();
+		values [55] = instrument2_13.getValue().toString();
+		values [56] = instrument2_14.getValue().toString();
+		values [57] = instrument2_15.getValue().toString();
+		values [58] = instrument2_16.getValue().toString();
+		values [59] = instrument2_17.getValue().toString();
+		values [60] = instrument2_18.getValue().toString();
+		
+	
+		values [61] = instrument3_1.getValue().toString();
+		values [62] = instrument3_2.getValue().toString();
+		values [63] = instrument3_3.getValue().toString();
+		values [64] = instrument3_4.getValue().toString();
+		values [65] = instrument3_5.getValue().toString();
+		values [66] = instrument3_6.getValue().toString();
+		values [67] = instrument3_7.getValue().toString();
+		values [68] = instrument3_8.getValue().toString();
+		values [69] = instrument3_9.getValue().toString();
+		values [70] = instrument3_10.getValue().toString();
+		values [71] = instrument3_11.getValue().toString();
+		values [72] = instrument3_12.getValue().toString();
+		values [73] = instrument3_13.getValue().toString();
+		values [74] = instrument3_14.getValue().toString();
+		values [75] = instrument3_15.getValue().toString();
+		values [76] = instrument3_16.getValue().toString();
+		values [77] = instrument3_17.getValue().toString();
+		values [78] = instrument3_18.getValue().toString();
+		values [79] = instrument3_19.getValue().toString();
+		values [80] = instrument3_20.getValue().toString();
+		
+		values [81] = instrument4_1.getValue().toString();
+		values [82] = instrument4_2.getValue().toString();
+		values [83] = instrument4_3.getValue().toString();
+		values [84] = instrument4_4.getValue().toString();
+		values [85] = instrument4_5.getValue().toString();
+		values [86] = instrument4_6.getValue().toString();
+		values [87] = instrument4_7.getValue().toString();
+		values [88] = instrument4_8.getValue().toString();
+		values [89] = instrument4_9.getValue().toString();
+		values [90] = instrument4_10.getValue().toString();
+		values [91] = instrument4_11.getValue().toString();
+		values [92] = instrument4_12.getValue().toString();
+		values [93] = instrument4_13.getValue().toString();
+		values [94] = instrument4_14.getValue().toString();
+		values [95] = instrument4_15.getValue().toString();
+		values [96] = instrument4_16.getValue().toString();
+		values [97] = instrument4_17.getValue().toString();
+		values [98] = instrument4_18.getValue().toString();
+		values [99] = instrument4_19.getValue().toString();
+		values [100] = instrument4_20.getValue().toString();
+		
+		values [101] =Comment_3_1.getText();
+		values [102] =Comment_3_2.getText();
+		values [103] =Comment_3_3.getText();
+		values [104] =Comment_3_4.getText();
+		values [105] =Comment_3_5.getText();
+		values [106] =Comment_3_6.getText();
+		values [107] =Comment_3_7.getText();
+		values [108] =Comment_3_8.getText();
+		values [109] =Comment_3_9.getText();
+		values [110] =Comment_3_10.getText();
+		values [111] =Comment_3_11.getText();
+		values [112] =Comment_3_12.getText();
+		values [113] =Comment_3_13.getText();
+		values [114] =Comment_3_14.getText();
+		values [115] =Comment_3_15.getText();
+		values [116] =Comment_3_16.getText();
+		values [117] =Comment_3_17.getText();
+		values [118] =Comment_3_18.getText();
+		values [119] =Comment_3_19.getText();
+		values [120] =Comment_3_20.getText();
 		
 		
+		values [121] = Comment_4_1.getText();
+		values [122] = Comment_4_2.getText();
+		values [123] = Comment_4_3.getText();
+		values [124] = Comment_4_4.getText();
+		values [125] = Comment_4_5.getText();
+		values [126] = Comment_4_6.getText();
+		values [127] = Comment_4_7.getText();
+		values [128] = Comment_4_8.getText();
+		values [129] = Comment_4_9.getText();
+		values [130] = Comment_4_10.getText();
+		values [131] = Comment_4_11.getText();
+		values [132] = Comment_4_12.getText();
+		values [133] = Comment_4_13.getText();
+		values [134] = Comment_4_14.getText();
+		values [135] = Comment_4_15.getText();
+		values [136] = Comment_4_16.getText();
+		values [137] = Comment_4_17.getText();
+		values [138] = Comment_4_18.getText();
+		values [139] = Comment_4_19.getText();
+		values [140] = Comment_4_20.getText();
+		values [141] = Comment_4_21.getText();
+		values [142] = Comment_4_22.getText();
+		values [143] = Comment_4_23.getText();
 		
+		values [144] = Comment_2_1.getText();
+		values [145] = Comment_2_2.getText();
+		values [146] = Comment_2_3.getText();
+		values [147] = Comment_2_4.getText();
+		values [148] = Comment_2_5.getText();
+		values [149] = Comment_2_6.getText();
+		values [150] = Comment_2_7.getText();
+		values [151] = Comment_2_8.getText();
+		values [152] = Comment_2_9.getText();
+		values [153] = Comment_2_10.getText();
+		values [154] = Comment_2_11.getText();
+		values [155] = Comment_2_12.getText();
+		values [156] = Comment_2_13.getText();
+		values [157] = Comment_2_14.getText();
+		values [158] = Comment_2_15.getText();
+		values [159] = Comment_2_16.getText();
+		values [160] = Comment_2_17.getText();
+		values [161] = Comment_2_18.getText();
 		
 		Login_backend user = new Login_backend();
 
@@ -1712,6 +2118,85 @@ public class Instruments  {
 		}
 		
 	}
+	
+	
+	
+	
+
+	
+
+	
+	
+	public void Load() {
+		
+		
+
+		int j = 40;
+
+		String[] ops;
+		File instru;
+		System.out.print("im in load ");
+
+		try {
+			instru = new File("./instrumentos.csv");
+			Scanner scanner = new Scanner(instru);
+
+			while(scanner.hasNextLine()) {
+				String data = scanner.nextLine();
+				ops = data.split(",", 170);
+				size++;
+
+			}
+			scanner.close();
+
+
+		}catch(Exception ex) {
+
+			System.out.print("404 "+ ex);
+		}
+		
+
+		
+		
+	}
+	
+	
+	
+	public void comboboxItems() {
+		System.out.print("entre mmmm que rico");
+		String[] ap = new String[162];
+		int re;
+		re = Integer.parseInt(CotiBor.getText());
+
+		fileManager continueI = new fileManager();
+		ap = continueI.combobox(user.getID(),re);
+
+		System.out.print("ewewwewewewewew" + ap[1]);
+		LocalDate localDate = LocalDate.parse("2021-05-04");
+		String pattern = "yyyy-dd-MM";
+		DateTimeFormatter dtFormatter;
+		 dtFormatter = DateTimeFormatter.ofPattern(pattern);
+		 LocalDate date = LocalDate.parse(ap[6], dtFormatter);
+		 
+		 
+		Unidadacademica_textField.setText(ap[0]);
+		nombre_prof_textField.setText(ap[1]);
+		rangoAcademico_comboBox.getSelectionModel().select(ap[2]);
+		departamento_textField.setText(ap[3]);
+		disiplina_textField.setText(ap[4]);
+		objetivo_eval_comboBox.getSelectionModel().select(ap[5]);
+		periodo_evaluado_textField.setValue(date);
+		jornada_comple_comboBox.getValueFactory().setValue(Integer.parseInt(ap[7])); 
+		jornada_parcial_comboBox.getValueFactory().setValue(Integer.parseInt(ap[8])); 
+		contrato_comboBox.getSelectionModel().select(ap[9]);
+		codigo_textField.setText(ap[10]);
+		tutulo_del_curso_textField.setText(ap[11]);
+		
+	}
+	
+	
+	
+	
 
 //public void comboboxItems(String ID , int IDE) {
 //		String bruh = "hola";

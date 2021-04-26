@@ -192,6 +192,8 @@ public class Login_backend {
 			
 			mm.start();
 			main.close();
+//			Instruments inst = new Instruments();
+//			inst.Load();
 
 		}else{
 			
