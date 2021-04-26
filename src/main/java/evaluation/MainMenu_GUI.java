@@ -128,6 +128,7 @@ public class MainMenu_GUI {
 	}
 	
 	public void tgl_borrar() {
+		
 		pane_info.setVisible(false);
 		pane_inst1.setVisible(false);
 		pane_inst2.setVisible(false);
