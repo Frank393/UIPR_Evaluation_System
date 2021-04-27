@@ -47,6 +47,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Instruments  {
+	static String warnText;
 	int tipo ;
 	static String[] values = new String[162];
 	int[] I2re = new int[21];
@@ -670,7 +671,12 @@ public class Instruments  {
     	aux_valen5D.setValueFactory(aux_valen5D_list);
     	aux_valen5EF.setValueFactory(aux_valen5EF_list);
     	
-		InitializeValen();
+		try {
+			InitializeValen();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//set();
 		System.out.println("im in ininininin");
 		 // Column setup
@@ -678,22 +684,22 @@ public class Instruments  {
 		
 	}
 	
-	public void InitializeValen() {
+	public void InitializeValen() throws FileNotFoundException {
 		
 		
-ConfigBackend cb = new ConfigBackend();
-//Initialize Configurations
-	 int[] valenSp = new int[58];
-	 valenSp =cb.valen;
+		ConfigBackend cb = new ConfigBackend();
+		Login_backend lg = new Login_backend();
+		//Initialize Configurations
+		cb.fillValen(lg.getID());
     	
     	System.out.println("Spinner value: "+aux_valen1A.getValue());
-    	System.out.println("Valen: "+valenSp[5]);
+    	System.out.println("Valen: "+cb.valen[5]);
 		aux_valen1A.getValueFactory().setValue(cb.valen[0]);
 		aux_valen1B.getValueFactory().setValue(cb.valen[1]);
 		aux_valen1C.getValueFactory().setValue(cb.valen[2]);
 		aux_valen1D.getValueFactory().setValue(cb.valen[3]);
 		aux_valen1E.getValueFactory().setValue(cb.valen[4]);
-		aux_valen1F.getValueFactory().setValue(valenSp[5]);
+		aux_valen1F.getValueFactory().setValue(cb.valen[5]);
 		aux_valen1GH.getValueFactory().setValue(cb.valen[6]);
 		aux_valen2A.getValueFactory().setValue(cb.valen[7]);
     	aux_valen2BC.getValueFactory().setValue(cb.valen[8]);
@@ -819,64 +825,119 @@ ConfigBackend cb = new ConfigBackend();
     }
     
 	public void applyValue() {
-			ConfigBackend cb = new ConfigBackend();
-	    	
-			cb.valen[0] = (Integer) aux_valen1A.getValue();
-			cb.valen[1] = (Integer) aux_valen1B.getValue();
-			cb.valen[2] = (Integer) aux_valen1C.getValue();
-			cb.valen[3] = (Integer) aux_valen1D.getValue();
-			cb.valen[4] = (Integer) aux_valen1E.getValue();
-			cb.valen[5] = (Integer) aux_valen1F.getValue();
-			cb.valen[6] = (Integer) aux_valen1GH.getValue();
-			cb.valen[7] = (Integer) aux_valen2A.getValue();
-			cb.valen[8] = (Integer) aux_valen2BC.getValue();
-			cb.valen[9] = (Integer) aux_valen2DE.getValue();
-			cb.valen[10] = (Integer) aux_valen2FG.getValue();
-			cb.valen[11] = (Integer) aux_valen3AB.getValue();
-			cb.valen[12] = (Integer) aux_valen4A.getValue();
-			cb.valen[13] = (Integer) aux_valen4B.getValue();
-			cb.valen[14] = (Integer) aux_valen4CDE.getValue();
-			cb.valen[15] = (Integer) aux_valen5ABC.getValue();
-			cb.valen[16] = (Integer) aux_valen5D.getValue();
-			cb.valen[17] = (Integer) aux_valen5EF.getValue();
-			
-			cb.valen[18] = (Integer) aso_valen1A.getValue();
-			cb.valen[19] = (Integer) aso_valen1B.getValue();
-			cb.valen[20] = (Integer) aso_valen1C.getValue();
-			cb.valen[21] = (Integer) aso_valen1D.getValue();
-			cb.valen[22] = (Integer) aso_valen1E.getValue();
-			cb.valen[23] = (Integer) aso_valen1F.getValue();
-			cb.valen[24] = (Integer) aso_valen1GH.getValue();
-			cb.valen[25] = (Integer) aso_valen2A.getValue();
-			cb.valen[26] = (Integer) aso_valen2BC.getValue();
-			cb.valen[27] = (Integer) aso_valen2DE.getValue();
-			cb.valen[28] = (Integer) aso_valen2FG.getValue();
-			cb.valen[29] = (Integer) aso_valen3AB.getValue();
-			cb.valen[30] = (Integer) aso_valen4A.getValue();
-			cb.valen[31] = (Integer) aso_valen4B.getValue();
-			cb.valen[32] = (Integer) aso_valen4CDE.getValue();
-			cb.valen[33] = (Integer) aso_valen5ABC.getValue();
-			cb.valen[34] = (Integer) aso_valen5D.getValue();
-			cb.valen[35] = (Integer) aso_valen5EF.getValue();
-			
-			cb.valen[36] = (Integer) cat_valen1A.getValue();
-			cb.valen[37] = (Integer) cat_valen1B.getValue();
-			cb.valen[38] = (Integer) cat_valen1C.getValue();
-			cb.valen[39] = (Integer) cat_valen1D.getValue();
-			cb.valen[40] = (Integer) cat_valen1E.getValue();
-			cb.valen[41] = (Integer) cat_valen1F.getValue();
-			cb.valen[42] = (Integer) cat_valen1GH.getValue();
-			cb.valen[43] = (Integer) cat_valen2A.getValue();
-			cb.valen[44] = (Integer) cat_valen2BC.getValue();
-			cb.valen[45] = (Integer) cat_valen2DE.getValue();
-			cb.valen[46] = (Integer) cat_valen2FG.getValue();
-			cb.valen[47] = (Integer) cat_valen3AB.getValue();
-			cb.valen[48] = (Integer) cat_valen4A.getValue();
-			cb.valen[49] = (Integer) cat_valen4B.getValue();
-			cb.valen[50] = (Integer) cat_valen4CDE.getValue();
-			cb.valen[51] = (Integer) cat_valen5ABC.getValue();
-			cb.valen[52] = (Integer) cat_valen5D.getValue();
-			cb.valen[53] = (Integer) cat_valen5EF.getValue();
+		
+		int sum = 0;
+    	boolean asociado_ok = false;
+    	boolean auxiliar_ok = false;
+    	boolean catedratico_ok = false;
+    	ConfigBackend cb = new ConfigBackend();
+    	WarningPrompt wp = new WarningPrompt();
+    	
+    	// Fill valen
+    	cb.valen[0] = (Integer) aux_valen1A.getValue();
+		cb.valen[1] = (Integer) aux_valen1B.getValue();
+		cb.valen[2] = (Integer) aux_valen1C.getValue();
+		cb.valen[3] = (Integer) aux_valen1D.getValue();
+		cb.valen[4] = (Integer) aux_valen1E.getValue();
+		cb.valen[5] = (Integer) aux_valen1F.getValue();
+		cb.valen[6] = (Integer) aux_valen1GH.getValue();
+		cb.valen[7] = (Integer) aux_valen2A.getValue();
+		cb.valen[8] = (Integer) aux_valen2BC.getValue();
+		cb.valen[9] = (Integer) aux_valen2DE.getValue();
+		cb.valen[10] = (Integer) aux_valen2FG.getValue();
+		cb.valen[11] = (Integer) aux_valen3AB.getValue();
+		cb.valen[12] = (Integer) aux_valen4A.getValue();
+		cb.valen[13] = (Integer) aux_valen4B.getValue();
+		cb.valen[14] = (Integer) aux_valen4CDE.getValue();
+		cb.valen[15] = (Integer) aux_valen5ABC.getValue();
+		cb.valen[16] = (Integer) aux_valen5D.getValue();
+		cb.valen[17] = (Integer) aux_valen5EF.getValue();
+		
+		cb.valen[18] = (Integer) aso_valen1A.getValue();
+		cb.valen[19] = (Integer) aso_valen1B.getValue();
+		cb.valen[20] = (Integer) aso_valen1C.getValue();
+		cb.valen[21] = (Integer) aso_valen1D.getValue();
+		cb.valen[22] = (Integer) aso_valen1E.getValue();
+		cb.valen[23] = (Integer) aso_valen1F.getValue();
+		cb.valen[24] = (Integer) aso_valen1GH.getValue();
+		cb.valen[25] = (Integer) aso_valen2A.getValue();
+		cb.valen[26] = (Integer) aso_valen2BC.getValue();
+		cb.valen[27] = (Integer) aso_valen2DE.getValue();
+		cb.valen[28] = (Integer) aso_valen2FG.getValue();
+		cb.valen[29] = (Integer) aso_valen3AB.getValue();
+		cb.valen[30] = (Integer) aso_valen4A.getValue();
+		cb.valen[31] = (Integer) aso_valen4B.getValue();
+		cb.valen[32] = (Integer) aso_valen4CDE.getValue();
+		cb.valen[33] = (Integer) aso_valen5ABC.getValue();
+		cb.valen[34] = (Integer) aso_valen5D.getValue();
+		cb.valen[35] = (Integer) aso_valen5EF.getValue();
+		
+		cb.valen[36] = (Integer) cat_valen1A.getValue();
+		cb.valen[37] = (Integer) cat_valen1B.getValue();
+		cb.valen[38] = (Integer) cat_valen1C.getValue();
+		cb.valen[39] = (Integer) cat_valen1D.getValue();
+		cb.valen[40] = (Integer) cat_valen1E.getValue();
+		cb.valen[41] = (Integer) cat_valen1F.getValue();
+		cb.valen[42] = (Integer) cat_valen1GH.getValue();
+		cb.valen[43] = (Integer) cat_valen2A.getValue();
+		cb.valen[44] = (Integer) cat_valen2BC.getValue();
+		cb.valen[45] = (Integer) cat_valen2DE.getValue();
+		cb.valen[46] = (Integer) cat_valen2FG.getValue();
+		cb.valen[47] = (Integer) cat_valen3AB.getValue();
+		cb.valen[48] = (Integer) cat_valen4A.getValue();
+		cb.valen[49] = (Integer) cat_valen4B.getValue();
+		cb.valen[50] = (Integer) cat_valen4CDE.getValue();
+		cb.valen[51] = (Integer) cat_valen5ABC.getValue();
+		cb.valen[52] = (Integer) cat_valen5D.getValue();
+		cb.valen[53] = (Integer) cat_valen5EF.getValue();
+		
+		
+		// Check points
+		
+    	// Catedratico Asociado
+    	for (int i = 0; i < 18; i++) {
+    		sum += cb.valen[i];
+    	}
+    	
+    	if (sum != 100) {
+    		warnText = "Los pesos en Rango Catedratico Asociado deben sumar exactamente 100pts.";
+    		System.out.println("uh oh");
+    		warningPrompt();
+    	}
+    	else
+    		asociado_ok = true;
+    	
+    	sum = 0;
+    	
+    	// Catedratico Auxiliar
+    	for (int i = 18; i < 36; i++) {
+    		sum += cb.valen[i];
+    	}
+    	
+    	if (sum != 100) {
+    		warnText = "Los pesos en Rango Catedratico Auxiliar deben sumar exactamente 100pts.";
+    		System.out.println("uh oh");
+    		warningPrompt();
+    	}
+    	else
+    		auxiliar_ok = true;
+    	
+    	sum = 0;
+    	
+    	// Catedratico
+    	for (int i = 36; i < 54; i++) {
+    		sum += cb.valen[i];
+    	}
+    	
+    	if (sum != 100) {
+    		warnText = "Los pesos en Rango Catedratico deben sumar exactamente 100pts.";
+    		System.out.println("uh oh");
+    		warningPrompt();
+    	}
+    	else
+    		catedratico_ok = true;
+    	
+    	if(asociado_ok && auxiliar_ok && catedratico_ok) {
 			
 	    	ValenciasRango vr = null;
 	    	vr.setValen(cb.valenDouble());
@@ -885,7 +946,9 @@ ConfigBackend cb = new ConfigBackend();
 	    	vr = new ValenciasRango(1);
 	    	
 	    	System.out.println("Valencia: "+vr.valen1A);
-	    }
+    	}
+			
+	}
     
     public double[] defValues(){ // Default values
         double [] valen = new double[54];
@@ -1124,7 +1187,21 @@ ConfigBackend cb = new ConfigBackend();
 			}
 	}
 	
-	
+	public void warningPrompt() {
+		try {
+			Stage primaryStage = new Stage();
+			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/warningPrompt.fxml")); // set pane
+			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("ERROR");
+			primaryStage.show();
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+			}
+	}
 	
 	
 	public void tgl_info() {
