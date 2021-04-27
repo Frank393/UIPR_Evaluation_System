@@ -199,17 +199,6 @@ public class Login_backend {
 			
 			mm.start();
 			main.close();
-//			Instruments inst = new Instruments();
-//			inst.Load();
-			ConfigBackend cb = new ConfigBackend();
-			try {
-				cb.fillValen(getID());
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			ValenciasRango.setValen(valen);
-			
 		}else{
 			
 		}
@@ -239,7 +228,6 @@ public class Login_backend {
 	
 	public void pass(ActionEvent event) {    // Pass Field
         
-        System.out.println("fcuk you");
     }
 	
 	public void login() {

@@ -41,8 +41,6 @@ public class ConfigBackend {
 		counter.close();
     }
     
-
-    
     public double[] valenDouble() {
     	double[] valenDouble = new double[54];
     	for (int i = 0;i < 54; i++) {
