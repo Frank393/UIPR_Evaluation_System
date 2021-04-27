@@ -2057,7 +2057,7 @@
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#testsave" text="Guardar" />
-                  <MenuItem mnemonicParsing="false" text="Guardar y completar" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveFinish" text="Guardar y completar" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">

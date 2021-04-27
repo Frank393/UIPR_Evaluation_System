@@ -2023,10 +2023,22 @@
                                     <Font size="14.0" />
                                  </font>
                               </Text>
-                              <CheckBox layoutX="39.0" layoutY="235.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 2" />
-                              <CheckBox layoutX="39.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 1" />
-                              <CheckBox layoutX="39.0" layoutY="294.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 3" />
-                              <CheckBox layoutX="39.0" layoutY="356.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 4" />
+                              <CheckBox fx:id="inst_2_chk" layoutX="39.0" layoutY="235.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 2">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="inst_1_chk" layoutX="39.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 1">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="inst_3_chk" layoutX="39.0" layoutY="294.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 3">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="inst_4_chk" layoutX="39.0" layoutY="356.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="554.0" text="Aseguro que he contestado todas las preguntas y asignado todas puntuaciones en el instrumento 4">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font></CheckBox>
                               <Label layoutX="129.0" layoutY="61.0" prefHeight="77.0" prefWidth="374.0" text="Asegurese de terminar todos los instrumentos antes de confirmar su informe" textAlignment="CENTER" textFill="RED" wrapText="true">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -2044,7 +2056,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#testsave" text="Save" />
+              <MenuItem mnemonicParsing="false" onAction="#testsave" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveFinish" text="Guardar y completar" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
