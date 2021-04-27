@@ -50,6 +50,7 @@ public class MainMenu_GUI {
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("UIPR Evaluation System");
 			primaryStage.show();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 			}
@@ -141,6 +142,7 @@ public class MainMenu_GUI {
 	}
 	
 	public void tgl_config() {
+		
 		pane_info.setVisible(false);
 		pane_inst1.setVisible(false);
 		pane_inst2.setVisible(false);

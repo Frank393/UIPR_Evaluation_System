@@ -461,7 +461,7 @@ public class Instruments  {
 		    // load table data
 		    
 		    tv.setItems(SetEval());
-		
+		    
 		rangoAcademico_comboBox.setItems(rangoAcademico);
 		objetivo_eval_comboBox.setItems(objetivo);
 		Tipo_EV.setItems(TipoEv);
@@ -539,7 +539,80 @@ public class Instruments  {
 		instrument3_19.setItems(Instrument3);
 		instrument3_20.setItems(Instrument3);
 		
+		
+		instrument4_1.setItems(Instrument3); 
+		instrument4_2.setItems(Instrument3); 
+		instrument4_3.setItems(Instrument3); 
+		instrument4_4.setItems(Instrument3);
+		instrument4_5.setItems(Instrument3);
+		instrument4_6.setItems(Instrument3);
+		instrument4_7.setItems(Instrument3);
+		instrument4_8.setItems(Instrument3);
+		instrument4_9.setItems(Instrument3);
+		instrument4_10.setItems(Instrument3);
+		instrument4_11.setItems(Instrument3);
+		instrument4_12.setItems(Instrument3);
+		instrument4_13.setItems(Instrument3);
+		instrument4_14.setItems(Instrument3);
+		instrument4_15.setItems(Instrument3);
+		instrument4_16.setItems(Instrument3);
+		instrument4_17.setItems(Instrument3);
+		instrument4_18.setItems(Instrument3);
+		instrument4_19.setItems(Instrument3);
+		instrument4_20.setItems(Instrument3);
+
+		
+		
+		
+		rangoAcademico_comboBox.getSelectionModel().selectFirst();
+		objetivo_eval_comboBox.getSelectionModel().selectFirst();
+        Tipo_EV.getSelectionModel().selectFirst();
+        contrato_comboBox.getSelectionModel().selectFirst();
+		
+		instrument3_1.getSelectionModel().selectFirst();
+		instrument3_2.getSelectionModel().selectFirst(); 
+		instrument3_3.getSelectionModel().selectFirst(); 
+		instrument3_4.getSelectionModel().selectFirst();
+		instrument3_5.getSelectionModel().selectFirst(); 
+		instrument3_6.getSelectionModel().selectFirst(); 
+		instrument3_7.getSelectionModel().selectFirst();
+		instrument3_8.getSelectionModel().selectFirst();
+		instrument3_9.getSelectionModel().selectFirst(); 
+		instrument3_10.getSelectionModel().selectFirst(); 
+		instrument3_11.getSelectionModel().selectFirst(); 
+		instrument3_12.getSelectionModel().selectFirst(); 
+		instrument3_13.getSelectionModel().selectFirst(); 
+		instrument3_14.getSelectionModel().selectFirst(); 
+		instrument3_15.getSelectionModel().selectFirst();
+		instrument3_16.getSelectionModel().selectFirst();
+		instrument3_17.getSelectionModel().selectFirst();
+		instrument3_18.getSelectionModel().selectFirst(); 
+		instrument3_19.getSelectionModel().selectFirst();
+		instrument3_20.getSelectionModel().selectFirst();
+		
+		instrument4_1.getSelectionModel().selectFirst();
+		instrument4_2.getSelectionModel().selectFirst(); 
+		instrument4_3.getSelectionModel().selectFirst(); 
+		instrument4_4.getSelectionModel().selectFirst();
+		instrument4_5.getSelectionModel().selectFirst(); 
+		instrument4_6.getSelectionModel().selectFirst(); 
+		instrument4_7.getSelectionModel().selectFirst();
+		instrument4_8.getSelectionModel().selectFirst();
+		instrument4_9.getSelectionModel().selectFirst(); 
+		instrument4_10.getSelectionModel().selectFirst(); 
+		instrument4_11.getSelectionModel().selectFirst(); 
+		instrument4_12.getSelectionModel().selectFirst(); 
+		instrument4_13.getSelectionModel().selectFirst(); 
+		instrument4_14.getSelectionModel().selectFirst(); 
+		instrument4_15.getSelectionModel().selectFirst();
+		instrument4_16.getSelectionModel().selectFirst();
+		instrument4_17.getSelectionModel().selectFirst();
+		instrument4_18.getSelectionModel().selectFirst(); 
+		instrument4_19.getSelectionModel().selectFirst();
+		instrument4_20.getSelectionModel().selectFirst();
+		
 		// Initialize Configurations
+		
 		cat_valen1A.setValueFactory(cat_valen1A_list);
     	cat_valen1B.setValueFactory(cat_valen1B_list);
     	cat_valen1C.setValueFactory(cat_valen1C_list);
@@ -597,16 +670,30 @@ public class Instruments  {
     	aux_valen5D.setValueFactory(aux_valen5D_list);
     	aux_valen5EF.setValueFactory(aux_valen5EF_list);
     	
-    	ConfigBackend cb = new ConfigBackend();
+		InitializeValen();
+		//set();
+		System.out.println("im in ininininin");
+		 // Column setup
+		//Load();
+		
+	}
+	
+	public void InitializeValen() {
+		
+		
+ConfigBackend cb = new ConfigBackend();
+//Initialize Configurations
+	 int[] valenSp = new int[58];
+	 valenSp =cb.valen;
     	
     	System.out.println("Spinner value: "+aux_valen1A.getValue());
-    	System.out.println("Valen: "+cb.valen[5]);
+    	System.out.println("Valen: "+valenSp[5]);
 		aux_valen1A.getValueFactory().setValue(cb.valen[0]);
 		aux_valen1B.getValueFactory().setValue(cb.valen[1]);
 		aux_valen1C.getValueFactory().setValue(cb.valen[2]);
 		aux_valen1D.getValueFactory().setValue(cb.valen[3]);
 		aux_valen1E.getValueFactory().setValue(cb.valen[4]);
-		aux_valen1F.getValueFactory().setValue(cb.valen[5]);
+		aux_valen1F.getValueFactory().setValue(valenSp[5]);
 		aux_valen1GH.getValueFactory().setValue(cb.valen[6]);
 		aux_valen2A.getValueFactory().setValue(cb.valen[7]);
     	aux_valen2BC.getValueFactory().setValue(cb.valen[8]);
@@ -657,14 +744,7 @@ public class Instruments  {
     	cat_valen5ABC.getValueFactory().setValue(cb.valen[51]);
     	cat_valen5D.getValueFactory().setValue(cb.valen[52]);
     	cat_valen5EF.getValueFactory().setValue(cb.valen[53]);
-		
-		//set();
-		System.out.println("im in ininininin");
-		 // Column setup
-		//Load();
-	 
 	}
-	
 	
 	// Config backend
 	
@@ -997,186 +1077,6 @@ public class Instruments  {
 	    return eval;
 
 }
-//	
-//	private JComboBox comboBox = new JComboBox();
-//	private JComboBox comboBox_1 = new JComboBox();
-//	private JComboBox comboBox_3 = new JComboBox();
-//	private JComboBox comboBox_3_1 = new JComboBox();
-//	private JComboBox comboBox_4 = new JComboBox();
-//	private JComboBox comboBox_4_1 = new JComboBox();
-//	private JComboBox comboBox_5 = new JComboBox();
-//	private JComboBox comboBox_6 = new JComboBox();
-//	private JComboBox comboBox_7 = new JComboBox();
-//	private JComboBox comboBox_9 = new JComboBox();
-//	private JComboBox comboBox_10 = new JComboBox();
-//	private JComboBox comboBox_5_1 = new JComboBox();
-//	private JComboBox comboBox_5_2 = new JComboBox();
-//	private JComboBox comboBox_5_3 = new JComboBox();
-//	private JComboBox comboBox_5_4 = new JComboBox();
-//	private JComboBox comboBox_5_5 = new JComboBox();
-//	private JComboBox comboBox_5_1_1 = new JComboBox();
-//	private JComboBox comboBox_5_1_2 = new JComboBox();
-//	private JComboBox comboBox_5_1_3 = new JComboBox();
-//	private JComboBox comboBox_5_1_4 = new JComboBox();
-//
-//	private JComboBox comboBox_8 = new JComboBox();
-//	private JComboBox comboBox_12 = new JComboBox();
-//	private JComboBox comboBox_13 = new JComboBox();
-//	private JComboBox comboBox_14 = new JComboBox();
-//	private JComboBox comboBox_15 = new JComboBox();
-//	private JComboBox comboBox_16 = new JComboBox();
-//	private JComboBox comboBox_17 = new JComboBox();
-//	private JComboBox comboBox_18 = new JComboBox();
-//	private JComboBox comboBox_19 = new JComboBox();
-//	private JComboBox comboBox_20 = new JComboBox();
-//	private JComboBox comboBox_21 = new JComboBox();
-//	private JComboBox comboBox_22 = new JComboBox();
-//	private JComboBox comboBox_23 = new JComboBox();
-//	private JComboBox comboBox_24 = new JComboBox();
-//	private JComboBox combobox25 = new JComboBox();
-//	private JComboBox combobox25_2 = new JComboBox();
-//	private JComboBox comboBox_26 = new JComboBox();
-//	private JComboBox comboBox_27 = new JComboBox();
-//	private JComboBox comboBox_28 = new JComboBox();
-//	private JComboBox comboBox_29 = new JComboBox();
-//	private JComboBox comboBox_30 = new JComboBox();
-//
-//
-//	private JTextField ins2_4_a_textField;
-//	private JTextField ins2_a_textField;
-//	private JTextField ins2_b_textField;
-//	private JTextField ins2_c_textField;
-//	private JTextField ins2_d_textField;
-//	private JTextField ins2_e_textField;
-//	private JTextField ins2_f_textField;
-//	private JTextField ins2_gh_textField;
-//	private JTextField ins2_1_ab_textField;
-//	private JTextField ins2_1_cd_textField;
-//	private JTextField ins2_1_ef_textField;
-//	private JTextField ins2_3_ab_textField;
-//	private JTextField ins2_4_b_textField;
-//	private JTextField ins2_4_cde_textField;
-//	private JTextField ins2_5_abc_textField;
-//	private JTextField ins2_5_b_textField;
-//	private JTextField ins2_5_ef_textField;
-//	private JTextField textField;
-//
-//
-//	private JTextPane textPane_1 = new JTextPane();
-//	private JTextPane textPane_1_1_1 = new JTextPane();
-//	private JTextPane textPane_1_1 = new JTextPane();
-//	private JTextPane textPane = new JTextPane();
-//	private JTextPane textPane_2_1 = new JTextPane();
-//	private JTextPane textPane_2 = new JTextPane();
-//	private JTextPane textPane_1_2 = new JTextPane();
-//	private JTextPane textPane_1_3 = new JTextPane();
-//	private JTextPane textPane_1_4 = new JTextPane();
-//	private JTextPane textPane_1_5 = new JTextPane();
-//	private JTextPane textPane_1_6 = new JTextPane();
-//	private JTextPane textPane_1_2_1 = new JTextPane();
-//	private JTextPane textPane_1_2_2 = new JTextPane();
-//	private JTextPane textPane_1_2_3 = new JTextPane();
-//	private JTextPane textPane_1_2_4 = new JTextPane();
-//	private JTextPane textPane_1_2_5 = new JTextPane();
-//	private JTextPane textPane_1_2_1_1 = new JTextPane();
-//	private JTextPane textPane_1_2_1_2 = new JTextPane();
-//	private JTextPane textPane_1_2_1_3 = new JTextPane();
-//	private JTextPane textPane_1_2_1_3_1 = new JTextPane();
-//
-//	private JTextPane textPane_1_7_4 = new JTextPane();
-//	private JTextPane textPane_1_7_1_2 = new JTextPane();
-//	private JTextPane textPane_1_7_1_1_1 = new JTextPane();
-//	private JTextPane textPane_1_7_4_1 = new JTextPane();
-//	private JTextPane textPane_1_7_4_2 = new JTextPane();
-//	private JTextPane textPane_1_7_4_3 = new JTextPane();
-//	private JTextPane textPane_1_7_3 = new JTextPane();
-//	private JTextPane textPane_1_7_3_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_1_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_2 = new JTextPane();
-//	private JTextPane textPane_1_7_3_2_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_2_1_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_1_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_2 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_2_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_2_1_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_3 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_3_1 = new JTextPane();
-//	private JTextPane textPane_1_7_3_3_2_3_1_1 = new JTextPane();
-//
-//	private JSpinner spinner = new JSpinner();
-//	private JSpinner spinner_1 = new JSpinner();
-//	private JSpinner spinner_2 = new JSpinner();
-//	private JSpinner spinner_3 = new JSpinner();
-//	private JSpinner spinner_4 = new JSpinner();
-//	private JSpinner spinner_5 = new JSpinner();
-//	private JSpinner spinner_5_1 = new JSpinner();
-//	private JSpinner spinner_6 = new JSpinner();
-//	private JSpinner spinner_1_1 = new JSpinner();
-//	private JSpinner spinner_3_1 = new JSpinner();
-//	private JSpinner spinner_5_2 = new JSpinner();
-//	private JSpinner spinner_6_1 = new JSpinner();
-//	private JSpinner spinner_6_2 = new JSpinner();
-//	private JSpinner spinner_1_1_1 = new JSpinner();
-//	private JSpinner spinner_3_1_1 = new JSpinner();
-//	private JSpinner spinner_1_1_1_1 = new JSpinner();
-//	private JSpinner spinner_3_1_1_1 = new JSpinner();
-//	private JSpinner spinner_3_1_1_1_1 = new JSpinner();
-//
-//	private JTextArea textArea = new JTextArea();
-//	private JTextArea textArea_1 = new JTextArea();
-//	private JTextArea textArea_2 = new JTextArea();
-//	private JTextArea textArea_3 = new JTextArea();
-//	private JTextArea textArea_4 = new JTextArea();
-//	private JTextArea textArea_5 = new JTextArea();
-//	private JTextArea textArea_6 = new JTextArea();
-//	private JTextArea textArea_8 = new JTextArea();
-//	private JTextArea textArea_1_1 = new JTextArea();
-//	private JTextArea textArea_3_1 = new JTextArea();
-//	private JTextArea textArea_5_1 = new JTextArea();
-//	private JTextArea textArea_8_1 = new JTextArea();
-//	private JTextArea textArea_8_2 = new JTextArea();
-//	private JTextArea textArea_1_1_1 = new JTextArea();
-//	private JTextArea textArea_8_2_1 = new JTextArea();
-//	private JTextArea textArea_8_2_1_1 = new JTextArea();
-//	private JTextArea textArea_8_2_1_1_1 = new JTextArea();
-//	private JTextField parte1_perfil_de_estudiante_1;
-//	private JTextField parte1_perfil_de_estudiante_2;
-//	private JTextField parte2_estudi_3;
-//	private JTextField parte2_estudi_4;
-//	private JTextField parte3_estudi_5_;
-//	private JTextField parte3_estudi_6;
-//	private JTextField parte3_estudi_7;
-//	private JTextField parte3_estudi_8;
-//	private JTextField parte3_estudi_9;
-//	private JTextField parte3_estudi_10;
-//	private JTextField parte3_estudi_11;
-//	private JTextField parte3_estudi_12;
-//	private JTextField parte3_desarollo_de_clase_13;
-//	private JTextField parte3_desarollo_de_clase_14;
-//	private JTextField parte3_desarollo_de_clase_15;
-//	private JTextField parte3_desarollo_de_clase_16;
-//	private JTextField parte3_desarollo_de_clase_17;
-//	private JTextField parte5_gerencia_18;
-//	private JTextField parte5_gerencia_19;
-//	private JTextField parte5_gerencia_20;
-//	private JTextField parte5_gerencia_21;
-//	private JTextField parte5_gerencia_22;
-//	private JTextField parte5_gerencia_23;
-//	private JTextField parte5_gerencia_24;
-//	private JTextField parte5_gerencia_25;
-//	private JTextField parte5_gerencia_26;
-//	private JTextField parte5_gerencia_27;
-//	private JTextField parte5_gerencia_28;
-//	private JTextField parte5_gerencia_29;
-//	private JTextField textField_15;
-//	private JCheckBox chckbxNewCheckBox;
-//	private JCheckBox chckbxNewCheckBox_1;
-//	private JCheckBox chckbxNewCheckBox_2;
-//	private JCheckBox chckbxNewCheckBox_3;
 
 	
 	
@@ -2306,14 +2206,14 @@ public class Instruments  {
 //		//					System.out.println("Test " + i + ": " +ag[i]);
 //		//				}
 		
-		
+	//String date = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		values [0] = Unidadacademica_textField.getText();
 		values [1] = nombre_prof_textField.getText();
 		values [2] = rangoAcademico_comboBox.getValue().toString();
 		values [3] = departamento_textField.getText();
 		values [4] = disiplina_textField.getText();
 		values [5] = objetivo_eval_comboBox.getValue().toString();
-		values [6] = periodo_evaluado_textField.getValue().toString();
+		values [6] = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		values [7] = jornada_comple_comboBox.getValue().toString();
 		values [8] = jornada_parcial_comboBox.getValue().toString();
 		values [9] = contrato_comboBox.getValue().toString();
@@ -2636,8 +2536,8 @@ public class Instruments  {
 		LocalDate localDate = LocalDate.parse("2021-05-04");
 		String pattern = "yyyy-dd-MM";
 		DateTimeFormatter dtFormatter;
-		 dtFormatter = DateTimeFormatter.ofPattern(pattern);
-		 LocalDate date = LocalDate.parse(ap[6], dtFormatter);
+		// dtFormatter = DateTimeFormatter.ofPattern(pattern);
+		// LocalDate date = LocalDate.parse(ap[6], dtFormatter);
 		 
 		 
 		Unidadacademica_textField.setText(ap[0]);
@@ -2646,12 +2546,184 @@ public class Instruments  {
 		departamento_textField.setText(ap[3]);
 		disiplina_textField.setText(ap[4]);
 		objetivo_eval_comboBox.getSelectionModel().select(ap[5]);
-		periodo_evaluado_textField.setValue(date);
+		//periodo_evaluado_textField.setValue(date);
 		jornada_comple_comboBox.getValueFactory().setValue(Integer.parseInt(ap[7])); 
 		jornada_parcial_comboBox.getValueFactory().setValue(Integer.parseInt(ap[8])); 
 		contrato_comboBox.getSelectionModel().select(ap[9]);
 		codigo_textField.setText(ap[10]);
 		tutulo_del_curso_textField.setText(ap[11]);
+		
+		
+		
+		
+		instrument1_1.getValueFactory().setValue(Integer.parseInt(ap[14])); 
+		instrument1_2.getValueFactory().setValue(Integer.parseInt(ap[15])); 
+		instrument1_3.getValueFactory().setValue(Integer.parseInt(ap[16])); 
+		instrument1_4.getValueFactory().setValue(Integer.parseInt(ap[17])); 
+		instrument1_5.getValueFactory().setValue(Integer.parseInt(ap[18])); 
+		instrument1_6.getValueFactory().setValue(Integer.parseInt(ap[19])); 
+		instrument1_7.getValueFactory().setValue(Integer.parseInt(ap[20])); 
+		instrument1_8.getValueFactory().setValue(Integer.parseInt(ap[21])); 
+		instrument1_9.getValueFactory().setValue(Integer.parseInt(ap[22])); 
+		instrument1_10.getValueFactory().setValue(Integer.parseInt(ap[23])); 
+		instrument1_11.getValueFactory().setValue(Integer.parseInt(ap[24])); 
+		instrument1_12.getValueFactory().setValue(Integer.parseInt(ap[25])); 
+		instrument1_13.getValueFactory().setValue(Integer.parseInt(ap[26])); 
+		instrument1_14.getValueFactory().setValue(Integer.parseInt(ap[27])); 
+		instrument1_15.getValueFactory().setValue(Integer.parseInt(ap[28])); 
+		instrument1_16.getValueFactory().setValue(Integer.parseInt(ap[29])); 
+		instrument1_17.getValueFactory().setValue(Integer.parseInt(ap[30])); 
+		instrument1_18.getValueFactory().setValue(Integer.parseInt(ap[31])); 
+		instrument1_19.getValueFactory().setValue(Integer.parseInt(ap[32])); 
+		instrument1_20.getValueFactory().setValue(Integer.parseInt(ap[33])); 
+		instrument1_21.getValueFactory().setValue(Integer.parseInt(ap[34])); 
+		instrument1_22.getValueFactory().setValue(Integer.parseInt(ap[35])); 
+		instrument1_23.getValueFactory().setValue(Integer.parseInt(ap[36])); 
+		instrument1_24.getValueFactory().setValue(Integer.parseInt(ap[37])); 
+		instrument1_25.getValueFactory().setValue(Integer.parseInt(ap[38])); 
+		instrument1_26.getValueFactory().setValue(Integer.parseInt(ap[39])); 
+		instrument1_27.getValueFactory().setValue(Integer.parseInt(ap[40])); 
+		instrument1_28.getValueFactory().setValue(Integer.parseInt(ap[41])); 
+		instrument1_29.getValueFactory().setValue(Integer.parseInt(ap[42]));  
+		
+		
+		
+		
+		instrument2_1.getValueFactory().setValue(Integer.parseInt(ap[43]));
+		instrument2_2.getValueFactory().setValue(Integer.parseInt(ap[44]));
+		instrument2_3.getValueFactory().setValue(Integer.parseInt(ap[45]));
+		instrument2_4.getValueFactory().setValue(Integer.parseInt(ap[46]));
+		instrument2_5.getValueFactory().setValue(Integer.parseInt(ap[47]));
+		instrument2_6.getValueFactory().setValue(Integer.parseInt(ap[48]));
+		instrument2_7.getValueFactory().setValue(Integer.parseInt(ap[49]));
+		instrument2_8.getValueFactory().setValue(Integer.parseInt(ap[50]));
+		instrument2_9.getValueFactory().setValue(Integer.parseInt(ap[51]));
+		instrument2_10.getValueFactory().setValue(Integer.parseInt(ap[52]));
+		instrument2_11.getValueFactory().setValue(Integer.parseInt(ap[53]));
+		instrument2_12.getValueFactory().setValue(Integer.parseInt(ap[54]));
+		instrument2_13.getValueFactory().setValue(Integer.parseInt(ap[55]));
+		instrument2_14.getValueFactory().setValue(Integer.parseInt(ap[56]));
+		instrument2_15.getValueFactory().setValue(Integer.parseInt(ap[57]));
+		instrument2_16.getValueFactory().setValue(Integer.parseInt(ap[58]));
+		instrument2_17.getValueFactory().setValue(Integer.parseInt(ap[59]));
+		instrument2_18.getValueFactory().setValue(Integer.parseInt(ap[60]));
+		
+		
+		instrument3_1.getSelectionModel().select(ap[61]);
+		instrument3_2.getSelectionModel().select(ap[62]);
+		instrument3_3.getSelectionModel().select(ap[63]);
+		instrument3_4.getSelectionModel().select(ap[64]);
+		instrument3_5.getSelectionModel().select(ap[65]);
+		instrument3_6.getSelectionModel().select(ap[66]);
+		instrument3_7.getSelectionModel().select(ap[67]);
+		instrument3_8.getSelectionModel().select(ap[68]);
+		instrument3_9.getSelectionModel().select(ap[69]);
+		instrument3_10.getSelectionModel().select(ap[70]);
+		instrument3_11.getSelectionModel().select(ap[71]);
+		instrument3_12.getSelectionModel().select(ap[72]);
+		instrument3_13.getSelectionModel().select(ap[73]);
+		instrument3_14.getSelectionModel().select(ap[74]);
+		instrument3_15.getSelectionModel().select(ap[75]);
+		instrument3_16.getSelectionModel().select(ap[76]);
+		instrument3_17.getSelectionModel().select(ap[77]);
+		instrument3_18.getSelectionModel().select(ap[78]);
+		instrument3_19.getSelectionModel().select(ap[79]);
+		instrument3_20.getSelectionModel().select(ap[80]);
+		
+		instrument4_1.getSelectionModel().select(ap[81]);
+		instrument4_2.getSelectionModel().select(ap[82]);
+		instrument4_3.getSelectionModel().select(ap[83]);
+		instrument4_4.getSelectionModel().select(ap[84]);
+		instrument4_5.getSelectionModel().select(ap[85]);
+		instrument4_6.getSelectionModel().select(ap[86]);
+		instrument4_7.getSelectionModel().select(ap[87]);
+		instrument4_8.getSelectionModel().select(ap[88]);
+		instrument4_9.getSelectionModel().select(ap[89]);
+		instrument4_10.getSelectionModel().select(ap[90]);
+		instrument4_11.getSelectionModel().select(ap[91]);
+		instrument4_12.getSelectionModel().select(ap[92]);
+		instrument4_13.getSelectionModel().select(ap[93]);
+		instrument4_14.getSelectionModel().select(ap[94]);
+		instrument4_15.getSelectionModel().select(ap[95]);
+		instrument4_16.getSelectionModel().select(ap[96]);
+		instrument4_17.getSelectionModel().select(ap[97]);
+		instrument4_18.getSelectionModel().select(ap[98]);
+		instrument4_19.getSelectionModel().select(ap[99]);
+		instrument4_20.getSelectionModel().select(ap[100]);
+		
+
+			
+	
+			
+			Comment_3_1.setText(ap[101]);
+			Comment_3_2.setText(ap[102]);
+			Comment_3_3.setText(ap[103]);
+			Comment_3_4.setText(ap[104]);
+			Comment_3_5.setText(ap[105]);
+			Comment_3_6.setText(ap[106]);
+			Comment_3_7.setText(ap[107]);
+			Comment_3_8.setText(ap[108]);
+			Comment_3_9.setText(ap[109]);
+			Comment_3_10.setText(ap[110]);
+			Comment_3_11.setText(ap[111]);
+			Comment_3_12.setText(ap[112]);
+			Comment_3_13.setText(ap[113]);
+			Comment_3_14.setText(ap[114]);
+			Comment_3_15.setText(ap[115]);
+			Comment_3_16.setText(ap[116]);
+			Comment_3_17.setText(ap[117]);
+			Comment_3_18.setText(ap[118]);
+			Comment_3_19.setText(ap[119]);
+			Comment_3_20.setText(ap[120]);
+			
+			
+			Comment_4_1.setText(ap[121]);
+			Comment_4_2.setText(ap[122]);
+			Comment_4_3.setText(ap[123]);
+			Comment_4_4.setText(ap[124]);
+			Comment_4_5.setText(ap[125]);
+			Comment_4_6.setText(ap[126]);
+			Comment_4_7.setText(ap[127]);
+			Comment_4_8.setText(ap[128]);
+			Comment_4_9.setText(ap[129]);
+			Comment_4_10.setText(ap[130]);
+			 Comment_4_11.setText(ap[131]);
+			 Comment_4_12.setText(ap[132]);
+			 Comment_4_13.setText(ap[133]);
+			 Comment_4_14.setText(ap[134]);
+			 Comment_4_15.setText(ap[135]);
+			 Comment_4_16.setText(ap[136]);
+			 Comment_4_17.setText(ap[137]);
+			 Comment_4_18.setText(ap[138]);
+			 Comment_4_19.setText(ap[139]);
+			 Comment_4_20.setText(ap[140]);
+			 Comment_4_21.setText(ap[141]);
+			 Comment_4_22.setText(ap[142]);
+			 Comment_4_23.setText(ap[143]);
+			
+			 Comment_2_1.setText(ap[144]);
+			 Comment_2_2.setText(ap[145]);
+			 Comment_2_3.setText(ap[146]);
+			 Comment_2_4.setText(ap[147]);
+			 Comment_2_5.setText(ap[148]);
+			 Comment_2_6.setText(ap[149]);
+			 Comment_2_7.setText(ap[150]);
+			 Comment_2_8.setText(ap[151]);
+			 Comment_2_9.setText(ap[152]);
+			 Comment_2_10.setText(ap[153]);
+			 Comment_2_11.setText(ap[154]);
+			 Comment_2_12.setText(ap[155]);
+			 Comment_2_13.setText(ap[156]);
+			 Comment_2_14.setText(ap[157]);
+			 Comment_2_15.setText(ap[158]);
+			 Comment_2_16.setText(ap[159]);
+			 Comment_2_17.setText(ap[160]);
+			 Comment_2_18.setText(ap[161]);
+
+		
+
+		
+		
 		
 	}
 	
