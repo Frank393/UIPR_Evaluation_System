@@ -13,8 +13,9 @@ public class ConfigBackend {
     int rango = 0;
     File file = new File("./credencials.csv");
     static int[] valen = new int[58];
+    //Login_backend user = new Login_backend();
     
-    public void fillValen() throws FileNotFoundException {
+    public void fillValen(String Id) throws FileNotFoundException {
     	int sum = 0;
 		FileReader freader = new FileReader(file);
 		String test;
@@ -26,7 +27,7 @@ public class ConfigBackend {
 			test = counter.nextLine(); // Read line
 			System.out.println(test);
 			splitter = test.split(",",58); // Split line
-			if(splitter[0].equals("test")) { // If ID found, fill valen
+			if(splitter[0].equals(Id)) { // If ID found, fill valen
 				System.out.println("in");
 				for(int i = 4;i < 58;i++) {
 					valen[sum] = Integer.parseInt(splitter[i]);

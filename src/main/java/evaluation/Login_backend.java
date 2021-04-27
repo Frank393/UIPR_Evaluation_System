@@ -49,7 +49,7 @@ public class Login_backend {
 	@FXML StackPane logPane = new StackPane();
 	@FXML StackPane regPane = new StackPane();
 	@FXML BorderPane bp = new BorderPane();
-	
+	double [] valen = new double[54];
 	public Login_backend() {
 		try {
 			initialize();
@@ -64,7 +64,7 @@ public class Login_backend {
 	 * @throws FileNotFoundException 
 	 */
 	private void initialize() throws FileNotFoundException {
-		double [] valen = new double[54];
+		
 		valen[0] = 16;
 		valen[1] = 12;
 		valen[2] = 8;
@@ -147,9 +147,7 @@ public class Login_backend {
 		valen[52] = 4;
 		valen[53] = 4;
 		
-		ConfigBackend cb = new ConfigBackend();
-		cb.fillValen();
-		ValenciasRango.setValen(valen);
+		
 
 
 		
@@ -195,7 +193,7 @@ public class Login_backend {
 
 		fileManager  file = new fileManager();
 		found =	file.login(getID(), pass);
-
+		Instruments val = new Instruments();
 		
 		if (found == 1) {
 			
@@ -203,7 +201,15 @@ public class Login_backend {
 			main.close();
 //			Instruments inst = new Instruments();
 //			inst.Load();
-
+			ConfigBackend cb = new ConfigBackend();
+			try {
+				cb.fillValen(getID());
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			ValenciasRango.setValen(valen);
+			
 		}else{
 			
 		}
