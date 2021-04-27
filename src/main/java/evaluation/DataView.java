@@ -12,7 +12,6 @@ public class DataView {
 	File file2 = new File("./temp.csv"); // Holds non-deletable data
 	String data[][]; // Data holder
 	
-	@SuppressWarnings("resource")
 	DataView(String fac) throws IOException{
 		int sum = 0;
 		FileReader freader = new FileReader(file);
@@ -21,7 +20,7 @@ public class DataView {
 		Scanner counter ;
 		counter = new Scanner(file);
 		
-		fac = mm.gettipo() == 1 ? mm.values[1] : mm.values[1];
+		fac = mm.gettipo() == 1 ? Instruments.values[1] : Instruments.values[1];
 		
 		FileWriter writer = new FileWriter(file2);
 		writer.write("header\n");
@@ -55,6 +54,8 @@ public class DataView {
 				}
 			}
 		}
+		counter.close();
+		freader.close();
 		reader.close();
 	}
 	
