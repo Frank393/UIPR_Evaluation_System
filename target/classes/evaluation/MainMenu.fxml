@@ -14,6 +14,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -1346,7 +1347,7 @@
                                              </font>
                                           </Text>
                                           <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
-                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" onAction="#applyValue" text="Guardar Cambios" />
                                           <Text layoutX="286.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
@@ -1466,7 +1467,7 @@
                                              </font>
                                           </Text>
                                           <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
-                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" onAction="#applyValue" text="Guardar Cambios" />
                                           <Text layoutX="259.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico Auxiliar">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
@@ -1586,7 +1587,7 @@
                                              </font>
                                           </Text>
                                           <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
-                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" onAction="#applyValue" text="Guardar Cambios" />
                                           <Text layoutX="254.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico Asociado">
                                              <font>
                                                 <Font name="System Bold" size="14.0" />
@@ -1598,6 +1599,393 @@
                               </Tab>
                            </tabs>
                         </TabPane>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="125.0" layoutY="29.0" prefWidth="663.0" visible="false">
+                     <children>
+                        <Group>
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3509.0" layoutX="-19.0" layoutY="1253.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="645.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Rectangle>
+                              <Text layoutX="111.0" layoutY="1286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluaci\u00F3n de Facultad por los Estudiantes">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="137.0" layoutY="1331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="en los cursos ofrecidos en l\u00EDnea ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="45.0" layoutY="1362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTE I. Perfil del estudiante. Utiliza la siguiente clave para las preguntas 1 y 2:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="63.0" layoutY="1392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTE I. Perfil del estudiante. Conteste las siguientes preguntas.">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="33.0" layoutY="1636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(3) Lo hizo (2) No lo hizo (1) Desconozco porque no estuve al inicio del curso">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="18.0" layoutY="1597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTE II. El prontuario del curso. Utiliza la siguiente clave para las preguntas 3 y 4:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="34.0" layoutY="1439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Indica el n\u00FAmero de horas a la semana que dedicas a trabajar en el curso en l\u00EDnea:" wrappingWidth="385.09375">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="33.0" layoutY="1520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ¿Cu\u00E1ntas veces te comunicas con tu profesor a trav\u00E9s de los medios provistos por la Instituci\u00F3n?" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="21.0" layoutY="1689.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Durante la primera semana del curso, el profesor pone a mi disposici\u00F3n el prontuario." wrappingWidth="443.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="28.0" layoutY="1772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. El profesor aclara mis dudas con respecto al contenido del prontuario." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="31.0" layoutY="1968.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. El profesor demuestra conocer el material de la clase" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="2035.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. El profesor me hace pensar y reflexionar sobre los temas del curso." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="32.0" layoutY="2097.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. La forma en que el profesor presenta el contenido del curso en l\u00EDnea, contribuye" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="28.0" layoutY="2186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Hasta el presente, se han logrado los objetivos del curso conforme al prontuario." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="28.0" layoutY="2266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. El profesor enriquece la clase con recursos audiovisuales, referencias o enlaces al Internet." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="31.0" layoutY="2345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. El profesor atiende y discute con respeto mis planteamientos para presentar el contenido del curso." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="31.0" layoutY="2414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. El profesor relaciona las ideas y temas presentados en el curso con situaciones del diario vivir." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="2505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. El profesor promueve que participe en los foros de discusi\u00F3n o en otras" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="2603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. El profesor muestra inter\u00E9s por mi aprovechamiento acad\u00E9mico actividades de interacci\u00F3n." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="2852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. El profesor aclara mis dudas sobre la estructura y organizaci\u00F3n del curso.\n\n" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="2938.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. El profesor est\u00E1 disponible para contestar mis preguntas en el horario anunciado.\n" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="3009.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Los ex\u00E1menes y trabajos responden al contenido del curso" wrappingWidth="455.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="3102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. El profesor utiliza diversos m\u00E9todos para evaluar el aprendizaje.\n" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="3190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. El profesor muestra inter\u00E9s por el aprovechamiento acad\u00E9mico seg\u00FAn los criterios establecidos en el prontuario." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="13.0" layoutY="3805.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Otras Apreciaciones del Estudiante. Contesta las siguientes preguntas." wrappingWidth="597.64453125">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="21.0" layoutY="3859.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25. ¿Qu\u00E9 fue lo que m\u00E1s te gust\u00F3 del curso?" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="22.0" layoutY="1859.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTE III. Desarrollo de la clase en linea. Utiliza la siguiente clave para las preguntas 5 al 13:">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="42.0" layoutY="1892.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(4) Totalmente de acuerdo (si) (3) Parcialmente de acuerdo (mayormente si) (2) Parcialmente en desacuerdo (mayormente no) (1) Totalmente en desacuerdo (no) (0) No Aplica" wrappingWidth="496.017578125">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="1.0" layoutY="2693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerencia del proceso de ense\u00F1anza aprendizaje. Conteste las preguntas 14-24 tomando en consideraci\u00F3n la siguiente premisa:" wrappingWidth="604.7158203125">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="28.0" layoutY="2758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(4) Totalmente de acuerdo (si) (3) Parcialmente de acuerdo (mayormente si) (2) Parcialmente en desacuerdo (mayormente no) (1) Totalmente en desacuerdo (no) (0) No Aplica" wrappingWidth="567.5263671875">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="33.0" layoutY="3282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. El profesor informa los resultados de los ex\u00E1menes y trabajos corregidos, preferiblemente en o antes de dos semanas." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="31.0" layoutY="3382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. El profesor discute los resultados de mis evaluaciones, en su defecto, hace anotaciones o comentarios en los espacios provistos en los diferentes tipos de actividades." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="3481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21. El profesor exhorta a los estudiantes a comunicarse con \u00E9l, en caso de que surjan dudas relacionadas con los temas del curso y sus evaluaciones." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="32.0" layoutY="3555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22. El profesor provee oportunidades flexibles de interacci\u00F3n entre estudiante-estudiante y estudiante- profesor, usando los foros de discusi\u00F3n, los salones virtuales, entre otros." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="3638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23. El profesor actualiza el plan de trabajo en el calendario de actividades." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="33.0" layoutY="3705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24. El profesor procura que las diversas actividades del curso se24. El profesor procura que las diversas actividades del curso se cumplan dentro del plazo establecido." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="4070.0" strokeType="OUTSIDE" strokeWidth="0.0" text="26. ¿Qu\u00E9 fue lo que menos te gust\u00F3 del curso?" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="4294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27. ¿Tomar\u00EDas otro curso en l\u00EDnea con el mismo profesor o lo recomendar\u00EDas a un compa\u00F1ero? Explica." wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="21.0" layoutY="4515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28. ¿Qu\u00E9 sugerencias har\u00EDas para que el profesor mejore su ense\u00F1anza  y participe m\u00E1s en tu aprendizaje en esta modalidad?" wrappingWidth="425.64453125">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="37.0" layoutY="3888.0" prefHeight="151.0" prefWidth="492.0" />
+                              <TextArea layoutX="37.0" layoutY="4095.0" prefHeight="151.0" prefWidth="492.0" />
+                              <TextArea layoutX="37.0" layoutY="4331.0" prefHeight="151.0" prefWidth="492.0" />
+                              <TextArea layoutX="37.0" layoutY="4576.0" prefHeight="151.0" prefWidth="492.0" />
+                              <Spinner layoutX="527.0" layoutY="1430.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="1511.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="1680.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="1763.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="1953.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="2017.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2082.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2177.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2257.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="2336.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2399.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2496.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="2594.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="2843.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="2929.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="2991.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="3093.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="3190.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="3273.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="3382.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="3481.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="3555.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="528.0" layoutY="3629.0" prefHeight="25.0" prefWidth="69.0" />
+                              <Spinner layoutX="527.0" layoutY="3705.0" prefHeight="25.0" prefWidth="69.0" />
+                           </children>
+                        </Group>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="106.0" layoutY="29.0" prefHeight="150.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <Group>
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5036.0" layoutX="9.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="642.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Rectangle>
+                              <Text layoutX="91.0" layoutY="33.892578125" strokeType="OUTSIDE" strokeWidth="0.0" text="DOMINIO DE LA DISCIPLINA Y SU RELACI\u00D3N CON OTRAS ESFERAS DEL CONOCIMIENTO" textAlignment="CENTER" wrappingWidth="450.34375">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="56.0" layoutY="162.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Mediante la interacci\u00F3n con los estudiantes, el profesor demostr\u00F3   conocimiento suficiente del tema evaluado." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="219.0" prefHeight="161.0" prefWidth="444.0" />
+                              <Text layoutX="56.0" layoutY="413.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Mediante la interacci\u00F3n con los estudiantes, el profesor integr\u00F3 conceptos o experiencias de otras disciplinas para enriquecer el tema evaluado." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="470.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="156.0" prefHeight="0.0" prefWidth="84.0" />
+                              <ComboBox layoutX="535.0" layoutY="413.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="654.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="3. El profesor resalt\u00F3 la utilidad del tema para otros cursos o \u00E1reas del conocimiento." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="711.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="654.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="908.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="4. El profesor facilit\u00F3 que los estudiantes relacionen el tema con sus experiencias personales o el mundo del trabajo." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="965.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="908.0" prefHeight="1.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="1156.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="5. El profesor ejerci\u00F3 la docencia como un gu\u00EDa o facilitador de los estudiantes, mediante la comunicaci\u00F3n e interacci\u00F3n con los mismos, as\u00ED como en las diversas actividades docentes." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="1229.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="1156.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="1412.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="6. En su interacci\u00F3n con los estudiantes, el profesor utiliz\u00F3 un lenguaje que corresponde con el nivel de los estudiantes en el curso." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="1484.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="1411.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="1668.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="7. El profesor promovi\u00F3 la comunicaci\u00F3n e interacci\u00F3n estudiante-estudiante." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="1741.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="1668.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="56.0" layoutY="1927.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="8. El profesor foment\u00F3 la comunicaci\u00F3n e interacci\u00F3n estudiante-profesor." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="72.0" layoutY="2000.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="1927.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="43.0" layoutY="2188.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="9. El profesor planific\u00F3 la distribuci\u00F3n del tiempo de forma tal que los estudiantes pueden cumplir con los objetivos establecidos." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="59.0" layoutY="2261.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="2192.0" prefHeight="0.0" prefWidth="84.0" />
+                              <TextArea layoutX="54.0" layoutY="2518.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="2444.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="38.0" layoutY="2435.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="10. El profesor inform\u00F3 a los estudiantes del tiempo estimado para responder a los mensajes, para informar sobre los resultados de los ex\u00E1menes, asignaciones y otros trabajos corregidos; aunque el dise\u00F1o del curso pueda incluir algo sobre esto." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="54.0" layoutY="2774.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="523.0" layoutY="2695.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="43.0" layoutY="2693.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="11. El profesor inform\u00F3 a los estudiantes de los resultados de las actividades realizadas por aquellos no m\u00E1s tarde de dos semanas de haber sido entregados durante el semestre o su equivalente en los diversos t\u00E9rminos acad\u00E9micos. " wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="56.0" layoutY="3034.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="532.0" layoutY="2953.0" prefHeight="3.0" prefWidth="84.0" />
+                              <Text layoutX="45.0" layoutY="2953.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="12. El profesor respondi\u00F3 en el tiempo establecido, los mensajes, las preguntasy las consultas de los estudiantes, que se recibieron mediante el correo electr\u00F3nico." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="56.0" layoutY="3293.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="531.0" layoutY="3221.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="45.0" layoutY="3212.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="13. El profesor utiliz\u00F3 las herramientas disponibles en la plataforma y present\u00F3 elcontenido del curso en forma organizada y coherente." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="69.0" layoutY="3562.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="3481.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="51.0" layoutY="3498.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="14. El profesor mantuvo un clima de confianza y respeto" wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="60.0" layoutY="3821.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="531.0" layoutY="3747.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="51.0" layoutY="3750.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="15. El profesor facilit\u00F3 la discusi\u00F3n para complementar, aclarar o enriquecer" wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="68.0" layoutY="4083.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="535.0" layoutY="4009.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="59.0" layoutY="4012.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="16. El profesor promovi\u00F3 la b\u00FAsqueda de informaci\u00F3n o experiencias para enriqueser el conocimento." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="77.0" layoutY="4333.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="540.0" layoutY="4260.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="66.0" layoutY="4269.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="17. El profesor foment\u00F3 el pensamiento cr\u00EDtico." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="78.0" layoutY="4579.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="541.0" layoutY="4506.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="67.0" layoutY="4515.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="18. El profesor aport\u00F3 recursos de apoyo adicionales para enriquecer el tema evaluado.\r\n" wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <TextArea layoutX="78.0" layoutY="4831.0" prefHeight="161.0" prefWidth="444.0" />
+                              <ComboBox layoutX="541.0" layoutY="4758.0" prefHeight="0.0" prefWidth="84.0" />
+                              <Text layoutX="67.0" layoutY="4767.9716796875" strokeType="OUTSIDE" strokeWidth="0.0" text="19. El profesor utiliz\u00F3 diferentes recursos de ense\u00F1anza para facilitar el aprendizajePor ejemplo: trabajo colaborativo, v\u00EDdeos, presentaciones, seminarios y conferencias a trav\u00E9s de la web, entre otros." wrappingWidth="466.62939453125">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
                      </children>
                   </StackPane>
                </children>

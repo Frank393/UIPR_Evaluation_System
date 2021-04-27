@@ -803,6 +803,8 @@ public class Instruments  {
 	    	vr = new ValenciasRango(3);
 	    	vr = new ValenciasRango(2);
 	    	vr = new ValenciasRango(1);
+	    	
+	    	System.out.println("Valencia: "+vr.valen1A);
 	    }
     
     public double[] defValues(){ // Default values
