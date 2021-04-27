@@ -26,6 +26,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -327,7 +328,121 @@ public class Instruments  {
 	
 	
 	
-	
+	// Config Spinners
+		@FXML protected Spinner cat_valen1A = new Spinner();
+		@FXML protected Spinner cat_valen1B = new Spinner();
+		@FXML protected Spinner cat_valen1C = new Spinner();
+		@FXML protected Spinner cat_valen1D = new Spinner();
+		@FXML protected Spinner cat_valen1E = new Spinner();
+		@FXML protected Spinner cat_valen1F = new Spinner();
+		@FXML protected Spinner cat_valen1GH = new Spinner();
+		@FXML protected Spinner cat_valen2A = new Spinner();
+		@FXML protected Spinner cat_valen2BC = new Spinner();
+		@FXML protected Spinner cat_valen2DE = new Spinner();
+		@FXML protected Spinner cat_valen2FG = new Spinner();
+		@FXML protected Spinner cat_valen3AB = new Spinner();
+		@FXML protected Spinner cat_valen4A = new Spinner();
+		@FXML protected Spinner cat_valen4B = new Spinner();
+		@FXML protected Spinner cat_valen4CDE = new Spinner();
+		@FXML protected Spinner cat_valen5ABC = new Spinner();
+		@FXML protected Spinner cat_valen5D = new Spinner();
+		@FXML protected Spinner cat_valen5EF = new Spinner();
+	    
+		@FXML protected Spinner aso_valen1A = new Spinner();
+		@FXML protected Spinner aso_valen1B = new Spinner();
+		@FXML protected Spinner aso_valen1C = new Spinner();
+		@FXML protected Spinner aso_valen1D = new Spinner();
+		@FXML protected Spinner aso_valen1E = new Spinner();
+		@FXML protected Spinner aso_valen1F = new Spinner();
+		@FXML protected Spinner aso_valen1GH = new Spinner();
+		@FXML protected Spinner aso_valen2A = new Spinner();
+		@FXML protected Spinner aso_valen2BC = new Spinner();
+		@FXML protected Spinner aso_valen2DE = new Spinner();
+		@FXML protected Spinner aso_valen2FG = new Spinner();
+		@FXML protected Spinner aso_valen3AB = new Spinner();
+		@FXML protected Spinner aso_valen4A = new Spinner();
+		@FXML protected Spinner aso_valen4B = new Spinner();
+		@FXML protected Spinner aso_valen4CDE = new Spinner();
+		@FXML protected Spinner aso_valen5ABC = new Spinner();
+		@FXML protected Spinner aso_valen5D = new Spinner();
+		@FXML protected Spinner aso_valen5EF = new Spinner();
+	    
+		@FXML protected Spinner aux_valen1A = new Spinner();
+		@FXML protected Spinner aux_valen1B = new Spinner();
+		@FXML protected Spinner aux_valen1C = new Spinner();
+		@FXML protected Spinner aux_valen1D = new Spinner();
+		@FXML protected Spinner aux_valen1E = new Spinner();
+		@FXML protected Spinner aux_valen1F = new Spinner();
+		@FXML protected Spinner aux_valen1GH = new Spinner();
+		@FXML protected Spinner aux_valen2A = new Spinner();
+		@FXML protected Spinner aux_valen2BC = new Spinner();
+		@FXML protected Spinner aux_valen2DE = new Spinner();
+		@FXML protected Spinner aux_valen2FG = new Spinner();
+		@FXML protected Spinner aux_valen3AB = new Spinner();
+		@FXML protected Spinner aux_valen4A = new Spinner();
+		@FXML protected Spinner aux_valen4B = new Spinner();
+		@FXML protected Spinner aux_valen4CDE = new Spinner();
+		@FXML protected Spinner aux_valen5ABC = new Spinner();
+		@FXML protected Spinner aux_valen5D = new Spinner();
+		@FXML protected Spinner aux_valen5EF = new Spinner();
+		
+		// Create value factories
+	    SpinnerValueFactory<Integer> cat_valen1A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1C_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1E_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1F_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen1GH_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen2A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen2BC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen2DE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen2FG_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen3AB_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen4A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen4B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen4CDE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen5ABC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen5D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> cat_valen5EF_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    
+	    SpinnerValueFactory<Integer> aso_valen1A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1C_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1E_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1F_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen1GH_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen2A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen2BC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen2DE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen2FG_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen3AB_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen4A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen4B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen4CDE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen5ABC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen5D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aso_valen5EF_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    
+	    SpinnerValueFactory<Integer> aux_valen1A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1C_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1E_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1F_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen1GH_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen2A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen2BC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen2DE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen2FG_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen3AB_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen4A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen4B_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen4CDE_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen5ABC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen5D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
+	    SpinnerValueFactory<Integer> aux_valen5EF_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
 	
 	
 	
@@ -424,7 +539,124 @@ public class Instruments  {
 		instrument3_19.setItems(Instrument3);
 		instrument3_20.setItems(Instrument3);
 		
-		
+		// Initialize Configurations
+		cat_valen1A.setValueFactory(cat_valen1A_list);
+    	cat_valen1B.setValueFactory(cat_valen1B_list);
+    	cat_valen1C.setValueFactory(cat_valen1C_list);
+    	cat_valen1D.setValueFactory(cat_valen1D_list);
+    	cat_valen1E.setValueFactory(cat_valen1E_list);
+    	cat_valen1F.setValueFactory(cat_valen1F_list);
+    	cat_valen1GH.setValueFactory(cat_valen1GH_list);
+    	cat_valen2A.setValueFactory(cat_valen2A_list);
+    	cat_valen2BC.setValueFactory(cat_valen2BC_list);
+    	cat_valen2DE.setValueFactory(cat_valen2DE_list);
+    	cat_valen2FG.setValueFactory(cat_valen2FG_list);
+    	cat_valen3AB.setValueFactory(cat_valen3AB_list);
+    	cat_valen4A.setValueFactory(cat_valen4A_list);
+    	cat_valen4B.setValueFactory(cat_valen4B_list);
+    	cat_valen4CDE.setValueFactory(cat_valen4CDE_list);
+    	cat_valen5ABC.setValueFactory(cat_valen5ABC_list);
+    	cat_valen5D.setValueFactory(cat_valen5D_list);
+    	cat_valen5EF.setValueFactory(cat_valen5EF_list);
+    	
+    	aso_valen1A.setValueFactory(aso_valen1A_list);
+    	aso_valen1B.setValueFactory(aso_valen1B_list);
+    	aso_valen1C.setValueFactory(aso_valen1C_list);
+    	aso_valen1D.setValueFactory(aso_valen1D_list);
+    	aso_valen1E.setValueFactory(aso_valen1E_list);
+    	aso_valen1F.setValueFactory(aso_valen1F_list);
+    	aso_valen1GH.setValueFactory(aso_valen1GH_list);
+    	aso_valen2A.setValueFactory(aso_valen2A_list);
+    	aso_valen2BC.setValueFactory(aso_valen2BC_list);
+    	aso_valen2DE.setValueFactory(aso_valen2DE_list);
+    	aso_valen2FG.setValueFactory(aso_valen2FG_list);
+    	aso_valen3AB.setValueFactory(aso_valen3AB_list);
+    	aso_valen4A.setValueFactory(aso_valen4A_list);
+    	aso_valen4B.setValueFactory(aso_valen4B_list);
+    	aso_valen4CDE.setValueFactory(aso_valen4CDE_list);
+    	aso_valen5ABC.setValueFactory(aso_valen5ABC_list);
+    	aso_valen5D.setValueFactory(aso_valen5D_list);
+    	aso_valen5EF.setValueFactory(aso_valen5EF_list);
+    	
+    	aux_valen1A.setValueFactory(aux_valen1A_list);
+    	aux_valen1B.setValueFactory(aux_valen1B_list);
+    	aux_valen1C.setValueFactory(aux_valen1C_list);
+    	aux_valen1D.setValueFactory(aux_valen1D_list);
+    	aux_valen1E.setValueFactory(aux_valen1E_list);
+    	aux_valen1F.setValueFactory(aux_valen1F_list);
+    	aux_valen1GH.setValueFactory(aux_valen1GH_list);
+    	aux_valen2A.setValueFactory(aux_valen2A_list);
+    	aux_valen2BC.setValueFactory(aux_valen2BC_list);
+    	aux_valen2DE.setValueFactory(aux_valen2DE_list);
+    	aux_valen2FG.setValueFactory(aux_valen2FG_list);
+    	aux_valen3AB.setValueFactory(aux_valen3AB_list);
+    	aux_valen4A.setValueFactory(aux_valen4A_list);
+    	aux_valen4B.setValueFactory(aux_valen4B_list);
+    	aux_valen4CDE.setValueFactory(aux_valen4CDE_list);
+    	aux_valen5ABC.setValueFactory(aux_valen5ABC_list);
+    	aux_valen5D.setValueFactory(aux_valen5D_list);
+    	aux_valen5EF.setValueFactory(aux_valen5EF_list);
+    	
+    	ConfigBackend cb = new ConfigBackend();
+    	
+    	System.out.println("Spinner value: "+aux_valen1A.getValue());
+    	System.out.println("Valen: "+cb.valen[5]);
+		aux_valen1A.getValueFactory().setValue(cb.valen[0]);
+		aux_valen1B.getValueFactory().setValue(cb.valen[1]);
+		aux_valen1C.getValueFactory().setValue(cb.valen[2]);
+		aux_valen1D.getValueFactory().setValue(cb.valen[3]);
+		aux_valen1E.getValueFactory().setValue(cb.valen[4]);
+		aux_valen1F.getValueFactory().setValue(cb.valen[5]);
+		aux_valen1GH.getValueFactory().setValue(cb.valen[6]);
+		aux_valen2A.getValueFactory().setValue(cb.valen[7]);
+    	aux_valen2BC.getValueFactory().setValue(cb.valen[8]);
+    	aux_valen2DE.getValueFactory().setValue(cb.valen[9]);
+    	aux_valen2FG.getValueFactory().setValue(cb.valen[10]);
+    	aux_valen3AB.getValueFactory().setValue(cb.valen[11]);
+    	aux_valen4A.getValueFactory().setValue(cb.valen[12]);
+    	aux_valen4B.getValueFactory().setValue(cb.valen[13]);
+    	aux_valen4CDE.getValueFactory().setValue(cb.valen[14]);
+    	aux_valen5ABC.getValueFactory().setValue(cb.valen[15]);
+    	aux_valen5D.getValueFactory().setValue(cb.valen[16]);
+    	aux_valen5EF.getValueFactory().setValue(cb.valen[17]);
+    	
+    	aso_valen1A.getValueFactory().setValue(cb.valen[18]);
+		aso_valen1B.getValueFactory().setValue(cb.valen[19]);
+		aso_valen1C.getValueFactory().setValue(cb.valen[20]);
+		aso_valen1D.getValueFactory().setValue(cb.valen[21]);
+		aso_valen1E.getValueFactory().setValue(cb.valen[22]);
+		aso_valen1F.getValueFactory().setValue(cb.valen[23]);
+		aso_valen1GH.getValueFactory().setValue(cb.valen[24]);
+		aso_valen2A.getValueFactory().setValue(cb.valen[25]);
+    	aso_valen2BC.getValueFactory().setValue(cb.valen[26]);
+    	aso_valen2DE.getValueFactory().setValue(cb.valen[27]);
+    	aso_valen2FG.getValueFactory().setValue(cb.valen[28]);
+    	aso_valen3AB.getValueFactory().setValue(cb.valen[29]);
+    	aso_valen4A.getValueFactory().setValue(cb.valen[30]);
+    	aso_valen4B.getValueFactory().setValue(cb.valen[31]);
+    	aso_valen4CDE.getValueFactory().setValue(cb.valen[32]);
+    	aso_valen5ABC.getValueFactory().setValue(cb.valen[33]);
+    	aso_valen5D.getValueFactory().setValue(cb.valen[34]);
+    	aso_valen5EF.getValueFactory().setValue(cb.valen[35]);
+    	
+    	cat_valen1A.getValueFactory().setValue(cb.valen[36]);
+		cat_valen1B.getValueFactory().setValue(cb.valen[37]);
+		cat_valen1C.getValueFactory().setValue(cb.valen[38]);
+		cat_valen1D.getValueFactory().setValue(cb.valen[39]);
+		cat_valen1E.getValueFactory().setValue(cb.valen[40]);
+		cat_valen1F.getValueFactory().setValue(cb.valen[41]);
+		cat_valen1GH.getValueFactory().setValue(cb.valen[42]);
+		cat_valen2A.getValueFactory().setValue(cb.valen[43]);
+    	cat_valen2BC.getValueFactory().setValue(cb.valen[44]);
+    	cat_valen2DE.getValueFactory().setValue(cb.valen[45]);
+    	cat_valen2FG.getValueFactory().setValue(cb.valen[46]);
+    	cat_valen3AB.getValueFactory().setValue(cb.valen[47]);
+    	cat_valen4A.getValueFactory().setValue(cb.valen[48]);
+    	cat_valen4B.getValueFactory().setValue(cb.valen[49]);
+    	cat_valen4CDE.getValueFactory().setValue(cb.valen[50]);
+    	cat_valen5ABC.getValueFactory().setValue(cb.valen[51]);
+    	cat_valen5D.getValueFactory().setValue(cb.valen[52]);
+    	cat_valen5EF.getValueFactory().setValue(cb.valen[53]);
 		
 		//set();
 		System.out.println("im in ininininin");
@@ -432,6 +664,233 @@ public class Instruments  {
 		//Load();
 	 
 	}
+	
+	
+	// Config backend
+	
+    public void assignDefault() { // Assign default values to spinners and valencias
+    	
+    	ValenciasRango vr = null;
+    	ConfigBackend cb = new ConfigBackend();
+    	
+    	vr.setValen(defValues()); // Set array in ValenciasRango
+    	vr = new ValenciasRango(3);    	
+    	vr = new ValenciasRango(2);
+    	vr = new ValenciasRango(1);
+    	
+    	Instruments inst = new Instruments();
+    	
+    	aux_valen1A.getValueFactory().setValue(cb.valen[0]);
+		aux_valen1B.getValueFactory().setValue(cb.valen[1]);
+		aux_valen1C.getValueFactory().setValue(cb.valen[2]);
+		aux_valen1D.getValueFactory().setValue(cb.valen[3]);
+		aux_valen1E.getValueFactory().setValue(cb.valen[4]);
+		aux_valen1F.getValueFactory().setValue(cb.valen[5]);
+		aux_valen1GH.getValueFactory().setValue(cb.valen[6]);
+		aux_valen2A.getValueFactory().setValue(cb.valen[7]);
+    	aux_valen2BC.getValueFactory().setValue(cb.valen[8]);
+    	aux_valen2DE.getValueFactory().setValue(cb.valen[9]);
+    	aux_valen2FG.getValueFactory().setValue(cb.valen[10]);
+    	aux_valen3AB.getValueFactory().setValue(cb.valen[11]);
+    	aux_valen4A.getValueFactory().setValue(cb.valen[12]);
+    	aux_valen4B.getValueFactory().setValue(cb.valen[13]);
+    	aux_valen4CDE.getValueFactory().setValue(cb.valen[14]);
+    	aux_valen5ABC.getValueFactory().setValue(cb.valen[15]);
+    	aux_valen5D.getValueFactory().setValue(cb.valen[16]);
+    	aux_valen5EF.getValueFactory().setValue(cb.valen[17]);
+    	
+    	aso_valen1A.getValueFactory().setValue(cb.valen[18]);
+		aso_valen1B.getValueFactory().setValue(cb.valen[19]);
+		aso_valen1C.getValueFactory().setValue(cb.valen[20]);
+		aso_valen1D.getValueFactory().setValue(cb.valen[21]);
+		aso_valen1E.getValueFactory().setValue(cb.valen[22]);
+		aso_valen1F.getValueFactory().setValue(cb.valen[23]);
+		aso_valen1GH.getValueFactory().setValue(cb.valen[24]);
+		aso_valen2A.getValueFactory().setValue(cb.valen[25]);
+    	aso_valen2BC.getValueFactory().setValue(cb.valen[26]);
+    	aso_valen2DE.getValueFactory().setValue(cb.valen[27]);
+    	aso_valen2FG.getValueFactory().setValue(cb.valen[28]);
+    	aso_valen3AB.getValueFactory().setValue(cb.valen[29]);
+    	aso_valen4A.getValueFactory().setValue(cb.valen[30]);
+    	aso_valen4B.getValueFactory().setValue(cb.valen[31]);
+    	aso_valen4CDE.getValueFactory().setValue(cb.valen[32]);
+    	aso_valen5ABC.getValueFactory().setValue(cb.valen[33]);
+    	aso_valen5D.getValueFactory().setValue(cb.valen[34]);
+    	aso_valen5EF.getValueFactory().setValue(cb.valen[35]);
+    	
+    	cat_valen1A.getValueFactory().setValue(cb.valen[36]);
+		cat_valen1B.getValueFactory().setValue(cb.valen[37]);
+		cat_valen1C.getValueFactory().setValue(cb.valen[38]);
+		cat_valen1D.getValueFactory().setValue(cb.valen[39]);
+		cat_valen1E.getValueFactory().setValue(cb.valen[40]);
+		cat_valen1F.getValueFactory().setValue(cb.valen[41]);
+		cat_valen1GH.getValueFactory().setValue(cb.valen[42]);
+		cat_valen2A.getValueFactory().setValue(cb.valen[43]);
+    	cat_valen2BC.getValueFactory().setValue(cb.valen[44]);
+    	cat_valen2DE.getValueFactory().setValue(cb.valen[45]);
+    	cat_valen2FG.getValueFactory().setValue(cb.valen[46]);
+    	cat_valen3AB.getValueFactory().setValue(cb.valen[47]);
+    	cat_valen4A.getValueFactory().setValue(cb.valen[48]);
+    	cat_valen4B.getValueFactory().setValue(cb.valen[49]);
+    	cat_valen4CDE.getValueFactory().setValue(cb.valen[50]);
+    	cat_valen5ABC.getValueFactory().setValue(cb.valen[51]);
+    	cat_valen5D.getValueFactory().setValue(cb.valen[52]);
+    	cat_valen5EF.getValueFactory().setValue(cb.valen[53]);
+    }
+    
+	public void applyValue() {
+			ConfigBackend cb = new ConfigBackend();
+	    	
+			cb.valen[0] = (Integer) aux_valen1A.getValue();
+			cb.valen[1] = (Integer) aux_valen1B.getValue();
+			cb.valen[2] = (Integer) aux_valen1C.getValue();
+			cb.valen[3] = (Integer) aux_valen1D.getValue();
+			cb.valen[4] = (Integer) aux_valen1E.getValue();
+			cb.valen[5] = (Integer) aux_valen1F.getValue();
+			cb.valen[6] = (Integer) aux_valen1GH.getValue();
+			cb.valen[7] = (Integer) aux_valen2A.getValue();
+			cb.valen[8] = (Integer) aux_valen2BC.getValue();
+			cb.valen[9] = (Integer) aux_valen2DE.getValue();
+			cb.valen[10] = (Integer) aux_valen2FG.getValue();
+			cb.valen[11] = (Integer) aux_valen3AB.getValue();
+			cb.valen[12] = (Integer) aux_valen4A.getValue();
+			cb.valen[13] = (Integer) aux_valen4B.getValue();
+			cb.valen[14] = (Integer) aux_valen4CDE.getValue();
+			cb.valen[15] = (Integer) aux_valen5ABC.getValue();
+			cb.valen[16] = (Integer) aux_valen5D.getValue();
+			cb.valen[17] = (Integer) aux_valen5EF.getValue();
+			
+			cb.valen[18] = (Integer) aso_valen1A.getValue();
+			cb.valen[19] = (Integer) aso_valen1B.getValue();
+			cb.valen[20] = (Integer) aso_valen1C.getValue();
+			cb.valen[21] = (Integer) aso_valen1D.getValue();
+			cb.valen[22] = (Integer) aso_valen1E.getValue();
+			cb.valen[23] = (Integer) aso_valen1F.getValue();
+			cb.valen[24] = (Integer) aso_valen1GH.getValue();
+			cb.valen[25] = (Integer) aso_valen2A.getValue();
+			cb.valen[26] = (Integer) aso_valen2BC.getValue();
+			cb.valen[27] = (Integer) aso_valen2DE.getValue();
+			cb.valen[28] = (Integer) aso_valen2FG.getValue();
+			cb.valen[29] = (Integer) aso_valen3AB.getValue();
+			cb.valen[30] = (Integer) aso_valen4A.getValue();
+			cb.valen[31] = (Integer) aso_valen4B.getValue();
+			cb.valen[32] = (Integer) aso_valen4CDE.getValue();
+			cb.valen[33] = (Integer) aso_valen5ABC.getValue();
+			cb.valen[34] = (Integer) aso_valen5D.getValue();
+			cb.valen[35] = (Integer) aso_valen5EF.getValue();
+			
+			cb.valen[36] = (Integer) cat_valen1A.getValue();
+			cb.valen[37] = (Integer) cat_valen1B.getValue();
+			cb.valen[38] = (Integer) cat_valen1C.getValue();
+			cb.valen[39] = (Integer) cat_valen1D.getValue();
+			cb.valen[40] = (Integer) cat_valen1E.getValue();
+			cb.valen[41] = (Integer) cat_valen1F.getValue();
+			cb.valen[42] = (Integer) cat_valen1GH.getValue();
+			cb.valen[43] = (Integer) cat_valen2A.getValue();
+			cb.valen[44] = (Integer) cat_valen2BC.getValue();
+			cb.valen[45] = (Integer) cat_valen2DE.getValue();
+			cb.valen[46] = (Integer) cat_valen2FG.getValue();
+			cb.valen[47] = (Integer) cat_valen3AB.getValue();
+			cb.valen[48] = (Integer) cat_valen4A.getValue();
+			cb.valen[49] = (Integer) cat_valen4B.getValue();
+			cb.valen[50] = (Integer) cat_valen4CDE.getValue();
+			cb.valen[51] = (Integer) cat_valen5ABC.getValue();
+			cb.valen[52] = (Integer) cat_valen5D.getValue();
+			cb.valen[53] = (Integer) cat_valen5EF.getValue();
+			
+	    	ValenciasRango vr = null;
+	    	vr.setValen(cb.valenDouble());
+	    	vr = new ValenciasRango(3);
+	    	vr = new ValenciasRango(2);
+	    	vr = new ValenciasRango(1);
+	    }
+    
+    public double[] defValues(){ // Default values
+        double [] valen = new double[54];
+		valen[0] = 16;
+		valen[1] = 12;
+		valen[2] = 8;
+		valen[3] = 6;
+		valen[4] = 6;
+		valen[5] = 9;
+		valen[6] = 10;
+
+		// Servicio a la institucion
+		valen[7] = 3;
+		valen[8] = 4;
+		valen[9] = 2;
+		valen[10] = 3;
+
+		// Servicio a la comunidad
+		valen[11] = 2;
+
+		// Investigacion y trabajo creativo
+		valen[12] = 2;
+		valen[13] = 4;
+		valen[14] = 4;
+
+		// Crecimiento y desarrollo profesional
+		valen[15] = 3;
+		valen[16] = 3;
+		valen[17] = 3;
+
+		valen[18] = 15;
+		valen[19] = 10;
+		valen[20] = 10;
+		valen[21] = 6;
+		valen[22] = 7;
+		valen[23] = 9;
+		valen[24] = 8;
+
+		// Servicio a la institucion
+		valen[25] = 3;
+		valen[26] = 3;
+		valen[27] = 2;
+		valen[28] = 3;
+
+		// Servicio a la comunidad
+		valen[29] = 2;
+
+		// Investigacion y trabajo creativo
+		valen[30] = 3;
+		valen[31] = 4;
+		valen[32] = 5;
+
+		// Crecimiento y desarrollo profesional
+		valen[33] = 4;
+		valen[34] = 3;
+		valen[35] = 3;
+
+		// Calidad docente
+		valen[36] = 13;
+		valen[37] = 10;
+		valen[38] = 12;
+		valen[39] = 6;
+		valen[40] = 5;
+		valen[41] = 9;
+		valen[42] = 8;
+
+		// Servicio a la institucion
+		valen[43] = 2;
+		valen[44] = 3;
+		valen[45] = 2;
+		valen[46]= 2;
+
+		// Servicio a la comunidad
+		valen[47] = 2;
+
+		// Investigacion y trabajo creativo
+		valen[48] = 5;
+		valen[49] = 5;
+		valen[50] = 4;
+
+		// Crecimiento y desarrollo profesional
+		valen[51] = 4;
+		valen[52] = 4;
+		valen[53] = 4;
+
+        return valen;
+    }
 	
 	
 	
@@ -1803,7 +2262,7 @@ public class Instruments  {
 //
 //	}
 	
-	public void testsave(ActionEvent event ) {
+	public void testsave(ActionEvent event ) throws FileNotFoundException {
 	 
 //		int valueID;
 //		int value ;

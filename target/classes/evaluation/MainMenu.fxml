@@ -43,7 +43,7 @@
                   <Button fx:id="tgl_inst4" layoutY="240.0" mnemonicParsing="false" onAction="#tgl_inst4" prefHeight="60.0" prefWidth="150.0" text="Instrumento 4" />
                   <Button fx:id="tgl_terminar" layoutY="300.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Terminar Evaluacion" />
                   <Button fx:id="tgl_borrar" layoutY="360.0" mnemonicParsing="false" onAction="#tgl_borrar" prefHeight="60.0" prefWidth="150.0" text="Cargar/Borrar Datos" />
-                  <Button fx:id="tgl_config" layoutY="420.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Configuraciones" />
+                  <Button layoutY="420.0" mnemonicParsing="false" onAction="#tgl_config" prefHeight="60.0" prefWidth="150.0" text="Configuraciones" />
                   <Button fx:id="tgl_salir" layoutY="480.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Salir" />
                </children>
             </Group>
@@ -317,7 +317,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375" visible="false">
+                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375">
                      <children>
                         <Group>
                            <children>
@@ -884,7 +884,7 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_borrar" layoutX="101.0">
+                  <StackPane fx:id="pane_borrar" layoutX="101.0" visible="false">
                      <children>
                         <Group>
                            <children>
@@ -1225,6 +1225,379 @@
                               </TextField>
                            </children>
                         </Group>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="pane_config" layoutX="112.0" layoutY="29.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1636.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="647.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Rectangle>
+                        <TabPane>
+                           <tabs>
+                              <Tab closable="false" text="Catedratico">
+                                 <content>
+                                    <Group>
+                                       <children>
+                                          <Text layoutX="56.0" layoutY="118.576171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Calidad Docente">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Dominio de la disciplina que enseña." />
+                                          <Text layoutX="468.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="cat_valen1A" layoutX="488.0" layoutY="147.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="189.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Habilidad para organizar el contenido y presentarlo en forma " wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1B" layoutX="488.0" layoutY="185.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Conocimiento de los desarrollos actuales de la disciplina" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1C" layoutX="489.0" layoutY="224.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="277.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Habilidad para relacionar la disciplina con otras esferas del conocimiento." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1D" layoutX="489.0" layoutY="268.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="327.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Habilidad para promover y ampliar el interes del estudiante en la disciplina." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1E" layoutX="488.0" layoutY="314.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="376.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Habilidad para desarrollar y utilizar metodos y estrategias adecuadas, incluyendo &quot;assessment&quot; para una enseñanza efectiva" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1F" layoutX="488.0" layoutY="370.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Disponibilidad y eficacia en la orientacion academica del estudiante." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="cat_valen1GH" layoutX="488.0" layoutY="456.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="481.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="h. Posecion de los atributos de integridad, laboriosidad, disponibilidad y liberalidad en la enseñanza del estudiante." wrappingWidth="287.275390625" />
+                                          <Separator layoutX="1.0" layoutY="542.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Institucion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="56.0" layoutY="610.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Trabajo en comites de facultad y comites a nivel recinto." />
+                                          <Spinner fx:id="cat_valen2A" layoutX="488.0" layoutY="606.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Participacion y aportacion a reuniones de facultad y de comites a nivel de recinto." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen2BC" layoutX="488.0" layoutY="662.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="679.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Servicio en comites y en organizaciones a nivel institucional" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="717.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Colaboracion en actividades estudiantiles." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen2DE" layoutX="488.0" layoutY="726.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Asistencia a actos oficiales" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="779.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Designacion como director(a) de departamento, presidente de comite y otras" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen2FG" layoutX="488.0" layoutY="796.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="813.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Participacion en organismos de gobierno, tales como el Senado y consejo Universitario." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="858.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Comunidad">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="921.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Servicio en el campo profesional del profesor como consultor o investigador." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen3AB" layoutX="488.0" layoutY="943.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="955.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participacion activa en gestiones politicas, religiosas o civicas." wrappingWidth="347.912109375" />
+                                          <Separator layoutX="1.0" layoutY="1025.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crecimiento y Desarrollo Profesional">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="1061.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="1092.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Obtencion de premios, ayudas y becas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen4A" layoutX="488.0" layoutY="1123.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Nombramiento como asesor(a) en agencias del gobierno estatal o federal." wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Participacion activa en organizaciones profesionales." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen4B" layoutX="488.0" layoutY="1197.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Recurso en conferencias y charlas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen4CDE" layoutX="488.0" layoutY="1255.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Participacion en conferencias, congresos o institutos" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Educacion post-doctoral, educacion continua." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="1312.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investigacion y Trabajo Creativo">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="cat_valen5ABC" layoutX="488.0" layoutY="1374.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Publicaciones" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen5D" layoutX="488.0" layoutY="1419.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1414.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Presentaciones y trabajos creativos relacionados con la disciplina que enseña." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="cat_valen5EF" layoutX="488.0" layoutY="1483.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1465.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Propuestas diseñadas y presentadas" wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Concesion de ayudas para investigacion y proyectos." wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1507.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Invenciones, patentes, labor artistica y actuacion." wrappingWidth="347.912109375" />
+                                          <Text layoutX="146.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuracion de puntuaciones">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Text layoutX="286.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </Group>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Auxiliar">
+                                 <content>
+                                    <Group>
+                                       <children>
+                                          <Text layoutX="56.0" layoutY="118.576171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Calidad Docente">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Dominio de la disciplina que enseña." />
+                                          <Text layoutX="468.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="aux_valen1A" layoutX="488.0" layoutY="147.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="189.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Habilidad para organizar el contenido y presentarlo en forma " wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1B" layoutX="488.0" layoutY="185.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Conocimiento de los desarrollos actuales de la disciplina" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1C" layoutX="489.0" layoutY="224.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="277.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Habilidad para relacionar la disciplina con otras esferas del conocimiento." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1D" layoutX="489.0" layoutY="268.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="327.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Habilidad para promover y ampliar el interes del estudiante en la disciplina." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1E" layoutX="488.0" layoutY="314.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="376.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Habilidad para desarrollar y utilizar metodos y estrategias adecuadas, incluyendo &quot;assessment&quot; para una enseñanza efectiva" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1F" layoutX="488.0" layoutY="370.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Disponibilidad y eficacia en la orientacion academica del estudiante." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aux_valen1GH" layoutX="488.0" layoutY="456.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="481.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="h. Posecion de los atributos de integridad, laboriosidad, disponibilidad y liberalidad en la enseñanza del estudiante." wrappingWidth="287.275390625" />
+                                          <Separator layoutX="1.0" layoutY="542.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Institucion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="56.0" layoutY="610.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Trabajo en comites de facultad y comites a nivel recinto." />
+                                          <Spinner fx:id="aux_valen2A" layoutX="488.0" layoutY="606.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Participacion y aportacion a reuniones de facultad y de comites a nivel de recinto." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen2BC" layoutX="488.0" layoutY="662.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="679.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Servicio en comites y en organizaciones a nivel institucional" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="717.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Colaboracion en actividades estudiantiles." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen2DE" layoutX="488.0" layoutY="726.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Asistencia a actos oficiales" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="779.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Designacion como director(a) de departamento, presidente de comite y otras" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen2FG" layoutX="488.0" layoutY="796.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="813.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Participacion en organismos de gobierno, tales como el Senado y consejo Universitario." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="858.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Comunidad">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="921.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Servicio en el campo profesional del profesor como consultor o investigador." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen3AB" layoutX="488.0" layoutY="943.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="955.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participacion activa en gestiones politicas, religiosas o civicas." wrappingWidth="347.912109375" />
+                                          <Separator layoutX="1.0" layoutY="1025.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crecimiento y Desarrollo Profesional">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="1061.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="1092.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Obtencion de premios, ayudas y becas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen4A" layoutX="488.0" layoutY="1123.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Nombramiento como asesor(a) en agencias del gobierno estatal o federal." wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Participacion activa en organizaciones profesionales." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen4B" layoutX="488.0" layoutY="1197.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Recurso en conferencias y charlas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen4CDE" layoutX="488.0" layoutY="1255.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Participacion en conferencias, congresos o institutos" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Educacion post-doctoral, educacion continua." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="1312.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investigacion y Trabajo Creativo">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="aux_valen5ABC" layoutX="488.0" layoutY="1374.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Publicaciones" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen5D" layoutX="488.0" layoutY="1419.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1414.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Presentaciones y trabajos creativos relacionados con la disciplina que enseña." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aux_valen5EF" layoutX="488.0" layoutY="1483.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1465.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Propuestas diseñadas y presentadas" wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Concesion de ayudas para investigacion y proyectos." wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1507.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Invenciones, patentes, labor artistica y actuacion." wrappingWidth="347.912109375" />
+                                          <Text layoutX="146.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuracion de puntuaciones">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Text layoutX="259.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico Auxiliar">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </Group>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Asociado">
+                                 <content>
+                                    <Group>
+                                       <children>
+                                          <Text layoutX="56.0" layoutY="118.576171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Calidad Docente">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Dominio de la disciplina que enseña." />
+                                          <Text layoutX="468.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="aso_valen1A" layoutX="488.0" layoutY="147.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="189.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Habilidad para organizar el contenido y presentarlo en forma " wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1B" layoutX="488.0" layoutY="185.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Conocimiento de los desarrollos actuales de la disciplina" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1C" layoutX="489.0" layoutY="224.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="277.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Habilidad para relacionar la disciplina con otras esferas del conocimiento." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1D" layoutX="489.0" layoutY="268.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="327.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Habilidad para promover y ampliar el interes del estudiante en la disciplina." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1E" layoutX="488.0" layoutY="314.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="376.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Habilidad para desarrollar y utilizar metodos y estrategias adecuadas, incluyendo &quot;assessment&quot; para una enseñanza efectiva" wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1F" layoutX="488.0" layoutY="370.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Disponibilidad y eficacia en la orientacion academica del estudiante." wrappingWidth="287.275390625" />
+                                          <Spinner fx:id="aso_valen1GH" layoutX="488.0" layoutY="456.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="481.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="h. Posecion de los atributos de integridad, laboriosidad, disponibilidad y liberalidad en la enseñanza del estudiante." wrappingWidth="287.275390625" />
+                                          <Separator layoutX="1.0" layoutY="542.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Institucion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="56.0" layoutY="610.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Trabajo en comites de facultad y comites a nivel recinto." />
+                                          <Spinner fx:id="aso_valen2A" layoutX="488.0" layoutY="606.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Participacion y aportacion a reuniones de facultad y de comites a nivel de recinto." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen2BC" layoutX="488.0" layoutY="662.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="679.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Servicio en comites y en organizaciones a nivel institucional" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="717.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Colaboracion en actividades estudiantiles." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen2DE" layoutX="488.0" layoutY="726.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Asistencia a actos oficiales" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="779.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Designacion como director(a) de departamento, presidente de comite y otras" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen2FG" layoutX="488.0" layoutY="796.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="56.0" layoutY="813.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="g. Participacion en organismos de gobierno, tales como el Senado y consejo Universitario." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="858.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio a la Comunidad">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="894.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="921.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Servicio en el campo profesional del profesor como consultor o investigador." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen3AB" layoutX="488.0" layoutY="943.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="955.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participacion activa en gestiones politicas, religiosas o civicas." wrappingWidth="347.912109375" />
+                                          <Separator layoutX="1.0" layoutY="1025.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="57.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crecimiento y Desarrollo Profesional">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="469.0" layoutY="1061.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="55.0" layoutY="1092.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Obtencion de premios, ayudas y becas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen4A" layoutX="488.0" layoutY="1123.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Nombramiento como asesor(a) en agencias del gobierno estatal o federal." wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Participacion activa en organizaciones profesionales." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen4B" layoutX="488.0" layoutY="1197.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Recurso en conferencias y charlas." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen4CDE" layoutX="488.0" layoutY="1255.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Participacion en conferencias, congresos o institutos" wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f. Educacion post-doctoral, educacion continua." wrappingWidth="347.912109375" />
+                                          <Separator layoutY="1312.0" prefHeight="0.0" prefWidth="646.0" />
+                                          <Text layoutX="56.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investigacion y Trabajo Creativo">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="468.0" layoutY="1348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntuacion">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Spinner fx:id="aso_valen5ABC" layoutX="488.0" layoutY="1374.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Publicaciones" wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen5D" layoutX="488.0" layoutY="1419.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1414.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="b. Presentaciones y trabajos creativos relacionados con la disciplina que enseña." wrappingWidth="347.912109375" />
+                                          <Spinner fx:id="aso_valen5EF" layoutX="488.0" layoutY="1483.0" prefHeight="25.0" prefWidth="56.0" />
+                                          <Text layoutX="55.0" layoutY="1465.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="c. Propuestas diseñadas y presentadas" wrappingWidth="347.912109375" />
+                                          <Text layoutX="55.0" layoutY="1487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d. Concesion de ayudas para investigacion y proyectos." wrappingWidth="347.912109375" />
+                                          <Text layoutX="56.0" layoutY="1507.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Invenciones, patentes, labor artistica y actuacion." wrappingWidth="347.912109375" />
+                                          <Text layoutX="146.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuracion de puntuaciones">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Button layoutX="343.0" layoutY="1572.0" mnemonicParsing="false" onAction="#assignDefault" prefWidth="155.0" text="Restaurar predeterminado" />
+                                          <Button layoutX="147.0" layoutY="1572.0" mnemonicParsing="false" text="Guardar Cambios" />
+                                          <Text layoutX="254.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catedratico Asociado">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </Group>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
                      </children>
                   </StackPane>
                </children>
