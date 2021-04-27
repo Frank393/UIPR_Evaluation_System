@@ -248,7 +248,7 @@ public class Instruments  {
 
 	@FXML private ComboBox<String> rangoAcademico_comboBox = new ComboBox<String>();
 	@FXML private ComboBox<String> objetivo_eval_comboBox = new ComboBox<String>();
-	@FXML private ComboBox<String> Tipo_EV = new ComboBox<String>();
+	@FXML public ComboBox<String> Tipo_EV = new ComboBox<String>();
 	@FXML private Spinner<Integer> jornada_comple_comboBox = new Spinner<Integer>();
 	@FXML private Spinner<Integer> jornada_parcial_comboBox = new Spinner<Integer>();
 	@FXML private ComboBox<String> contrato_comboBox = new ComboBox<String>();
@@ -1512,18 +1512,18 @@ public class Instruments  {
 	
 	public void testsave(ActionEvent event ) throws FileNotFoundException {
 	 
-//		int valueID;
-//		int value ;
-//		int j = 0;
-//		int IDEInt = 0;
-//		String[] ops;
-//		File instru;
-//		int size = 0;
-//		Boolean type = false;
-//		Boolean IN = false;
-//		String[] ag = new String[162];
+		int valueID;
+		int value ;
+		int j = 0;
+		int IDEInt = 0;
+		String[] ops;
+		File instru;
+		int size = 0;
+		Boolean type = false;
+		Boolean IN = false;
+
 //		ContinuarEvaluacion IDE = new ContinuarEvaluacion();
-//		fileManager borrar = new fileManager();
+		fileManager borrar = new fileManager();
 //		MainMenu typeM = new MainMenu();
 //		type = typeM.getContinuar(); 
 //
@@ -1552,6 +1552,47 @@ public class Instruments  {
 //		//					System.out.println("Test " + i + ": " +ag[i]);
 //		//				}
 		
+	
+	try {
+		instru = new File("./instrumentos.csv");
+		Scanner scanner = new Scanner(instru);
+
+		while(scanner.hasNextLine()) {
+			String data = scanner.nextLine();
+			ops = data.split(",", 170);
+			size++;
+
+		}
+		scanner.close();
+
+
+	}catch(Exception ex) {
+
+		System.out.print("404 "+ ex);
+	}
+
+	do 
+	{
+		IN = false;
+		j++;
+		for (int i = 1 ;i < size ;i++ ){
+
+			System.out.println(" esta es la J y AG "+j+" " + ag[i]);
+			if (Integer.valueOf(ag[i]).equals(j)){
+
+
+				IN = true;
+
+			}
+
+		}
+	}while(IN == true ) ;
+	
+	
+	
+	
+	
+	
 	//String date = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		values [0] = Unidadacademica_textField.getText();
 		values [1] = nombre_prof_textField.getText();
@@ -1559,7 +1600,8 @@ public class Instruments  {
 		values [3] = departamento_textField.getText();
 		values [4] = disiplina_textField.getText();
 		values [5] = objetivo_eval_comboBox.getValue().toString();
-		values [6] = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		values [6] = "N/A";
+		//values [6] = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		values [7] = jornada_comple_comboBox.getValue().toString();
 		values [8] = jornada_parcial_comboBox.getValue().toString();
 		values [9] = contrato_comboBox.getValue().toString();
@@ -1574,7 +1616,7 @@ public class Instruments  {
 		 else {
 			 tipo = 0;
 		 }
-		values [12] = ag[12];
+		values [12] = String.valueOf(j);
 		values [13] = Tipo_EV.getValue().toString();
 		
 		if(values[13].toString().equals("Manual")) {
@@ -1639,7 +1681,7 @@ public class Instruments  {
 			values [39] =instrument1_26_On.getText();
 			values [40] =instrument1_27_On.getText();
 			values [41] =instrument1_28_On.getText();
-			values [42] = " ";
+			values [42] = "N/A";
 		}
 
 		values [43] = instrument2_1.getValue().toString();
@@ -1704,7 +1746,7 @@ public class Instruments  {
 		values [77] = instrument3_17_On.getValue().toString();
 		values [78] = instrument3_18_On.getValue().toString();
 		values [79] = instrument3_19_On.getValue().toString();
-		values [80] = " ";
+		values [80] = "N/A";
 		}
 		
 		values [81] = instrument4_1.getValue().toString();
@@ -1771,7 +1813,7 @@ public class Instruments  {
 			values [117] =Comment_3_17_On.getText();
 			values [118] =Comment_3_18_On.getText();
 			values [119] =Comment_3_19_On.getText();	
-			values [120] = " ";
+			values [120] = "N/A";
 		}
 		
 		values [121] = Comment_4_1.getText();

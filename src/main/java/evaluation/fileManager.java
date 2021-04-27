@@ -220,7 +220,7 @@ public class fileManager {
 				
 					ap[i]  = ops[15];
 					j++;
-
+					System.out.println("404    "+ap[i]);
 				i++;
 			}
 			scanner.close();
