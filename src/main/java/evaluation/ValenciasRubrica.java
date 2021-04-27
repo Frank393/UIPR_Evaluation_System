@@ -24,7 +24,7 @@ public class ValenciasRubrica{
 		
 		Instruments mm = new Instruments();
 		String[] fac = new String[162];
-		fac = status == 1 ? e.getvalue() : d.getvalue();
+		status = mm.Tipo_EV.getValue() == "Manual" ? 1 : 0;
 		
 		// v
 		rango = new ValenciasRango(choice);
@@ -81,7 +81,7 @@ public class ValenciasRubrica{
 		
 		I3 = status == 1 ? Pc.I3 : Pc.I3A;
 		
-		Pc.puntuacion = status == 0 ? (((B*Pc.I2)+(C*I3)+(D*Pc.I4))*(rango.valen1C / 3))/(1-A): (((B*Pc.I2)+(D*Pc.I4))*(rango.valen1C / 3))/(1-A-C);
+		Pc.puntuacion = status == 1 ? (((B*Pc.I2)+(C*I3)+(D*Pc.I4))*(rango.valen1C / 3))/(1-A): (((B*Pc.I2)+(D*Pc.I4))*(rango.valen1C / 3))/(1-A-C);
 		result[2] = Pc.puntuacion;
 		//////////////////////////////////////////////////////////////
 		
@@ -169,10 +169,8 @@ public class ValenciasRubrica{
 	}
 	
 	double[] ServicioInstitucion(int choice, int status) throws IOException {
-		Evaluation e = new Evaluation();
-		onlineEvaluation d = new onlineEvaluation();
 		String[] fac = new String[162];
-		fac = status == 1 ? e.getvalue() : d.getvalue();
+		fac = Instruments.values;
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -225,10 +223,8 @@ public class ValenciasRubrica{
 	}
 	
 	double ServicioComunidad(int choice, int status) throws IOException {
-		Evaluation e = new Evaluation();
-		onlineEvaluation d = new onlineEvaluation();
 		String[] fac = new String[162];
-		fac = status == 1 ? e.getvalue() : d.getvalue();
+		fac = Instruments.values;
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -245,10 +241,8 @@ public class ValenciasRubrica{
 	}
 	
 	double[] InvestigacionTrabajo(int choice, int status) throws IOException {
-		Evaluation e = new Evaluation();
-		onlineEvaluation d = new onlineEvaluation();
 		String[] fac = new String[162];
-		fac = status == 1 ? e.getvalue() : d.getvalue();
+		fac = Instruments.values;
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -276,10 +270,8 @@ public class ValenciasRubrica{
 	}
 	
 	double[] CrecimientoDesarrollo(int choice, int status) throws IOException {
-		Evaluation e = new Evaluation();
-		onlineEvaluation d = new onlineEvaluation();
 		String[] fac = new String[162];
-		fac = status == 1 ? e.getvalue() : d.getvalue();
+		fac = Instruments.values;
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
