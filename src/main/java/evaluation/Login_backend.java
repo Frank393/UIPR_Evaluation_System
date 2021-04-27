@@ -21,6 +21,7 @@ import javafx.stage.Stage;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -50,13 +51,19 @@ public class Login_backend {
 	@FXML BorderPane bp = new BorderPane();
 	
 	public Login_backend() {
-		initialize();
+		try {
+			initialize();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	/**
 	 * Initialize the contents of the frame.
+	 * @throws FileNotFoundException 
 	 */
-	private void initialize() {
+	private void initialize() throws FileNotFoundException {
 		double [] valen = new double[54];
 		valen[0] = 16;
 		valen[1] = 12;
@@ -139,7 +146,9 @@ public class Login_backend {
 		valen[51] = 4;
 		valen[52] = 4;
 		valen[53] = 4;
-
+		
+		ConfigBackend cb = new ConfigBackend();
+		cb.fillValen();
 		ValenciasRango.setValen(valen);
 
 
