@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -423,6 +424,11 @@ public class Instruments  {
 	@FXML private TextField Comment_2_18;
 	@FXML private TextField Comment_2_19;
 	@FXML private TextField Comment_2_20;
+	
+	@FXML private CheckBox inst_1_chk = new CheckBox();
+    @FXML private CheckBox inst_2_chk = new CheckBox();
+    @FXML private CheckBox inst_3_chk = new CheckBox();
+    @FXML private CheckBox inst_4_chk = new CheckBox();
 	
 	
 	@FXML private TextField CotiBor;
@@ -1506,11 +1512,20 @@ public class Instruments  {
 	
 	
 	
-	
+	public void saveFinish() throws FileNotFoundException {
+		if (inst_1_chk.isSelected() && inst_2_chk.isSelected() && inst_3_chk.isSelected() && inst_4_chk.isSelected()) {
+			testsave();
+			
+		}
+		else {
+			warnText = "Favor confirmar termina evaluacion en Terminar Evaluacion";
+			warningPrompt();
+		}
+	}
 	
 
 	
-	public void testsave(ActionEvent event ) throws FileNotFoundException {
+	public void testsave() throws FileNotFoundException {
 	 
 		int valueID;
 		int value ;
