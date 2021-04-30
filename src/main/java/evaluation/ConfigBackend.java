@@ -25,7 +25,7 @@ public class ConfigBackend {
 		
 		while(counter.hasNextLine()) { // Count observations
 			test = counter.nextLine(); // Read line
-			System.out.println(test);
+			System.out.println("test: "+test);
 			System.out.println(Id + " Es el ID ");
 			splitter = test.split(",",58); // Split line'
 			System.out.println(splitter[0]);
@@ -37,7 +37,6 @@ public class ConfigBackend {
 					sum++;
 				}
 			}
-			break;
 		}
     	
 		counter.close();

@@ -43,7 +43,7 @@
                   <Button fx:id="tgl_inst2" layoutY="120.0" mnemonicParsing="false" onAction="#tgl_inst2" prefHeight="60.0" prefWidth="150.0" text="Instrumento 2" />
                   <Button fx:id="tgl_inst3" layoutY="180.0" mnemonicParsing="false" onAction="#tgl_inst3" prefHeight="60.0" prefWidth="150.0" text="Instrumento 3" />
                   <Button fx:id="tgl_inst4" layoutY="240.0" mnemonicParsing="false" onAction="#tgl_inst4" prefHeight="60.0" prefWidth="150.0" text="Instrumento 4" />
-                  <Button fx:id="tgl_terminar" layoutY="300.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Terminar Evaluacion" />
+                  <Button layoutY="300.0" mnemonicParsing="false" onAction="#tgl_terminar" prefHeight="60.0" prefWidth="150.0" text="Terminar Evaluacion" />
                   <Button fx:id="tgl_borrar" layoutY="360.0" mnemonicParsing="false" onAction="#tgl_borrar" prefHeight="60.0" prefWidth="150.0" text="Cargar/Borrar Datos" />
                   <Button layoutY="420.0" mnemonicParsing="false" onAction="#tgl_config" prefHeight="60.0" prefWidth="150.0" text="Configuraciones" />
                   <Button fx:id="tgl_salir" layoutY="480.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Salir" />
