@@ -26,7 +26,9 @@ public class ConfigBackend {
 		while(counter.hasNextLine()) { // Count observations
 			test = counter.nextLine(); // Read line
 			System.out.println(test);
-			splitter = test.split(",",58); // Split line
+			System.out.println(Id + " Es el ID ");
+			splitter = test.split(",",58); // Split line'
+			System.out.println(splitter[0]);
 			if(splitter[0].equals(Id)) { // If ID found, fill valen
 				System.out.println("in");
 				for(int i = 4;i < 58;i++) {
