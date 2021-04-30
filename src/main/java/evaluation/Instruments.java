@@ -2008,7 +2008,15 @@ public class Instruments  {
 		
 	}
 	
-	
+	public void delete() throws IOException {
+		int re;
+		re = Integer.parseInt(CotiBor.getText());
+
+		fileManager continueI = new fileManager();
+		continueI.borrarEV3(re);
+		
+		
+	}
 	
 	public void comboboxItems() {
 		System.out.print("entre mmmm que rico");
