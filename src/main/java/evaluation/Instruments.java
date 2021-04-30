@@ -10,6 +10,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TableColumn;
@@ -493,8 +494,6 @@ public class Instruments  {
 		@FXML protected Spinner aux_valen5ABC = new Spinner();
 		@FXML protected Spinner aux_valen5D = new Spinner();
 		@FXML protected Spinner aux_valen5EF = new Spinner();
-		@FXML private StackPane pane_inst1Online = new StackPane();
-	    @FXML private StackPane pane_inst3Online = new StackPane();
 		
 		// Create value factories
 	    SpinnerValueFactory<Integer> cat_valen1A_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
@@ -553,9 +552,6 @@ public class Instruments  {
 	    SpinnerValueFactory<Integer> aux_valen5ABC_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
 	    SpinnerValueFactory<Integer> aux_valen5D_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
 	    SpinnerValueFactory<Integer> aux_valen5EF_list = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 99);
-	
-	
-	
 	
 	
 	
@@ -1316,17 +1312,17 @@ public class Instruments  {
 	
 	ToggleGroup sideBar = new ToggleGroup();
 	
-	@FXML private StackPane pane_info = new StackPane();
-	@FXML private StackPane pane_inst1 = new StackPane();
-	@FXML private StackPane pane_inst2 = new StackPane();
-	@FXML private StackPane pane_inst3 = new StackPane();
-	@FXML private StackPane pane_inst4 = new StackPane();
-	@FXML private StackPane pane_terminar = new StackPane();
-	@FXML private StackPane pane_borrar = new StackPane();
-	@FXML private StackPane pane_config = new StackPane();
-	@FXML private StackPane pane_salir = new StackPane();
-	
-	
+	@FXML private ScrollPane pane_info = new ScrollPane();
+	@FXML private ScrollPane pane_inst1 = new ScrollPane();
+	@FXML private ScrollPane pane_inst2 = new ScrollPane();
+	@FXML private ScrollPane pane_inst3 = new ScrollPane();
+	@FXML private ScrollPane pane_inst4 = new ScrollPane();
+	@FXML private ScrollPane pane_terminar = new ScrollPane();
+	@FXML private ScrollPane pane_borrar = new ScrollPane();
+	@FXML private ScrollPane pane_config = new ScrollPane();
+	@FXML private ScrollPane pane_salir = new ScrollPane();
+	@FXML private ScrollPane pane_inst1Online = new ScrollPane();
+    @FXML private ScrollPane pane_inst3Online = new ScrollPane();
 	
 	public void start() {
 		try {

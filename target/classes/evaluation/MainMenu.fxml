@@ -54,11 +54,77 @@
             <DropShadow />
          </effect>
       </Pane>
-      <ScrollPane hbarPolicy="ALWAYS" layoutX="147.0" layoutY="23.0" prefHeight="760.0" prefWidth="878.0" styleClass="anchor" stylesheets="@application.css" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="23.0">
+      <ScrollPane fx:id="pane_info" hmax="0.0" layoutX="149.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" vmax="0.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="25.0">
          <content>
-            <AnchorPane prefHeight="5188.0" prefWidth="874.0" styleClass="anchor" stylesheets="@application.css">
+            <AnchorPane prefHeight="745.0" prefWidth="860.0" styleClass="anchor">
                <children>
-                  <StackPane fx:id="pane_inst2" layoutX="106.0" layoutY="21.0" visible="false">
+                  <StackPane layoutX="217.0" layoutY="21.005859375">
+                     <children>
+                        <Group>
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="699.0" layoutX="3.0" layoutY="52.005859375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="418.0">
+                                 <effect>
+                                    <DropShadow blurType="ONE_PASS_BOX" />
+                                 </effect>
+                              </Rectangle>
+                              <Text layoutX="-8.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion a Ingresar" textAlignment="CENTER" wrappingWidth="439.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="Unidadacademica_textField" layoutX="223.0" layoutY="117.005859375" />
+                              <TextField fx:id="nombre_prof_textField" layoutX="223.0" layoutY="154.005859375" />
+                              <TextField fx:id="departamento_textField" layoutX="223.0" layoutY="241.005859375" />
+                              <TextField fx:id="disiplina_textField" layoutX="223.0" layoutY="279.005859375" />
+                              <ComboBox fx:id="rangoAcademico_comboBox" layoutX="223.0" layoutY="198.005859375" prefWidth="150.0" />
+                              <ComboBox fx:id="objetivo_eval_comboBox" layoutX="223.0" layoutY="324.005859375" prefWidth="150.0" />
+                              <DatePicker fx:id="periodo_evaluado_textField" layoutX="223.0" layoutY="377.005859375" prefHeight="25.0" prefWidth="150.0" />
+                              <Spinner fx:id="jornada_comple_comboBox" layoutX="100.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
+                              <Spinner fx:id="jornada_parcial_comboBox" layoutX="268.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
+                              <TextField fx:id="tutulo_del_curso_textField" layoutX="230.0" layoutY="689.0" />
+                              <TextField fx:id="codigo_textField" layoutX="230.0" layoutY="648.0" />
+                              <Group layoutX="10.0" layoutY="121.05078125">
+                                 <children>
+                                    <Text layoutX="27.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Del Profesor" wrappingWidth="130.265625" />
+                                    <Text layoutX="27.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rango academico que solicita" wrappingWidth="170.265625" />
+                                    <Text layoutX="27.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamento" wrappingWidth="170.265625" />
+                                    <Text layoutX="27.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina que Enseña" wrappingWidth="170.265625" />
+                                    <Text layoutX="27.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivo de Evaluacion" wrappingWidth="170.265625" />
+                                    <Text layoutX="27.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo Evaluado" wrappingWidth="170.265625" />
+                                    <Text layoutX="81.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Años de Servicio como Profesor" textAlignment="CENTER" wrappingWidth="241.265625">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="38.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jornada Completa" textAlignment="CENTER" wrappingWidth="170.265625" />
+                                    <Text layoutX="208.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jornada Parcial" textAlignment="CENTER" wrappingWidth="170.265625" />
+                                    <Text layoutX="26.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Contrato" textAlignment="CENTER" wrappingWidth="170.265625" />
+                                    <Text layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Especifique los cursos ofrecidos durante el periodo evaluado" textAlignment="CENTER" wrappingWidth="403.265625">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="27.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo" wrappingWidth="170.265625" />
+                                    <Text layoutX="27.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo del Curso" wrappingWidth="170.265625" />
+                                    <Text layoutX="26.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unidad Academica" wrappingWidth="110.087890625" />
+                                    <ComboBox fx:id="contrato_comboBox" layoutX="36.0" layoutY="439.0" prefWidth="150.0" />
+                                    <Text layoutX="207.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Evaluacion" textAlignment="CENTER" wrappingWidth="170.265625" />
+                                    <ComboBox fx:id="Tipo_EV" layoutX="217.0" layoutY="439.0" prefWidth="150.0" />
+                                 </children>
+                              </Group>
+                           </children>
+                        </Group>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst2" layoutX="149.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2561.0" prefWidth="860.0">
+               <children>
+                  <StackPane layoutX="105.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
@@ -68,10 +134,10 @@
                                  </effect>
                               </Rectangle>
                               <TabPane layoutX="9.0" layoutY="9.0" prefHeight="2509.0" prefWidth="644.0" tabClosingPolicy="UNAVAILABLE">
-                                <tabs>
-                                  <Tab text="Evidencia">
-                                    <content>
-                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1550.0" prefWidth="644.0">
+                                 <tabs>
+                                    <Tab text="Evidencia">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1550.0" prefWidth="644.0">
                                              <children>
                                                 <Text layoutX="14.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a. Dominio de la disciplina que enseña." />
                                                 <Spinner fx:id="instrument2_1" layoutX="252.0" layoutY="112.0" prefHeight="25.0" prefWidth="63.0" />
@@ -198,11 +264,11 @@
                                                 </Button>
                                              </children>
                                           </AnchorPane>
-                                    </content>
-                                  </Tab>
-                                  <Tab text="Resultados">
-                                    <content>
-                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Resultados">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                              <children>
                                                 <Text layoutX="178.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autoevaluacion Narrativa">
                                                    <font>
@@ -311,73 +377,23 @@
                                                 <Text layoutX="55.0" layoutY="1482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e. Invenciones, patentes, labor artistica y actuacion." wrappingWidth="347.912109375" />
                                              </children>
                                           </AnchorPane>
-                                    </content>
-                                  </Tab>
-                                </tabs>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
                               </TabPane>
                            </children>
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_info" layoutX="217.0" layoutY="21.005859375" visible="false">
-                     <children>
-                        <Group>
-                           <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="699.0" layoutX="3.0" layoutY="52.005859375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="418.0">
-                                 <effect>
-                                    <DropShadow blurType="ONE_PASS_BOX" />
-                                 </effect>
-                              </Rectangle>
-                              <Text layoutX="-8.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion a Ingresar" textAlignment="CENTER" wrappingWidth="439.13671875">
-                                 <font>
-                                    <Font name="System Bold" size="32.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="Unidadacademica_textField" layoutX="223.0" layoutY="117.005859375" />
-                              <TextField fx:id="nombre_prof_textField" layoutX="223.0" layoutY="154.005859375" />
-                              <TextField fx:id="departamento_textField" layoutX="223.0" layoutY="241.005859375" />
-                              <TextField fx:id="disiplina_textField" layoutX="223.0" layoutY="279.005859375" />
-                              <ComboBox fx:id="rangoAcademico_comboBox" layoutX="223.0" layoutY="198.005859375" prefWidth="150.0" />
-                              <ComboBox fx:id="objetivo_eval_comboBox" layoutX="223.0" layoutY="324.005859375" prefWidth="150.0" />
-                              <DatePicker fx:id="periodo_evaluado_textField" layoutX="223.0" layoutY="377.005859375" prefHeight="25.0" prefWidth="150.0" />
-                              <Spinner fx:id="jornada_comple_comboBox" layoutX="100.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
-                              <Spinner fx:id="jornada_parcial_comboBox" layoutX="268.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
-                              <TextField fx:id="tutulo_del_curso_textField" layoutX="230.0" layoutY="689.0" />
-                              <TextField fx:id="codigo_textField" layoutX="230.0" layoutY="648.0" />
-                              <Group layoutX="10.0" layoutY="121.05078125">
-                                 <children>
-                                    <Text layoutX="27.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Del Profesor" wrappingWidth="130.265625" />
-                                    <Text layoutX="27.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rango academico que solicita" wrappingWidth="170.265625" />
-                                    <Text layoutX="27.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departamento" wrappingWidth="170.265625" />
-                                    <Text layoutX="27.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina que Enseña" wrappingWidth="170.265625" />
-                                    <Text layoutX="27.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivo de Evaluacion" wrappingWidth="170.265625" />
-                                    <Text layoutX="27.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo Evaluado" wrappingWidth="170.265625" />
-                                    <Text layoutX="81.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Años de Servicio como Profesor" textAlignment="CENTER" wrappingWidth="241.265625">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Text>
-                                    <Text layoutX="38.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jornada Completa" textAlignment="CENTER" wrappingWidth="170.265625" />
-                                    <Text layoutX="208.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jornada Parcial" textAlignment="CENTER" wrappingWidth="170.265625" />
-                                    <Text layoutX="26.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Contrato" textAlignment="CENTER" wrappingWidth="170.265625" />
-                                    <Text layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Especifique los cursos ofrecidos durante el periodo evaluado" textAlignment="CENTER" wrappingWidth="403.265625">
-                                       <font>
-                                          <Font name="System Bold" size="14.0" />
-                                       </font>
-                                    </Text>
-                                    <Text layoutX="27.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo" wrappingWidth="170.265625" />
-                                    <Text layoutX="27.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo del Curso" wrappingWidth="170.265625" />
-                                    <Text layoutX="26.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unidad Academica" wrappingWidth="110.087890625" />
-                                    <ComboBox fx:id="contrato_comboBox" layoutX="36.0" layoutY="439.0" prefWidth="150.0" />
-                                    <Text layoutX="207.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Evaluacion" textAlignment="CENTER" wrappingWidth="170.265625" />
-                                    <ComboBox fx:id="Tipo_EV" layoutX="217.0" layoutY="439.0" prefWidth="150.0" />
-                                 </children>
-                              </Group>
-                           </children>
-                        </Group>
-                     </children>
-                  </StackPane>
-                  <StackPane fx:id="pane_inst3" layoutX="149.0" layoutY="14.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst3" layoutX="149.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4764.0" prefWidth="860.0">
+               <children>
+                  <StackPane layoutX="129.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
@@ -651,7 +667,15 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst1" layoutX="183.0" layoutY="14.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst1" layoutX="149.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1754.0" prefWidth="861.0">
+               <children>
+                  <StackPane layoutX="164.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
@@ -886,11 +910,19 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_borrar" layoutX="101.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_borrar" layoutX="147.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="874.0">
+               <children>
+                  <StackPane layoutX="103.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="730.0" layoutX="-31.0" layoutY="1583.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0">
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="678.0" layoutX="-31.0" layoutY="1583.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0">
                                  <effect>
                                     <DropShadow />
                                  </effect>
@@ -916,7 +948,15 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst4" layoutX="130.0" layoutY="29.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst4" layoutX="147.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" stylesheets="@application.css" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5930.0" prefWidth="861.0">
+               <children>
+                  <StackPane layoutX="129.0" layoutY="14.0">
                      <children>
                         <Group>
                            <children>
@@ -1229,7 +1269,15 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_config" layoutX="112.0" layoutY="29.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_config" layoutX="147.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1681.0" prefWidth="859.0">
+               <children>
+                  <StackPane layoutX="114.0" layoutY="14.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1636.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="647.0">
                            <effect>
@@ -1602,7 +1650,15 @@
                         </TabPane>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst1Online" layoutX="125.0" layoutY="29.0" prefWidth="663.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst1Online" layoutX="149.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3554.0" prefWidth="859.0">
+               <children>
+                  <StackPane layoutX="105.0" layoutY="14.0" prefWidth="663.0">
                      <children>
                         <Group>
                            <children>
@@ -1838,7 +1894,15 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_inst3Online" layoutX="106.0" layoutY="29.0" prefHeight="150.0" prefWidth="200.0" visible="false">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_inst3Online" layoutX="149.0" layoutY="23.0" prefHeight="754.0" prefWidth="876.0" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5077.0" prefWidth="860.0">
+               <children>
+                  <StackPane layoutX="100.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0">
                      <children>
                         <Group>
                            <children>
@@ -1989,7 +2053,15 @@
                         </Group>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="pane_terminar" layoutX="119.0" layoutY="140.0">
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="pane_terminar" layoutX="147.0" layoutY="25.0" prefHeight="754.0" prefWidth="876.0" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="25.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="856.0">
+               <children>
+                  <StackPane layoutX="112.0" layoutY="141.0">
                      <children>
                         <Group>
                            <children>
@@ -2050,7 +2122,7 @@
                   </StackPane>
                </children>
             </AnchorPane>
-         </content>
+        </content>
       </ScrollPane>
       <MenuBar layoutY="2.0" prefHeight="0.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
