@@ -827,6 +827,7 @@ public class Instruments  {
     	aux_valen5EF.setValueFactory(aux_valen5EF_list);
     	
 		try {
+			
 			InitializeValen();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -840,7 +841,6 @@ public class Instruments  {
 	}
 	
 	public void InitializeValen() throws FileNotFoundException {
-		
 		
 		ConfigBackend cb = new ConfigBackend();
 		Login_backend lg = new Login_backend();
@@ -979,7 +979,7 @@ public class Instruments  {
     	cat_valen5EF.getValueFactory().setValue(cb.valen[53]);
     }
     
-	public void applyValue() {
+	public void applyValue() throws IOException {
 		
 		int sum = 0;
     	boolean asociado_ok = false;
@@ -1056,7 +1056,7 @@ public class Instruments  {
     	
     	if (sum != 100) {
     		warnText = "Los pesos en Rango Catedratico Asociado deben sumar exactamente 100pts.";
-    		System.out.println("uh oh");
+    		System.out.println("Asociado: "+sum);
     		warningPrompt();
     	}
     	else
@@ -1071,7 +1071,7 @@ public class Instruments  {
     	
     	if (sum != 100) {
     		warnText = "Los pesos en Rango Catedratico Auxiliar deben sumar exactamente 100pts.";
-    		System.out.println("uh oh");
+    		System.out.println("Auxiliar: "+sum);
     		warningPrompt();
     	}
     	else
@@ -1082,11 +1082,12 @@ public class Instruments  {
     	// Catedratico
     	for (int i = 36; i < 54; i++) {
     		sum += cb.valen[i];
+    		System.out.println("Valen: "+cb.valen[i]);
     	}
     	
     	if (sum != 100) {
     		warnText = "Los pesos en Rango Catedratico deben sumar exactamente 100pts.";
-    		System.out.println("uh oh");
+    		System.out.println("Catedratico: "+sum);
     		warningPrompt();
     	}
     	else
@@ -1100,7 +1101,8 @@ public class Instruments  {
 	    	vr = new ValenciasRango(2);
 	    	vr = new ValenciasRango(1);
 	    	
-	    	System.out.println("Valencia: "+vr.valen1A);
+	    	System.out.println("values 0 es "+values[0]);
+	    	cb.saveValen(Login_backend.userName);
     	}
 			
 	}
