@@ -117,6 +117,54 @@ public class fileManager {
 
 	}
 
+	public String[] load(String ID ) {
+
+		String[] ops;
+		File instru;
+		int found = 0;
+		String NIDE ;
+		
+
+		String[] ap = new String[162] ;
+
+
+		 
+
+		
+		try {
+			instru = new File("./instrumentos.csv");
+			Scanner scanner = new Scanner(instru);
+
+			while(scanner.hasNextLine()) {
+				String data = scanner.nextLine();
+				ops = data.split(",", 170);
+				
+
+				if (ops[2].trim().equals(ID) && ops[1].trim().equals("FALSE") )
+				{
+
+					int j = 3;
+					for (int i = 0;i < 162; i++ ) {
+						ap[i]  = ops[j];
+						j++;
+
+					}
+
+				}
+			}
+			scanner.close();
+
+
+		}catch(Exception ex) {
+
+			System.out.print("404 "+ ex);
+		}
+
+
+		return ap;
+
+	}
+	
 	
 
 	public void borrarEV3( int IDE) throws IOException {
