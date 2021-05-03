@@ -78,8 +78,10 @@ public class DataView {
 
 		for(int i = 0; i < data.length;i++) {
 			if(data[i][16].equals("Manual")) {
-				for(int j = start; j <= end; j++) 
+				for(int j = start; j <= end; j++) {
+					System.out.println(Integer.parseInt(data[i][j]));
 					sum += Integer.parseInt(data[i][j]); // Convert string to int
+				}
 					count++;
 			}
 		}
@@ -117,7 +119,8 @@ public class DataView {
 				count++;
 			}
 		}
-		sum /= count;
+		if(count != 0)
+			sum /= count;
 		return sum;
 	}
 		
@@ -135,7 +138,9 @@ public class DataView {
 			
 			}
 			sum /= questions; // Get average by number of questions
-			sum /= count; // Get average by number of evaluations
+			
+			if(count != 0)
+				sum /= count; // Get average by number of evaluations
 			return sum;
 		}
 	
