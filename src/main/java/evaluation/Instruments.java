@@ -57,6 +57,8 @@ public class Instruments  {
 	String User = user.getID();
 	String[] ag = new String[160];
 	int size = 0;
+	int continuado;
+    Boolean continuar = false;
 	ObservableList<String> objetivo = FXCollections.observableArrayList("Formativa","Sumativa"); // String array for choice box 1
 	ObservableList<String> rangoAcademico = FXCollections.observableArrayList("Rango Catedratico","Rango Catedratico Asociado","Rango Catedratico Auxiliar"); // String array for choice box 2
 	ObservableList<String> contrato = FXCollections.observableArrayList("Temporero","Sustituto","Probatorio","Permanente"); 
@@ -1510,10 +1512,15 @@ public class Instruments  {
 	
 	
 	
-	public void saveFinish() throws FileNotFoundException {
+	public void saveFinish() throws IOException {
 		if (inst_1_chk.isSelected() && inst_2_chk.isSelected() && inst_3_chk.isSelected() && inst_4_chk.isSelected()) {
 			testsave();
-			
+			try {
+				Results1 r1 = new Results1();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else {
 			warnText = "Favor confirmar termina evaluacion en Terminar Evaluacion";
@@ -1523,7 +1530,7 @@ public class Instruments  {
 	
 
 	
-	public void testsave() throws FileNotFoundException {
+	public void testsave() throws IOException {
 	 
 		int valueID;
 		int value ;
@@ -1535,35 +1542,19 @@ public class Instruments  {
 		Boolean type = false;
 		Boolean IN = false;
 
-//		ContinuarEvaluacion IDE = new ContinuarEvaluacion();
 		fileManager borrar = new fileManager();
-//		MainMenu typeM = new MainMenu();
-//		type = typeM.getContinuar(); 
-//
-//		if(type == true) {
-//			IDEInt = Integer.valueOf(IDE.getIDEBox());
-//
-//			try {
-//				borrar.borrarEV3(IDEInt);
-//			} catch (IOException e1) {
-//				// TODO Auto-generated catch block
-//				e1.printStackTrace();
-//			}
-//		}
-//		fileManager IDgen = new fileManager();
-//		ag = IDgen.IDGen();
+		
+		if (continuar == true) {
+            borrar.borrarEV3(continuado);
+
+        }
 		
 		String[] ag = new String[160];
 		
 		fileManager IDgen = new fileManager();	
 		ag = IDgen.IDGen();
-//
-//		//Informacion a ingresar
-//		System.out.println("woooooooooooooooooooow ");
+		
 	System.out.println(ag[12]);
-//		//				for (int i = 0; i < ag.length; i++) {
-//		//					System.out.println("Test " + i + ": " +ag[i]);
-//		//				}
 		
 	
 	try {
@@ -1613,7 +1604,8 @@ public class Instruments  {
 		values [3] = departamento_textField.getText();
 		values [4] = disiplina_textField.getText();
 		values [5] = objetivo_eval_comboBox.getValue().toString();
-		values [6] = "N/A";
+		//values [6] = "N/A";
+		values [6] = periodo_evaluado_textField.getEditor().getText();
 		//values [6] = periodo_evaluado_textField.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		values [7] = jornada_comple_comboBox.getValue().toString();
 		values [8] = jornada_parcial_comboBox.getValue().toString();
@@ -1629,7 +1621,14 @@ public class Instruments  {
 		 else {
 			 tipo = 0;
 		 }
-		values [12] = String.valueOf(j);
+		 
+		 if(continuar == false) {
+		        values [12] = String.valueOf(j);
+		         }else {
+
+		        values [12] = String.valueOf(continuado);
+		         }
+		 
 		values [13] = Tipo_EV.getValue().toString();
 		
 		if(values[13].toString().equals("Manual")) {
@@ -2022,15 +2021,13 @@ public class Instruments  {
 		int re;
 		re = Integer.parseInt(CotiBor.getText());
 
+		continuado  = Integer.parseInt(CotiBor.getText());
+        continuar = true;
+		
 		fileManager continueI = new fileManager();
 		ap = continueI.combobox(user.getID(),re);
 
 		System.out.print("ewewwewewewewew" + ap[1]);
-		LocalDate localDate = LocalDate.parse("2021-05-04");
-		String pattern = "yyyy-dd-MM";
-		DateTimeFormatter dtFormatter;
-		// dtFormatter = DateTimeFormatter.ofPattern(pattern);
-		// LocalDate date = LocalDate.parse(ap[6], dtFormatter);
 		 
 		 
 		Unidadacademica_textField.setText(ap[0]);
@@ -2039,7 +2036,7 @@ public class Instruments  {
 		departamento_textField.setText(ap[3]);
 		disiplina_textField.setText(ap[4]);
 		objetivo_eval_comboBox.getSelectionModel().select(ap[5]);
-		//periodo_evaluado_textField.setValue(date);
+		periodo_evaluado_textField.getEditor().setText(ap[6]);
 		jornada_comple_comboBox.getValueFactory().setValue(Integer.parseInt(ap[7])); 
 		jornada_parcial_comboBox.getValueFactory().setValue(Integer.parseInt(ap[8])); 
 		contrato_comboBox.getSelectionModel().select(ap[9]);
