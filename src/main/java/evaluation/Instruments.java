@@ -58,6 +58,7 @@ public class Instruments  {
 	String[] ag = new String[160];
 	int size = 0;
 	int continuado;
+	String[] EvalId = new String[400];
     Boolean continuar = false;
 	ObservableList<String> objetivo = FXCollections.observableArrayList("Formativa","Sumativa"); // String array for choice box 1
 	ObservableList<String> rangoAcademico = FXCollections.observableArrayList("Rango Catedratico","Rango Catedratico Asociado","Rango Catedratico Auxiliar"); // String array for choice box 2
@@ -1276,11 +1277,24 @@ public class Instruments  {
 	public ObservableList<tableColum> SetEval() { // Create observable list
 		ObservableList<tableColum> eval = FXCollections.observableArrayList();
 		System.out.print("set eval");
+		int j = 1;
+		int k = 1;
+		int[] evalid = new int[400];
 		Load();
+		for(int i = 0 ; i <size ;i++) {
+			
+			if(i == size -1)
+				System.out.print("Im done you lil bitch ");
+			else {
+				evalid[i] = Integer.parseInt(EvalId[i+1]);
+				System.out.print("im evalid: "+evalid[i]);
+			}
+		}
+		
 		for(int i = 0; i <size ;i++) {
-
+			
 			fileManager continuar = new fileManager();
-			ag = continuar.combobox(User,i);
+			ag = continuar.combobox(User,evalid[i]);
 
 			System.out.println("Numero de evaluacion: "+ag[12]+" \tProfesor evaluado: "+ag[1]+" \tModalidad: "+ag[13]+ " \tPeriodo: "+ag[6]);
 			
@@ -1291,7 +1305,7 @@ public class Instruments  {
 				 
 				    
 			}
-
+			j++;
 		}	
 		
 	   
@@ -1977,8 +1991,9 @@ public class Instruments  {
 		
 
 		int j = 40;
-
+		int i = 0;
 		String[] ops;
+		
 		File instru;
 		System.out.print("im in load ");
 
@@ -1990,7 +2005,9 @@ public class Instruments  {
 				String data = scanner.nextLine();
 				ops = data.split(",", 170);
 				size++;
-
+				EvalId[i] = ops[15];
+				System.out.println("eveveveveveve "+EvalId[i]);
+				i++;
 			}
 			scanner.close();
 
