@@ -727,6 +727,9 @@ public class Instruments  {
 		objetivo_eval_comboBox.getSelectionModel().selectFirst();
         Tipo_EV.getSelectionModel().selectFirst();
         contrato_comboBox.getSelectionModel().selectFirst();
+        
+
+		output(); // Resumen thing
 		
 		instrument3_1.getSelectionModel().selectFirst();
 		instrument3_2.getSelectionModel().selectFirst(); 
@@ -2085,6 +2088,7 @@ public class Instruments  {
 		codigo_textField.setText(ap[10]);
 		tutulo_del_curso_textField.setText(ap[11]);
 		Tipo_EV.getSelectionModel().select(ap[13]);
+		output(); // Resumen thing
 		
 		
 		if(ap[13].toString().equals("Manual")) {
@@ -2350,17 +2354,24 @@ public class Instruments  {
 
 	}
 	
+	static String output;
+	
 	public int rangoNum() {
 		int rango = 1;
 		
-//		if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico")) 
-//			rango = 1;
-//		else if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico Asociado")) 
-//			rango = 2;
-//		else if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico Auxiliar"))
-//			rango = 3;
+		if (output.equals("Rango Catedratico")) 
+			rango = 1;
+		else if (output.equals("Rango Catedratico Asociado")) 
+			rango = 2;
+		else if (output.equals("Rango Catedratico Auxiliar"))
+			rango = 3;
 
 		return rango;
+	}
+	
+	public void output() {
+		output = rangoAcademico_comboBox.getValue();
+		System.out.println(output);
 	}
 	
 	public void summary() {

@@ -17,10 +17,10 @@ public class DataView {
 		FileReader freader = new FileReader(file);
 		String test;
 		String splitter[] = null; // Split lines
-		Scanner counter ;
+		Scanner counter;
 		counter = new Scanner(file);
 		
-		fac = mm.gettipo() == 1 ? Instruments.values[1] : Instruments.values[1];
+		//fac = mm.gettipo() == 1 ? Instruments.values[1] : Instruments.values[1];
 		
 		FileWriter writer = new FileWriter(file2);
 		writer.write("header\n");
@@ -29,7 +29,7 @@ public class DataView {
 		while(counter.hasNextLine()) { // Count observations
 			test = counter.nextLine(); // Read line
 			splitter = test.split(",",165); // Split line
-			if(splitter[4].equals(fac)) { // If not-deletable, add to temp
+			if(splitter[2].equals(fac)) { // If not-deletable, add to temp
 				sum++;
 				writer.write(test+"\n");
 			}
@@ -79,7 +79,7 @@ public class DataView {
 		for(int i = 0; i < data.length;i++) {
 			if(data[i][16].equals("Manual")) {
 				for(int j = start; j <= end; j++) {
-					System.out.println(Integer.parseInt(data[i][j]));
+					//System.out.println(Integer.parseInt(data[i][j]));
 					sum += Integer.parseInt(data[i][j]); // Convert string to int
 				}
 					count++;
