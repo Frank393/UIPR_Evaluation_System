@@ -1,5 +1,6 @@
 package evaluation;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
@@ -7,8 +8,13 @@ import javafx.scene.control.Label;
 
 public class ResultsBackend {
 	Instruments mm = new Instruments();
-	ValenciasCapsule vr = new ValenciasCapsule();
+	ValenciasRango vr = new ValenciasRango(mm.rangoNum());
 	ValenciasRubrica rub = new ValenciasRubrica();
+	Login_backend lg = new Login_backend();
+	ConfigBackend cb = new ConfigBackend();
+	@FXML Label rangoText = new Label();
+	
+	int[] valencia = new int [18];
 	
 	// Score weights
 	@FXML Label ScoreW1A = new Label();
@@ -59,28 +65,29 @@ public class ResultsBackend {
 	@FXML Label Score5EF = new Label();
 	
 	@FXML private void initialize() throws IOException{
-		  ScoreW1A.setText (String.valueOf(vr.valen1A));
-		  ScoreW1B.setText (String.valueOf(vr.valen1B));
-		  ScoreW1C.setText (String.valueOf(vr.valen1C));
-		  ScoreW1D.setText (String.valueOf(vr.valen1D));
-		  ScoreW1E.setText (String.valueOf(vr.valen1E));
-		  ScoreW1F.setText (String.valueOf(vr.valen1F));
-		  ScoreW1GH.setText (String.valueOf(vr.valen1GH));
+		  rankFill();
+		  ScoreW1A.setText (String.valueOf(valencia[0]));
+		  ScoreW1B.setText (String.valueOf(valencia[1]));
+		  ScoreW1C.setText (String.valueOf(valencia[2]));
+		  ScoreW1D.setText (String.valueOf(valencia[3]));
+		  ScoreW1E.setText (String.valueOf(valencia[4]));
+		  ScoreW1F.setText (String.valueOf(valencia[5]));
+		  ScoreW1GH.setText (String.valueOf(valencia[6]));
 		
-		  ScoreW2A.setText (String.valueOf(vr.valen2A));
-		  ScoreW2BC.setText (String.valueOf(vr.valen2BC));
-		  ScoreW2DE.setText (String.valueOf(vr.valen2DE));
-		  ScoreW2FG.setText (String.valueOf(vr.valen2FG));
+		  ScoreW2A.setText (String.valueOf(valencia[7]));
+		  ScoreW2BC.setText (String.valueOf(valencia[8]));
+		  ScoreW2DE.setText (String.valueOf(valencia[9]));
+		  ScoreW2FG.setText (String.valueOf(valencia[10]));
 		
-		  ScoreW3AB.setText (String.valueOf(vr.valen3AB));
+		  ScoreW3AB.setText (String.valueOf(valencia[11]));
 		
-		  ScoreW4A.setText (String.valueOf(vr.valen4A));
-		  ScoreW4B.setText (String.valueOf(vr.valen4B));
-		  ScoreW4CDE.setText (String.valueOf(vr.valen4CDE));
+		  ScoreW4A.setText (String.valueOf(valencia[12]));
+		  ScoreW4B.setText (String.valueOf(valencia[13]));
+		  ScoreW4CDE.setText (String.valueOf(valencia[14]));
 		
-		  ScoreW5ABC.setText (String.valueOf(vr.valen5ABC));
-		  ScoreW5C.setText (String.valueOf(vr.valen5D));
-		  ScoreW5EF.setText (String.valueOf(vr.valen5EF));
+		  ScoreW5ABC.setText (String.valueOf(valencia[15]));
+		  ScoreW5C.setText (String.valueOf(valencia[16]));
+		  ScoreW5EF.setText (String.valueOf(valencia[17]));
 		  
 		  Score1A.setText (String.valueOf(rub.CalidadDocente()[0]));
 		  Score1B.setText (String.valueOf(rub.CalidadDocente()[1]));
@@ -104,5 +111,36 @@ public class ResultsBackend {
 		  Score5ABC.setText (String.valueOf(rub.CrecimientoDesarrollo()[0]));
 		  Score5C.setText (String.valueOf(rub.CrecimientoDesarrollo()[1]));
 		  Score5EF.setText (String.valueOf(rub.CrecimientoDesarrollo()[2]));
+	}
+	
+	public void rankFill() throws FileNotFoundException {
+		cb.fillValen(lg.getID());
+		int rango = mm.rangoNum();
+		//int rango = 1;
+		int sum = 0;
+		
+		if (rango == 1) {
+			for(int i = 0;i < 18;i++) {
+				rangoText.setText("Rango Catedratico Asociado");
+				valencia[sum] = ConfigBackend.valen[i];
+				sum++;
+			}
+		}
+		
+		else if (rango == 2) {
+			for(int i = 18;i < 36;i++) {
+				rangoText.setText("Rango Catedratico Auxiliar");
+				valencia[sum] = ConfigBackend.valen[i];
+				sum++;
+			}
+		}
+		
+		else if (rango == 3) {
+			for(int i = 37;i < 54;i++) {
+				rangoText.setText("Rango Catedratico");
+				valencia[sum] = ConfigBackend.valen[i];
+				sum++;
+			}
+		}
 	}
 }

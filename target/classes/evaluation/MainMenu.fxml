@@ -76,7 +76,7 @@
                               <TextField fx:id="nombre_prof_textField" layoutX="223.0" layoutY="154.005859375" />
                               <TextField fx:id="departamento_textField" layoutX="223.0" layoutY="241.005859375" />
                               <TextField fx:id="disiplina_textField" layoutX="223.0" layoutY="279.005859375" />
-                              <ComboBox fx:id="rangoAcademico_comboBox" layoutX="223.0" layoutY="198.005859375" prefWidth="150.0" />
+                              <ComboBox fx:id="rangoAcademico_comboBox" layoutX="223.0" layoutY="198.005859375" onAction="#output" prefWidth="150.0" />
                               <ComboBox fx:id="objetivo_eval_comboBox" layoutX="223.0" layoutY="324.005859375" prefWidth="150.0" />
                               <DatePicker fx:id="periodo_evaluado_textField" layoutX="223.0" layoutY="377.005859375" prefHeight="25.0" prefWidth="150.0" />
                               <Spinner fx:id="jornada_comple_comboBox" layoutX="100.0" layoutY="482.005859375" prefHeight="25.0" prefWidth="73.0" />
