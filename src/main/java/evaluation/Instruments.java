@@ -2325,4 +2325,33 @@ public class Instruments  {
 
 	}
 	
+	public int rangoNum() {
+		int rango = 1;
+		
+//		if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico")) 
+//			rango = 1;
+//		else if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico Asociado")) 
+//			rango = 2;
+//		else if (rangoAcademico_comboBox.getValue().equals("Rango Catedratico Auxiliar"))
+//			rango = 3;
+
+		return rango;
+	}
+	
+	public void summary() {
+		try {
+			Stage primaryStage = new Stage();
+			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/Summary.fxml")); // set pane
+			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("RESUMEN");
+			primaryStage.show();
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+			}
+	}
+	
 }
