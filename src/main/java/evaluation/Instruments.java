@@ -342,92 +342,94 @@ public class Instruments  {
 	
 	
 	
-	@FXML private TextField Comment_3_1;
-	@FXML private TextField Comment_3_2;
-	@FXML private TextField Comment_3_3;
-	@FXML private TextField Comment_3_4;
-	@FXML private TextField Comment_3_5;
-	@FXML private TextField Comment_3_6;
-	@FXML private TextField Comment_3_7;
-	@FXML private TextField Comment_3_8;
-	@FXML private TextField Comment_3_9;
-	@FXML private TextField Comment_3_10;
-	@FXML private TextField Comment_3_11;
-	@FXML private TextField Comment_3_12;
-	@FXML private TextField Comment_3_13;
-	@FXML private TextField Comment_3_14;
-	@FXML private TextField Comment_3_15;
-	@FXML private TextField Comment_3_16;
-	@FXML private TextField Comment_3_17;
-	@FXML private TextField Comment_3_18;
-	@FXML private TextField Comment_3_19;
-	@FXML private TextField Comment_3_20;
+	@FXML public TextField Comment_3_1;
+	@FXML public TextField Comment_3_2;
+	@FXML public TextField Comment_3_3;
+	@FXML public TextField Comment_3_4;
+	@FXML public TextField Comment_3_5;
+	@FXML public TextField Comment_3_6;
+	@FXML public TextField Comment_3_7;
+	@FXML public TextField Comment_3_8;
+	@FXML public TextField Comment_3_9;
+	@FXML public TextField Comment_3_10;
+	@FXML public TextField Comment_3_11;
+	@FXML public TextField Comment_3_12;
+	@FXML public TextField Comment_3_13;
+	@FXML public TextField Comment_3_14;
+	@FXML public TextField Comment_3_15;
+	@FXML public TextField Comment_3_16;
+	@FXML public TextField Comment_3_17;
+	@FXML public TextField Comment_3_18;
+	@FXML public TextField Comment_3_19;
+	@FXML public TextField Comment_3_20;
 	
-	@FXML private TextField Comment_3_1_On;
-	@FXML private TextField Comment_3_2_On;
-	@FXML private TextField Comment_3_3_On;
-	@FXML private TextField Comment_3_4_On;
-	@FXML private TextField Comment_3_5_On;
-	@FXML private TextField Comment_3_6_On;
-	@FXML private TextField Comment_3_7_On;
-	@FXML private TextField Comment_3_8_On;
-	@FXML private TextField Comment_3_9_On;
-	@FXML private TextField Comment_3_10_On;
-	@FXML private TextField Comment_3_11_On;
-	@FXML private TextField Comment_3_12_On;
-	@FXML private TextField Comment_3_13_On;
-	@FXML private TextField Comment_3_14_On;
-	@FXML private TextField Comment_3_15_On;
-	@FXML private TextField Comment_3_16_On;
-	@FXML private TextField Comment_3_17_On;
-	@FXML private TextField Comment_3_18_On;
-	@FXML private TextField Comment_3_19_On;
+	@FXML public TextField Comment_3_1_On;
+	@FXML public TextField Comment_3_2_On;
+	@FXML public TextField Comment_3_3_On;
+	@FXML public TextField Comment_3_4_On;
+	@FXML public TextField Comment_3_5_On;
+	@FXML public TextField Comment_3_6_On;
+	@FXML public TextField Comment_3_7_On;
+	@FXML public TextField Comment_3_8_On;
+	@FXML public TextField Comment_3_9_On;
+	@FXML public TextField Comment_3_10_On;
+	@FXML public TextField Comment_3_11_On;
+	@FXML public TextField Comment_3_12_On;
+	@FXML public TextField Comment_3_13_On;
+	@FXML public TextField Comment_3_14_On;
+	@FXML public TextField Comment_3_15_On;
+	@FXML public TextField Comment_3_16_On;
+	@FXML public TextField Comment_3_17_On;
+	@FXML public TextField Comment_3_18_On;
+	@FXML public TextField Comment_3_19_On;
 	
 	
-	@FXML private TextField Comment_4_1;
-	@FXML private TextField Comment_4_2;
-	@FXML private TextField Comment_4_3;
-	@FXML private TextField Comment_4_4;
-	@FXML private TextField Comment_4_5;
-	@FXML private TextField Comment_4_6;
-	@FXML private TextField Comment_4_7;
-	@FXML private TextField Comment_4_8;
-	@FXML private TextField Comment_4_9;
-	@FXML private TextField Comment_4_10;
-	@FXML private TextField Comment_4_11;
-	@FXML private TextField Comment_4_12;
-	@FXML private TextField Comment_4_13;
-	@FXML private TextField Comment_4_14;
-	@FXML private TextField Comment_4_15;
-	@FXML private TextField Comment_4_16;
-	@FXML private TextField Comment_4_17;
-	@FXML private TextField Comment_4_18;
-	@FXML private TextField Comment_4_19;
-	@FXML private TextField Comment_4_20;
-	@FXML private TextField Comment_4_21;
-	@FXML private TextField Comment_4_22;
-	@FXML private TextField Comment_4_23;
+	@FXML public TextField Comment_4_1;
+	@FXML public TextField Comment_4_2;
+	@FXML public TextField Comment_4_3;
+	@FXML public TextField Comment_4_4;
+	@FXML public TextField Comment_4_5;
+	@FXML public TextField Comment_4_6;
+	@FXML public TextField Comment_4_7;
+	@FXML public TextField Comment_4_8;
+	@FXML public TextField Comment_4_9;
+	@FXML public TextField Comment_4_10;
+	@FXML public TextField Comment_4_11;
+	@FXML public TextField Comment_4_12;
+	@FXML public TextField Comment_4_13;
+	@FXML public TextField Comment_4_14;
+	@FXML public TextField Comment_4_15;
+	@FXML public TextField Comment_4_16;
+	@FXML public TextField Comment_4_17;
+	@FXML public TextField Comment_4_18;
+	@FXML public TextField Comment_4_19;
+	@FXML public TextField Comment_4_20;
+	@FXML public TextField Comment_4_21;
+	@FXML public TextField Comment_4_22;
+	@FXML public TextField Comment_4_23;
 	
-	@FXML private TextField Comment_2_1;
-	@FXML private TextField Comment_2_2;
-	@FXML private TextField Comment_2_3;
-	@FXML private TextField Comment_2_4;
-	@FXML private TextField Comment_2_5;
-	@FXML private TextField Comment_2_6;
-	@FXML private TextField Comment_2_7;
-	@FXML private TextField Comment_2_8;
-	@FXML private TextField Comment_2_9;
-	@FXML private TextField Comment_2_10;
-	@FXML private TextField Comment_2_11;
-	@FXML private TextField Comment_2_12;
-	@FXML private TextField Comment_2_13;
-	@FXML private TextField Comment_2_14;
-	@FXML private TextField Comment_2_15;
-	@FXML private TextField Comment_2_16;
-	@FXML private TextField Comment_2_17;
-	@FXML private TextField Comment_2_18;
-	@FXML private TextField Comment_2_19;
-	@FXML private TextField Comment_2_20;
+	@FXML public TextField Comment_2_1;
+	@FXML public TextField Comment_2_2;
+	@FXML public TextField Comment_2_3;
+	@FXML public TextField Comment_2_4;
+	@FXML public TextField Comment_2_5;
+	@FXML public TextField Comment_2_6;
+	@FXML public TextField Comment_2_7;
+	@FXML public TextField Comment_2_8;
+	@FXML public TextField Comment_2_9;
+	@FXML public TextField Comment_2_10;
+	@FXML public TextField Comment_2_11;
+	@FXML public TextField Comment_2_12;
+	@FXML public TextField Comment_2_13;
+	@FXML public TextField Comment_2_14;
+	@FXML public TextField Comment_2_15;
+	@FXML public TextField Comment_2_16;
+	@FXML public TextField Comment_2_17;
+	@FXML public TextField Comment_2_18;
+	@FXML public TextField Comment_2_19;
+	@FXML public TextField Comment_2_20;
+	
+	public static String[] comments = new String[82];
 	
 	@FXML private CheckBox inst_1_chk = new CheckBox();
     @FXML private CheckBox inst_2_chk = new CheckBox();
@@ -1086,9 +1088,8 @@ public class Instruments  {
     	}
     	
     	if (sum != 100) {
-    		warnText = "Los pesos en Rango Catedratico Asociado deben sumar exactamente 100pts.";
     		System.out.println("Asociado: "+sum);
-    		warningPrompt();
+    		warningPrompt("Los pesos en Rango Catedratico Asociado deben sumar exactamente 100pts.");
     	}
     	else
     		asociado_ok = true;
@@ -1101,9 +1102,8 @@ public class Instruments  {
     	}
     	
     	if (sum != 100) {
-    		warnText = "Los pesos en Rango Catedratico Auxiliar deben sumar exactamente 100pts.";
     		System.out.println("Auxiliar: "+sum);
-    		warningPrompt();
+    		warningPrompt("Los pesos en Rango Catedratico Auxiliar deben sumar exactamente 100pts.");
     	}
     	else
     		auxiliar_ok = true;
@@ -1117,9 +1117,8 @@ public class Instruments  {
     	}
     	
     	if (sum != 100) {
-    		warnText = "Los pesos en Rango Catedratico deben sumar exactamente 100pts.";
     		System.out.println("Catedratico: "+sum);
-    		warningPrompt();
+    		warningPrompt("Los pesos en Rango Catedratico deben sumar exactamente 100pts.");
     	}
     	else
     		catedratico_ok = true;
@@ -1388,8 +1387,9 @@ public class Instruments  {
 			}
 	}
 	
-	public void warningPrompt() {
+	public void warningPrompt(String message) {
 		try {
+			warnText = message;
 			Stage primaryStage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/warningPrompt.fxml")); // set pane
 			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
@@ -1566,8 +1566,7 @@ public class Instruments  {
 //			}
 		}
 		else {
-			warnText = "Favor confirmar termina evaluacion en Terminar Evaluacion";
-			warningPrompt();
+			warningPrompt("Favor confirmar termina evaluacion en Terminar Evaluacion");
 		}
 	}
 	
@@ -2337,7 +2336,7 @@ public class Instruments  {
 			 Comment_2_18.setText(ap[161]);
 
 		
-
+			 comments();
 		
 		
 		
@@ -2389,6 +2388,96 @@ public class Instruments  {
 		} catch(Exception e) {
 			e.printStackTrace();
 			}
+	}
+	
+	public String[] comments() {
+		comments = new String[80];
+		
+		 comments[0] = Comment_3_1.getText();
+		 comments[1] = Comment_3_2.getText();
+		 comments[2] = Comment_3_3.getText();
+		 comments[3] = Comment_3_4.getText();
+		 comments[4] = Comment_3_5.getText();
+		 comments[5] = Comment_3_6.getText();
+		 comments[6] = Comment_3_7.getText();
+		 comments[7] = Comment_3_8.getText();
+		 comments[8] = Comment_3_9.getText();
+		 comments[9] = Comment_3_10.getText();
+		 comments[10] = Comment_3_11.getText();
+		 comments[11] = Comment_3_12.getText();
+		 comments[12] = Comment_3_13.getText();
+		 comments[13] = Comment_3_14.getText();
+		 comments[14] = Comment_3_15.getText();
+		 comments[15] = Comment_3_16.getText();
+		 comments[16] = Comment_3_17.getText();
+		 comments[17] = Comment_3_18.getText();
+		 comments[18] = Comment_3_19.getText();
+		 comments[19] = Comment_3_20.getText();
+		
+		 comments[20] = Comment_3_1_On.getText();
+		 comments[21] = Comment_3_2_On.getText();
+		 comments[22] = Comment_3_3_On.getText();
+		 comments[23] = Comment_3_4_On.getText();
+		 comments[24] = Comment_3_5_On.getText();
+		 comments[25] = Comment_3_6_On.getText();
+		 comments[26] = Comment_3_7_On.getText();
+		 comments[27] = Comment_3_8_On.getText();
+		 comments[28] = Comment_3_9_On.getText();
+		 comments[29] = Comment_3_10_On.getText();
+		 comments[30] = Comment_3_11_On.getText();
+		 comments[31] = Comment_3_12_On.getText();
+		 comments[32] = Comment_3_13_On.getText();
+		 comments[33] = Comment_3_14_On.getText();
+		 comments[34] = Comment_3_15_On.getText();
+		 comments[35] = Comment_3_16_On.getText();
+		 comments[36] = Comment_3_17_On.getText();
+		 comments[37] = Comment_3_18_On.getText();
+		 comments[38] = Comment_3_19_On.getText();
+		
+		 comments[39] = Comment_4_1.getText();
+		 comments[40] = Comment_4_2.getText();
+		 comments[41] = Comment_4_3.getText();
+		 comments[42] = Comment_4_4.getText();
+		 comments[43] = Comment_4_5.getText();
+		 comments[44] = Comment_4_6.getText();
+		 comments[45] = Comment_4_7.getText();
+		 comments[46] = Comment_4_8.getText();
+		 comments[47] = Comment_4_9.getText();
+		 comments[48] = Comment_4_10.getText();
+		 comments[49] = Comment_4_11.getText();
+		 comments[50] = Comment_4_12.getText();
+		 comments[51] = Comment_4_13.getText();
+		 comments[52] = Comment_4_14.getText();
+		 comments[53] = Comment_4_15.getText();
+		 comments[54] = Comment_4_16.getText();
+		 comments[55] = Comment_4_17.getText();
+		 comments[56] = Comment_4_18.getText();
+		 comments[57] = Comment_4_19.getText();
+		 comments[58] = Comment_4_20.getText();
+		 comments[59] = Comment_4_21.getText();
+		 comments[60] = Comment_4_22.getText();
+		 comments[61] = Comment_4_23.getText();
+		
+		 comments[62] = Comment_2_1.getText();
+		 comments[63] = Comment_2_2.getText();
+		 comments[64] = Comment_2_3.getText();
+		 comments[65] = Comment_2_4.getText();
+		 comments[66] = Comment_2_5.getText();
+		 comments[67] = Comment_2_6.getText();
+		 comments[68] = Comment_2_7.getText();
+		 comments[69] = Comment_2_8.getText();
+		 comments[70] = Comment_2_9.getText();
+		 comments[71] = Comment_2_10.getText();
+		 comments[72] = Comment_2_11.getText();
+		 comments[73] = Comment_2_12.getText();
+		 comments[74] = Comment_2_13.getText();
+		 comments[75] = Comment_2_14.getText();
+		 comments[76] = Comment_2_15.getText();
+		 comments[77] = Comment_2_16.getText();
+		 comments[78] = Comment_2_17.getText();
+		 comments[79] = Comment_2_18.getText();
+		 
+		 return comments;
 	}
 	
 }
