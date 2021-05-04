@@ -56,7 +56,7 @@ public class ConfigBackend {
 		counter = new Scanner(file);
 		
 		// Pass to temp
-		FileWriter fw = new FileWriter(temp,true);
+		FileWriter fw = new FileWriter(temp);
 		BufferedWriter bw = new BufferedWriter(fw);
 		PrintWriter pw = new PrintWriter(bw);
 		
