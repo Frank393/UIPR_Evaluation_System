@@ -1558,12 +1558,12 @@ public class Instruments  {
 		if (inst_1_chk.isSelected() && inst_2_chk.isSelected() && inst_3_chk.isSelected() && inst_4_chk.isSelected()) {
 			testsave();
 			summary();
-//			try {
-//				Results1 r1 = new Results1();
-//			} catch (Exception e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+			try {
+				Results2 r1 = new Results2();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else {
 			warningPrompt("Favor confirmar termina evaluacion en Terminar Evaluacion");
