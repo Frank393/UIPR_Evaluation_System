@@ -79,6 +79,8 @@ public class DataView {
 		for(int i = 0; i < data.length;i++) {
 			if(data[i][16].equals("Manual")) {
 				for(int j = start; j <= end; j++) {
+					if(data[i][j].equals("N/A"))
+						continue;
 					//System.out.println(Integer.parseInt(data[i][j]));
 					sum += Integer.parseInt(data[i][j]); // Convert string to int
 				}
@@ -100,6 +102,8 @@ public class DataView {
 		int count = 0;
 		for(int i = 0; i < data.length;i++) {
 			if(data[i][16].equals("Manual")){
+				if(data[i][k].equals("N/A"))
+					continue;
 				sum += Integer.parseInt(data[i][k]); // Convert string to int
 				count++;
 			}
@@ -116,7 +120,10 @@ public class DataView {
 		int count = 0;
 		
 		for(int i = 0; i < data.length;i++) {
+			
 			if(data[i][16].equals("Online")){
+				if(data[i][k].equals("N/A"))
+					continue;
 				sum += Integer.parseInt(data[i][k]); // Convert string to int
 				count++;
 			}
@@ -133,12 +140,14 @@ public class DataView {
 			
 			for(int i = 0; i < data.length;i++) {
 				if(data[i][16].equals("Online")) {
-					for(int j = start; j <= end; j++) 
+					for(int j = start; j <= end; j++) {
+						if(data[i][j].equals("N/A"))
+							continue;
 						sum += Integer.parseInt(data[i][j]); // Convert string to int
 						count++;
 				}
 			
-			}
+			}}
 			sum /= questions; // Get average by number of questions
 			
 			if(count != 0)
