@@ -109,7 +109,7 @@
                                     <Text layoutX="26.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unidad Academica" wrappingWidth="110.087890625" />
                                     <ComboBox fx:id="contrato_comboBox" layoutX="36.0" layoutY="439.0" prefWidth="150.0" />
                                     <Text layoutX="207.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Evaluacion" textAlignment="CENTER" wrappingWidth="170.265625" />
-                                    <ComboBox fx:id="Tipo_EV" layoutX="217.0" layoutY="439.0" prefWidth="150.0" />
+                                    <ComboBox fx:id="Tipo_EV" layoutX="217.0" layoutY="439.0" onAction="#settipo" prefWidth="150.0" />
                                  </children>
                               </Group>
                            </children>
