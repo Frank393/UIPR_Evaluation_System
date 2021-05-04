@@ -1557,12 +1557,13 @@ public class Instruments  {
 	public void saveFinish() throws IOException {
 		if (inst_1_chk.isSelected() && inst_2_chk.isSelected() && inst_3_chk.isSelected() && inst_4_chk.isSelected()) {
 			testsave();
-			try {
-				Results1 r1 = new Results1();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			summary();
+//			try {
+//				Results1 r1 = new Results1();
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		}
 		else {
 			warnText = "Favor confirmar termina evaluacion en Terminar Evaluacion";
