@@ -87,7 +87,8 @@ public class DataView {
 		}
 		
 		sum /= questions; // Get average by number of questions
-		sum /= count; // Get average by number of evaluations
+		if(count != 0)
+			sum /= count; // Get average by number of evaluations
 		return sum;
 	}
 	
@@ -104,7 +105,8 @@ public class DataView {
 			}
 		}
 		
-		sum /= count;
+		if(count != 0)
+			sum /= count;
 		return sum;
 	}
 	

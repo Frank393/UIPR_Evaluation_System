@@ -19,12 +19,12 @@ public class ValenciasRubrica{
 		
 	}
 	
-	double[] CalidadDocente(int choice, int status)  throws IOException{
-		
+	double[] CalidadDocente()  throws IOException{
 		
 		Instruments mm = new Instruments();
 		String[] fac = new String[162];
-		status = mm.Tipo_EV.getValue() == "Manual" ? 1 : 0;
+		int status = mm.gettipo();
+		int choice = mm.rangoNum();
 		
 		// v
 		rango = new ValenciasRango(choice);
@@ -168,9 +168,11 @@ public class ValenciasRubrica{
 		return result;
 	}
 	
-	double[] ServicioInstitucion(int choice, int status) throws IOException {
+	double[] ServicioInstitucion() throws IOException {
 		String[] fac = new String[162];
 		fac = Instruments.values;
+		Instruments mm = new Instruments();
+		int choice = mm.rangoNum();
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -222,9 +224,11 @@ public class ValenciasRubrica{
 		return result;
 	}
 	
-	double ServicioComunidad(int choice, int status) throws IOException {
+	double ServicioComunidad() throws IOException {
 		String[] fac = new String[162];
 		fac = Instruments.values;
+		Instruments mm = new Instruments();
+		int choice = mm.rangoNum();
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -240,9 +244,11 @@ public class ValenciasRubrica{
 		return result;
 	}
 	
-	double[] InvestigacionTrabajo(int choice, int status) throws IOException {
+	double[] InvestigacionTrabajo() throws IOException {
 		String[] fac = new String[162];
 		fac = Instruments.values;
+		Instruments mm = new Instruments();
+		int choice = mm.rangoNum();
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -269,9 +275,11 @@ public class ValenciasRubrica{
 		return result;
 	}
 	
-	double[] CrecimientoDesarrollo(int choice, int status) throws IOException {
+	double[] CrecimientoDesarrollo() throws IOException {
 		String[] fac = new String[162];
 		fac = Instruments.values;
+		Instruments mm = new Instruments();
+		int choice = mm.rangoNum();
 		
 		rango = new ValenciasRango(choice);
 		dv = new DataView(fac[1]);
@@ -301,18 +309,18 @@ public class ValenciasRubrica{
 		double sum = 0;
 		
 		for(int i = 0; i < 7; i++)
-			sum += CalidadDocente(choice,status)[i];
+			sum += CalidadDocente()[i];
 		
 		for(int i = 0; i < 4; i++)
-			sum += ServicioInstitucion(choice, status)[i];
+			sum += ServicioInstitucion()[i];
 		
-		sum += ServicioComunidad(choice, status);
-		
-		for(int i = 0; i < 3; i++)
-			sum += InvestigacionTrabajo(choice, status)[i];
+		sum += ServicioComunidad();
 		
 		for(int i = 0; i < 3; i++)
-			sum += CrecimientoDesarrollo(choice, status)[i];
+			sum += InvestigacionTrabajo()[i];
+		
+		for(int i = 0; i < 3; i++)
+			sum += CrecimientoDesarrollo()[i];
 		
 		return sum;
 	}
