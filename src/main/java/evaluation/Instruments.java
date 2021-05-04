@@ -50,7 +50,7 @@ import javafx.stage.Stage;
 
 public class Instruments  {
 	static String warnText;
-	int tipo ;
+	static int tipo ;
 	static String[] values = new String[162];
 	int[] I2re = new int[21];
 	Login_backend user = new Login_backend();
@@ -2352,6 +2352,18 @@ public class Instruments  {
 	public int gettipo() {
 		return tipo;
 
+	}
+	
+	public void settipo() {
+		if (Tipo_EV.getValue().toString().equals("Manual")) {
+			 tipo = 1;
+			 
+		 }
+		 else {
+			 tipo = 0;
+		 }
+		
+		System.out.println("Tipo: "+tipo);
 	}
 	
 	static String output;

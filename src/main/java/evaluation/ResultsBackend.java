@@ -254,7 +254,7 @@ public class ResultsBackend {
 	      comment_2_17.setText(Instruments.comments[78]);
 	      comment_2_18.setText(Instruments.comments[79]);
 	      
-	      if(mm.gettipo() == 1) {
+	      if(mm.gettipo() == 0) {
 	    	  comment_3_1_text.setText(Instruments.comments[20]);
 		      comment_3_2_text.setText(Instruments.comments[21]);
 		      comment_3_3_text.setText(Instruments.comments[22]);
