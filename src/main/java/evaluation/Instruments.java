@@ -64,7 +64,7 @@ public class Instruments  {
 	ObservableList<String> rangoAcademico = FXCollections.observableArrayList("Rango Catedratico","Rango Catedratico Asociado","Rango Catedratico Auxiliar"); // String array for choice box 2
 	ObservableList<String> contrato = FXCollections.observableArrayList("Temporero","Sustituto","Probatorio","Permanente"); 
 	ObservableList<String> TipoEv = FXCollections.observableArrayList("Online","Manual"); 
-	ObservableList<String> Instrument3 = FXCollections.observableArrayList("N/A","1","2","3","4"); 
+	ObservableList<String> Instrument3 = FXCollections.observableArrayList("N/A","0","1","2","3","4"); 
 	// Spinner value factory
 	SpinnerValueFactory<Integer> spin1list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
 	SpinnerValueFactory<Integer> spin2list = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 99,0);
@@ -1558,17 +1558,14 @@ public class Instruments  {
 		if (inst_1_chk.isSelected() && inst_2_chk.isSelected() && inst_3_chk.isSelected() && inst_4_chk.isSelected()) {
 			testsave();
 			summary();
-			try {
-				Results2 r1 = new Results2();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
 		}
 		else {
 			warningPrompt("Favor confirmar termina evaluacion en Terminar Evaluacion");
 		}
 	}
+	
+	
 	
 
 	

@@ -1,10 +1,16 @@
 package evaluation;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class ResultsBackend {
 	Instruments mm = new Instruments();
@@ -13,6 +19,7 @@ public class ResultsBackend {
 	Login_backend lg = new Login_backend();
 	ConfigBackend cb = new ConfigBackend();
 	@FXML Label rangoText = new Label();
+	static String PDF;
 	
 	int[] valencia = new int [18];
 	
@@ -355,4 +362,32 @@ public class ResultsBackend {
 			}
 		}
 	}
+//	public void warningPrompt(String message) {
+//		try {
+//			PDF = message;
+//			Stage primaryStage = new Stage();
+//			Parent root = FXMLLoader.load(getClass().getResource("/evaluation/warningPrompt.fxml")); // set pane
+//			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+//			Scene scene = new Scene(root);
+//			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//			primaryStage.setScene(scene);
+//			primaryStage.setTitle("Completado");
+//			primaryStage.show();
+//			
+//		} catch(Exception e) {
+//			e.printStackTrace();
+//			}
+//	}
+	
+	public void PDFGen() throws IOException {
+		try {
+			Results2 r1 = new Results2();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 }
