@@ -64,12 +64,73 @@ public class ResultsBackend {
 	@FXML Label Score5C = new Label();
 	@FXML Label Score5EF = new Label();
 	
+	// Comments
 	
-	@FXML Label comment_1_1_on = new Label();
-	@FXML Label comment_1_2_on = new Label();
-	@FXML Label comment_1_3_on = new Label();
-	@FXML Label comment_1_4_on = new Label();
+	@FXML Label comment_2_1 = new Label();
+	@FXML Label comment_2_2 = new Label();
+	@FXML Label comment_2_3 = new Label();
+	@FXML Label comment_2_4 = new Label();
+	@FXML Label comment_2_5 = new Label();
+	@FXML Label comment_2_6 = new Label();
+	@FXML Label comment_2_7 = new Label();
+	@FXML Label comment_2_8 = new Label();
+	@FXML Label comment_2_9 = new Label();
+	@FXML Label comment_2_10 = new Label();
+	@FXML Label comment_2_11 = new Label();
+	@FXML Label comment_2_12 = new Label();
+	@FXML Label comment_2_13 = new Label();
+	@FXML Label comment_2_14 = new Label();
+	@FXML Label comment_2_15 = new Label();
+	@FXML Label comment_2_16 = new Label();
+	@FXML Label comment_2_17 = new Label();
+	@FXML Label comment_2_18 = new Label();
 	
+	@FXML Label comment_3_1_text = new Label();
+	@FXML Label comment_3_2_text = new Label();
+	@FXML Label comment_3_3_text = new Label();
+	@FXML Label comment_3_4_text = new Label();
+	@FXML Label comment_3_5_text = new Label();
+	@FXML Label comment_3_6_text = new Label();
+	@FXML Label comment_3_7_text = new Label();
+	@FXML Label comment_3_8_text = new Label();
+	@FXML Label comment_3_9_text = new Label();
+	@FXML Label comment_3_10_text = new Label();
+	@FXML Label comment_3_11_text = new Label();
+	@FXML Label comment_3_12_text = new Label();
+	@FXML Label comment_3_13_text = new Label();
+	@FXML Label comment_3_14_text = new Label();
+	@FXML Label comment_3_15_text = new Label();
+	@FXML Label comment_3_16_text = new Label();
+	@FXML Label comment_3_17_text = new Label();
+	@FXML Label comment_3_18_text = new Label();
+	@FXML Label comment_3_19_text = new Label();
+	@FXML Label comment_3_20_text = new Label();
+	
+	@FXML Label comment_4_1 = new Label();
+	@FXML Label comment_4_2 = new Label();
+	@FXML Label comment_4_3 = new Label();
+	@FXML Label comment_4_4 = new Label();
+	@FXML Label comment_4_5 = new Label();
+	@FXML Label comment_4_6 = new Label();
+	@FXML Label comment_4_7 = new Label();
+	@FXML Label comment_4_8 = new Label();
+	@FXML Label comment_4_9 = new Label();
+	@FXML Label comment_4_10 = new Label();
+	@FXML Label comment_4_11 = new Label();
+	@FXML Label comment_4_12 = new Label();
+	@FXML Label comment_4_13 = new Label();
+	@FXML Label comment_4_14 = new Label();
+	@FXML Label comment_4_15 = new Label();
+	@FXML Label comment_4_16 = new Label();
+	@FXML Label comment_4_17 = new Label();
+	@FXML Label comment_4_18 = new Label();
+	@FXML Label comment_4_19 = new Label();
+	@FXML Label comment_4_20 = new Label();
+	@FXML Label comment_4_21 = new Label();
+	@FXML Label comment_4_22 = new Label();
+	@FXML Label comment_4_23 = new Label();
+	
+	// Descriptions
 	@FXML Label comment_3_1_on = new Label();
 	@FXML Label comment_3_2_on = new Label();
 	@FXML Label comment_3_3_on = new Label();
@@ -91,6 +152,10 @@ public class ResultsBackend {
 	@FXML Label comment_3_19_on = new Label();
 	@FXML Label comment_3_20_on = new Label();
 	
+	@FXML Label comment_1_1_on = new Label();
+	@FXML Label comment_1_2_on = new Label();
+	@FXML Label comment_1_3_on = new Label();
+	@FXML Label comment_1_4_on = new Label();
 	
 	@FXML private void initialize() throws IOException{
 		  rankFill();
@@ -140,34 +205,124 @@ public class ResultsBackend {
 		  Score5C.setText (String.valueOf(rub.CrecimientoDesarrollo()[1]));
 		  Score5EF.setText (String.valueOf(rub.CrecimientoDesarrollo()[2]));
 		  
+		  System.out.println("Tipo: "+mm.gettipo());
+		  
 		  if(mm.gettipo()== 0) {
 			  comment_1_1_on.setVisible(false);
 			  comment_1_2_on.setVisible(false);
 			  comment_1_3_on.setVisible(false);
 			  comment_1_4_on.setVisible(false);
 
-			  comment_3_1_on.setText ("Mediante la interacción con los estudiantes, el profesor demostró   conocimiento suficiente del tema evaluado.");
-			  comment_3_2_on.setText ("Mediante la interacción con los estudiantes, el profesor integró conceptos o experiencias de otras disciplinas para enriquecer el tema evaluado.");
-			  comment_3_3_on.setText ("El profesor resaltó la utilidad del tema para otros cursos o áreas del conocimiento.");
-			  comment_3_4_on.setText ("El profesor facilitó que los estudiantes relacionen el tema con sus experiencias personales o el mundo del trabajo.");
-			  comment_3_5_on.setText ("El profesor ejerció la docencia como un guía o facilitador de los estudiantes, mediante la comunicación e interacción con los mismos, así como en las diversas actividades docentes.");
-			  comment_3_6_on.setText ("En su interacción con los estudiantes, el profesor utilizó un lenguaje que corresponde con el nivel de los estudiantes en el curso.");
-			  comment_3_7_on.setText ("El profesor promovió la comunicación e interacción estudiante-estudiante.");
-			  comment_3_8_on.setText ("El profesor fomentó la comunicación e interacción estudiante-profesor.");
-			  comment_3_9_on.setText ( "El profesor planificó la distribución del tiempo de forma tal que los estudiantes pueden cumplir con los objetivos establecidos.");
-			  comment_3_10_on.setText ("El profesor informó a los estudiantes del tiempo estimado para responder a los mensajes, para informar sobre los resultados de los exámenes, asignaciones y otros trabajos corregidos; aunque el diseño del curso pueda incluir algo sobre esto.");
-			  comment_3_11_on.setText ("El profesor informó a los estudiantes de los resultados de las actividades realizadas por aquellos no más tarde de dos semanas de haber sido entregados durante el semestre o su equivalente en los diversos términos académicos. ");
-			  comment_3_12_on.setText ("El profesor respondió en el tiempo establecido, los mensajes, las preguntasy las consultas de los estudiantes, que se recibieron mediante el correo electrónico.");
-			  comment_3_13_on.setText ("El profesor utilizó las herramientas disponibles en la plataforma y presentó elcontenido del curso en forma organizada y coherente.");
+			  comment_3_1_on.setText ("Mediante la interacciï¿½n con los estudiantes, el profesor demostrï¿½ conocimiento suficiente del tema evaluado.");
+			  comment_3_2_on.setText ("Mediante la interacciï¿½n con los estudiantes, el profesor integrï¿½ conceptos o experiencias de otras disciplinas para enriquecer el tema evaluado.");
+			  comment_3_3_on.setText ("El profesor resaltï¿½ la utilidad del tema para otros cursos o ï¿½reas del conocimiento.");
+			  comment_3_4_on.setText ("El profesor facilitï¿½ que los estudiantes relacionen el tema con sus experiencias personales o el mundo del trabajo.");
+			  comment_3_5_on.setText ("El profesor ejerciï¿½ la docencia como un guï¿½a o facilitador de los estudiantes, mediante la comunicaciï¿½n e interacciï¿½n con los mismos, asï¿½ como en las diversas actividades docentes.");
+			  comment_3_6_on.setText ("En su interacciï¿½n con los estudiantes, el profesor utilizï¿½ un lenguaje que corresponde con el nivel de los estudiantes en el curso.");
+			  comment_3_7_on.setText ("El profesor promoviï¿½ la comunicaciï¿½n e interacciï¿½n estudiante-estudiante.");
+			  comment_3_8_on.setText ("El profesor fomentï¿½ la comunicaciï¿½n e interacciï¿½n estudiante-profesor.");
+			  comment_3_9_on.setText ( "El profesor planificï¿½ la distribuciï¿½n del tiempo de forma tal que los estudiantes pueden cumplir con los objetivos establecidos.");
+			  comment_3_10_on.setText ("El profesor informï¿½ a los estudiantes del tiempo estimado para responder a los mensajes, para informar sobre los resultados de los exï¿½menes, asignaciones y otros trabajos corregidos; aunque el diseï¿½o del curso pueda incluir algo sobre esto.");
+			  comment_3_11_on.setText ("El profesor informï¿½ a los estudiantes de los resultados de las actividades realizadas por aquellos no mï¿½s tarde de dos semanas de haber sido entregados durante el semestre o su equivalente en los diversos tï¿½rminos acadï¿½micos. ");
+			  comment_3_12_on.setText ("El profesor respondiï¿½ en el tiempo establecido, los mensajes, las preguntasy las consultas de los estudiantes, que se recibieron mediante el correo electrï¿½nico.");
+			  comment_3_13_on.setText ("El profesor utilizï¿½ las herramientas disponibles en la plataforma y presentï¿½ elcontenido del curso en forma organizada y coherente.");
 			  comment_3_14_on.setText ("El profesor mantuvo un clima de confianza y respeto");
-			  comment_3_15_on.setText ("El profesor facilitó la discusión para complementar, aclarar o enriquecer");
-			  comment_3_16_on.setText ("El profesor promovió la búsqueda de información o experiencias para enriqueser el conocimento.");
-			  comment_3_17_on.setText ("El profesor fomentó el pensamiento crítico.");
-			  comment_3_18_on.setText ("El profesor aportó recursos de apoyo adicionales para enriquecer el tema evaluado.");
-			  comment_3_19_on.setText ("El profesor utilizó diferentes recursos de enseñanza para facilitar el aprendizajePor ejemplo: trabajo colaborativo, vídeos, presentaciones, seminarios y conferencias a través de la web, entre otros.");
+			  comment_3_15_on.setText ("El profesor facilitï¿½ la discusiï¿½n para complementar, aclarar o enriquecer");
+			  comment_3_16_on.setText ("El profesor promoviï¿½ la bï¿½squeda de informaciï¿½n o experiencias para enriqueser el conocimento.");
+			  comment_3_17_on.setText ("El profesor fomentï¿½ el pensamiento crï¿½tico.");
+			  comment_3_18_on.setText ("El profesor aportï¿½ recursos de apoyo adicionales para enriquecer el tema evaluado.");
+			  comment_3_19_on.setText ("El profesor utilizï¿½ diferentes recursos de enseï¿½anza para facilitar el aprendizajePor ejemplo: trabajo colaborativo, vï¿½deos, presentaciones, seminarios y conferencias a travï¿½s de la web, entre otros.");
 			  comment_3_20_on.setVisible(false);
 		  }         
 		  
+		  comment_2_1.setText(Instruments.comments[62]);
+		  comment_2_2.setText(Instruments.comments[63]);
+		  comment_2_3.setText(Instruments.comments[64]);
+		  comment_2_4.setText(Instruments.comments[65]);
+		  comment_2_5.setText(Instruments.comments[66]);
+		  comment_2_6.setText(Instruments.comments[67]);
+		  comment_2_7.setText(Instruments.comments[68]);
+		  comment_2_8.setText(Instruments.comments[69]);
+		  comment_2_9.setText(Instruments.comments[70]);
+		  comment_2_10.setText(Instruments.comments[71]);
+		  comment_2_11.setText(Instruments.comments[72]);
+	      comment_2_12.setText(Instruments.comments[73]);
+	      comment_2_13.setText(Instruments.comments[74]);
+	      comment_2_14.setText(Instruments.comments[75]);
+	      comment_2_15.setText(Instruments.comments[76]);
+	      comment_2_16.setText(Instruments.comments[77]);
+	      comment_2_17.setText(Instruments.comments[78]);
+	      comment_2_18.setText(Instruments.comments[79]);
+	      
+	      if(mm.gettipo() == 1) {
+	    	  comment_3_1_text.setText(Instruments.comments[20]);
+		      comment_3_2_text.setText(Instruments.comments[21]);
+		      comment_3_3_text.setText(Instruments.comments[22]);
+		      comment_3_4_text.setText(Instruments.comments[23]);
+		      comment_3_5_text.setText(Instruments.comments[24]);
+		      comment_3_6_text.setText(Instruments.comments[25]);
+		      comment_3_7_text.setText(Instruments.comments[26]);
+		      comment_3_8_text.setText(Instruments.comments[27]);
+		      comment_3_9_text.setText(Instruments.comments[28]);
+		      comment_3_10_text.setText(Instruments.comments[29]);
+		      comment_3_11_text.setText(Instruments.comments[30]);
+		      comment_3_12_text.setText(Instruments.comments[31]);
+		      comment_3_13_text.setText(Instruments.comments[32]);
+		      comment_3_14_text.setText(Instruments.comments[33]);
+		      comment_3_15_text.setText(Instruments.comments[34]);
+		      comment_3_16_text.setText(Instruments.comments[35]);
+		      comment_3_17_text.setText(Instruments.comments[36]);
+		      comment_3_18_text.setText(Instruments.comments[37]);
+		      comment_3_19_text.setText(Instruments.comments[38]);
+		      comment_3_20_text.setVisible(false);
+	      }
+	      else {
+	    	  comment_3_1_text.setText(Instruments.comments[0]);
+		      comment_3_2_text.setText(Instruments.comments[1]);
+		      comment_3_3_text.setText(Instruments.comments[2]);
+		      comment_3_4_text.setText(Instruments.comments[3]);
+		      comment_3_5_text.setText(Instruments.comments[4]);
+		      comment_3_6_text.setText(Instruments.comments[5]);
+		      comment_3_7_text.setText(Instruments.comments[6]);
+		      comment_3_8_text.setText(Instruments.comments[7]);
+		      comment_3_9_text.setText(Instruments.comments[8]);
+		      comment_3_10_text.setText(Instruments.comments[9]);
+		      comment_3_11_text.setText(Instruments.comments[10]);
+		      comment_3_12_text.setText(Instruments.comments[11]);
+		      comment_3_13_text.setText(Instruments.comments[12]);
+		      comment_3_14_text.setText(Instruments.comments[13]);
+		      comment_3_15_text.setText(Instruments.comments[14]);
+		      comment_3_16_text.setText(Instruments.comments[15]);
+		      comment_3_17_text.setText(Instruments.comments[16]);
+		      comment_3_18_text.setText(Instruments.comments[17]);
+		      comment_3_19_text.setText(Instruments.comments[18]);
+		      comment_3_20_text.setText(Instruments.comments[19]);
+		      
+	      }
+	      
+	      comment_4_1.setText(Instruments.comments[39]);
+	      comment_4_2.setText(Instruments.comments[40]);
+	      comment_4_3.setText(Instruments.comments[41]);
+	      comment_4_4.setText(Instruments.comments[42]);
+	      comment_4_5.setText(Instruments.comments[43]);
+	      comment_4_6.setText(Instruments.comments[44]);
+	      comment_4_7.setText(Instruments.comments[45]);
+	      comment_4_8.setText(Instruments.comments[46]);
+	      comment_4_9.setText(Instruments.comments[47]);
+	      comment_4_10.setText(Instruments.comments[48]);
+	      comment_4_11.setText(Instruments.comments[49]);
+	      comment_4_12.setText(Instruments.comments[50]);
+	      comment_4_13.setText(Instruments.comments[51]);
+	      comment_4_14.setText(Instruments.comments[52]);
+	      comment_4_15.setText(Instruments.comments[53]);
+	      comment_4_16.setText(Instruments.comments[54]);
+	      comment_4_17.setText(Instruments.comments[55]);
+	      comment_4_18.setText(Instruments.comments[56]);
+	      comment_4_19.setText(Instruments.comments[57]);
+	      comment_4_20.setText(Instruments.comments[58]);
+	      comment_4_21.setText(Instruments.comments[59]);
+	      comment_4_22.setText(Instruments.comments[60]);
+	      comment_4_23.setText(Instruments.comments[61]);
 	}
 	
 	public void rankFill() throws FileNotFoundException {

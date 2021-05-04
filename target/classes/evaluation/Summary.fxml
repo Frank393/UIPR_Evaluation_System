@@ -19,7 +19,7 @@
             <Button layoutX="508.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="53.0" prefWidth="138.0" text="Cerrar" />
          </children>
       </Pane>
-      <ScrollPane prefHeight="791.0" prefWidth="813.0">
+      <ScrollPane prefHeight="791.0" prefWidth="813.0" vvalue="0.53">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="8201.0" prefWidth="795.0">
                <children>
@@ -495,37 +495,37 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2235.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_1" layoutX="562.0" layoutY="2235.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2300.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_2" layoutX="562.0" layoutY="2300.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2374.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_3" layoutX="562.0" layoutY="2374.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2445.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_4" layoutX="562.0" layoutY="2445.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2520.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_5" layoutX="562.0" layoutY="2520.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="2603.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_6" layoutX="562.0" layoutY="2603.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="561.0" layoutY="2713.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_7" layoutX="561.0" layoutY="2713.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -551,7 +551,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="563.0" layoutY="2858.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_8" layoutX="563.0" layoutY="2858.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -561,7 +561,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="564.0" layoutY="2943.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_9" layoutX="564.0" layoutY="2943.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -576,7 +576,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="565.0" layoutY="3060.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_10" layoutX="565.0" layoutY="3060.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -591,7 +591,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="565.0" layoutY="3167.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_11" layoutX="565.0" layoutY="3167.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -617,12 +617,12 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="3359.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_12" layoutX="562.0" layoutY="3359.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="55.0" layoutY="3369.0" prefHeight="64.0" prefWidth="234.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participación activa en gestiones políticas, religiosas o cívicas." wrapText="true">
+                  <Label layoutX="55.0" layoutY="3369.0" prefHeight="78.0" prefWidth="279.0" text="b. Servicio como recurso: conferenciante de grupos de la comunidad, participación activa en gestiones políticas, religiosas o cívicas." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -638,7 +638,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="563.0" layoutY="3507.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_13" layoutX="563.0" layoutY="3507.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -648,7 +648,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="563.0" layoutY="3571.0" prefHeight="15.0" prefWidth="61.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_14" layoutX="563.0" layoutY="3571.0" prefHeight="15.0" prefWidth="61.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -663,7 +663,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="563.0" layoutY="3674.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_15" layoutX="563.0" layoutY="3674.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -694,7 +694,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="3871.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_16" layoutX="562.0" layoutY="3871.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -709,7 +709,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="3979.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_17" layoutX="562.0" layoutY="3979.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -719,7 +719,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="4065.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_2_18" layoutX="562.0" layoutY="4065.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -749,133 +749,133 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="55.0" layoutY="4218.0" text="1. Domina el tma discutido en clase.">
+                  <Label fx:id="comment_3_1_on" layoutX="57.0" layoutY="4197.0" prefHeight="67.0" prefWidth="282.0" text="1. Domina el tema discutido en clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="564.0" layoutY="4220.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_1_text" layoutX="564.0" layoutY="4220.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <Separator layoutX="41.0" layoutY="4118.0" prefHeight="2.0" prefWidth="728.0" />
-                  <Label layoutX="57.0" layoutY="4290.0" prefHeight="60.0" prefWidth="259.0" text="2. Usa ejemplos o ejercicios relacionados con el tema de la clase." wrapText="true">
+                  <Label fx:id="comment_3_2_on" layoutX="55.0" layoutY="4273.0" prefHeight="94.0" prefWidth="289.0" text="2. Usa ejemplos o ejercicios relacionados con el tema de la clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="568.0" layoutY="4310.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_2_text" layoutX="568.0" layoutY="4310.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="52.0" layoutY="4369.0" prefHeight="60.0" prefWidth="259.0" text="3. Integra conceptos o experiencias de otras disciplinas para enriquecer la clase" wrapText="true">
+                  <Label fx:id="comment_3_3_on" layoutX="52.0" layoutY="4369.0" prefHeight="60.0" prefWidth="259.0" text="3. Integra conceptos o experiencias de otras disciplinas para enriquecer la clase" wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="566.0" layoutY="4389.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_3_text" layoutX="566.0" layoutY="4389.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="4441.0" prefHeight="60.0" prefWidth="259.0" text="4. Relaciona la utilidad del tema con otros cursos o areas del conocimiento." wrapText="true">
+                  <Label fx:id="comment_3_4_on" layoutX="53.0" layoutY="4441.0" prefHeight="60.0" prefWidth="259.0" text="4. Relaciona la utilidad del tema con otros cursos o areas del conocimiento." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="4461.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_4_text" layoutX="567.0" layoutY="4461.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="55.0" layoutY="4509.0" prefHeight="60.0" prefWidth="259.0" text="5. Presenta el tema en forma actualizada." wrapText="true">
+                  <Label fx:id="comment_3_5_on" layoutX="55.0" layoutY="4509.0" prefHeight="60.0" prefWidth="259.0" text="5. Presenta el tema en forma actualizada." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="4529.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_5_text" layoutX="569.0" layoutY="4529.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="4589.0" prefHeight="60.0" prefWidth="259.0" text="6. Incorpora en la clase las nuevas tendencias de la disciplina." wrapText="true">
+                  <Label fx:id="comment_3_6_on" layoutX="53.0" layoutY="4589.0" prefHeight="60.0" prefWidth="259.0" text="6. Incorpora en la clase las nuevas tendencias de la disciplina." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="4609.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_6_text" layoutX="567.0" layoutY="4609.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="4667.0" prefHeight="60.0" prefWidth="259.0" text="7. Presenta el material de la clase en forma organizada y coherente." wrapText="true">
+                  <Label fx:id="comment_3_7_on" layoutX="53.0" layoutY="4667.0" prefHeight="60.0" prefWidth="259.0" text="7. Presenta el material de la clase en forma organizada y coherente." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="4687.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_7_text" layoutX="567.0" layoutY="4687.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="4745.0" prefHeight="60.0" prefWidth="259.0" text="8. Utiliza el vocabulario propio de la materia." wrapText="true">
+                  <Label fx:id="comment_3_10_on" layoutX="53.0" layoutY="4745.0" prefHeight="60.0" prefWidth="259.0" text="8. Utiliza el vocabulario propio de la materia." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="4765.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_8_text" layoutX="567.0" layoutY="4765.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="55.0" layoutY="4812.0" prefHeight="60.0" prefWidth="259.0" text="9. Cumple con los objetivos establecidos para la clase." wrapText="true">
+                  <Label fx:id="comment_3_11_on" layoutX="55.0" layoutY="4812.0" prefHeight="60.0" prefWidth="259.0" text="9. Cumple con los objetivos establecidos para la clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="4832.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_9_text" layoutX="567.0" layoutY="4832.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="4885.0" prefHeight="60.0" prefWidth="259.0" text="10. Utiliza el tiempo de la clase de acuerdo con los objetivos establecidos." wrapText="true">
+                  <Label fx:id="comment_3_12_on" layoutX="54.0" layoutY="4885.0" prefHeight="60.0" prefWidth="259.0" text="10. Utiliza el tiempo de la clase de acuerdo con los objetivos establecidos." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="4905.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_10_text" layoutX="569.0" layoutY="4905.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="4964.0" prefHeight="60.0" prefWidth="259.0" text="11. Resume los conceptos discutidos en clase y las actividades planificadas." wrapText="true">
+                  <Label fx:id="comment_3_13_on" layoutX="54.0" layoutY="4964.0" prefHeight="60.0" prefWidth="259.0" text="11. Resume los conceptos discutidos en clase y las actividades planificadas." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="4984.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_11_text" layoutX="569.0" layoutY="4984.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="57.0" layoutY="5039.0" prefHeight="60.0" prefWidth="259.0" text="12. Estimula la participacion de los estudiantes en la clase." wrapText="true">
+                  <Label fx:id="comment_3_14_on" layoutX="57.0" layoutY="5039.0" prefHeight="60.0" prefWidth="259.0" text="12. Estimula la participacion de los estudiantes en la clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="5059.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_12_text" layoutX="572.0" layoutY="5059.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="57.0" layoutY="5120.0" prefHeight="60.0" prefWidth="259.0" text="13. Mantiene un clima de confianza y respeto." wrapText="true">
+                  <Label fx:id="comment_3_15_on" layoutX="57.0" layoutY="5120.0" prefHeight="60.0" prefWidth="259.0" text="13. Mantiene un clima de confianza y respeto." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="5140.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_13_text" layoutX="572.0" layoutY="5140.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -885,7 +885,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5214.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_14_text" layoutX="569.0" layoutY="5214.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -895,57 +895,57 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5300.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_15_text" layoutX="569.0" layoutY="5300.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="57.0" layoutY="5371.0" prefHeight="83.0" prefWidth="280.0" text="16. Promueve en los estudiantes la busqueda de informacion y otras experiencias que enriquezcan sus conocimientos y estimulen el pensamiento critico." wrapText="true">
+                  <Label fx:id="comment_3_16_on" layoutX="57.0" layoutY="5371.0" prefHeight="83.0" prefWidth="280.0" text="16. Promueve en los estudiantes la busqueda de informacion y otras experiencias que enriquezcan sus conocimientos y estimulen el pensamiento critico." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="5403.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_16_text" layoutX="572.0" layoutY="5403.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="5474.0" prefHeight="60.0" prefWidth="259.0" text="17. Fomenta la colaboracion y el trabajo en equipo entre los estudiantes." wrapText="true">
+                  <Label fx:id="comment_3_17_on" layoutX="54.0" layoutY="5474.0" prefHeight="60.0" prefWidth="259.0" text="17. Fomenta la colaboracion y el trabajo en equipo entre los estudiantes." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5494.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_17_text" layoutX="569.0" layoutY="5494.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="5551.0" prefHeight="60.0" prefWidth="259.0" text="18. Utiliza recursos de apoyo (pizarra, materiales educativos o tecnologicos) adecuados para desarrollar la clase." wrapText="true">
+                  <Label fx:id="comment_3_18_on" layoutX="54.0" layoutY="5551.0" prefHeight="60.0" prefWidth="259.0" text="18. Utiliza recursos de apoyo (pizarra, materiales educativos o tecnologicos) adecuados para desarrollar la clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5571.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_18_text" layoutX="569.0" layoutY="5571.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="5638.0" prefHeight="60.0" prefWidth="259.0" text="19. Utiliza estrategias y metodos que promueven el aprendizaje de los estudiantes." wrapText="true">
+                  <Label fx:id="comment_3_19_on" layoutX="54.0" layoutY="5638.0" prefHeight="60.0" prefWidth="259.0" text="19. Utiliza estrategias y metodos que promueven el aprendizaje de los estudiantes." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5658.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_19_text" layoutX="569.0" layoutY="5658.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="5719.0" prefHeight="60.0" prefWidth="259.0" text="20. Utiliza estrategias para verificar si los estudiantes entienden el material durante el transcurso de la clase." wrapText="true">
+                  <Label fx:id="comment_3_20_on" layoutX="54.0" layoutY="5719.0" prefHeight="60.0" prefWidth="259.0" text="20. Utiliza estrategias para verificar si los estudiantes entienden el material durante el transcurso de la clase." wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="5739.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_3_20_text" layoutX="569.0" layoutY="5739.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -971,7 +971,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="5898.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_1" layoutX="572.0" layoutY="5898.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -981,7 +981,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="5985.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_2" layoutX="572.0" layoutY="5985.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -991,7 +991,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="6092.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_3" layoutX="572.0" layoutY="6092.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1001,7 +1001,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="6176.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_4" layoutX="572.0" layoutY="6176.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1011,7 +1011,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="6262.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_5" layoutX="572.0" layoutY="6262.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1021,7 +1021,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="569.0" layoutY="6353.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_6" layoutX="569.0" layoutY="6353.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1031,7 +1031,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="6491.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_7" layoutX="572.0" layoutY="6491.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1041,7 +1041,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="6632.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_8" layoutX="572.0" layoutY="6632.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1051,7 +1051,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="567.0" layoutY="6714.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_9" layoutX="572.0" layoutY="6715.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1061,7 +1061,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="572.0" layoutY="6834.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_10" layoutX="572.0" layoutY="6834.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1071,7 +1071,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="6944.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_11" layoutX="575.0" layoutY="6944.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1081,7 +1081,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7050.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_12" layoutX="575.0" layoutY="7050.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1091,7 +1091,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7151.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_13" layoutX="575.0" layoutY="7151.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1101,7 +1101,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7240.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_14" layoutX="575.0" layoutY="7240.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1111,7 +1111,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7322.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_15" layoutX="575.0" layoutY="7322.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1121,7 +1121,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7432.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_16" layoutX="575.0" layoutY="7432.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1131,7 +1131,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7541.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_17" layoutX="575.0" layoutY="7541.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1141,7 +1141,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7628.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_18" layoutX="575.0" layoutY="7628.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1151,7 +1151,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="575.0" layoutY="7716.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_19" layoutX="575.0" layoutY="7716.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -1161,7 +1161,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="573.0" layoutY="7802.0" text="Comment" textAlignment="CENTER">
+                  <Label fx:id="comment_4_20" layoutX="573.0" layoutY="7802.0" text="Comment" textAlignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
