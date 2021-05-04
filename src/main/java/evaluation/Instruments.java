@@ -770,6 +770,31 @@ public class Instruments  {
 		instrument4_19.getSelectionModel().selectFirst();
 		instrument4_20.getSelectionModel().selectFirst();
 		
+		instrument3_1_On.getSelectionModel().selectFirst();
+		instrument3_2_On.getSelectionModel().selectFirst(); 
+		instrument3_3_On.getSelectionModel().selectFirst(); 
+		instrument3_4_On.getSelectionModel().selectFirst();
+		instrument3_5_On.getSelectionModel().selectFirst(); 
+		instrument3_6_On.getSelectionModel().selectFirst(); 
+		instrument3_7_On.getSelectionModel().selectFirst();
+		instrument3_8_On.getSelectionModel().selectFirst();
+		instrument3_9_On.getSelectionModel().selectFirst(); 
+		instrument3_10_On.getSelectionModel().selectFirst(); 
+		instrument3_11_On.getSelectionModel().selectFirst(); 
+		instrument3_12_On.getSelectionModel().selectFirst(); 
+		instrument3_13_On.getSelectionModel().selectFirst(); 
+		instrument3_14_On.getSelectionModel().selectFirst(); 
+		instrument3_15_On.getSelectionModel().selectFirst();
+		instrument3_16_On.getSelectionModel().selectFirst();
+		instrument3_17_On.getSelectionModel().selectFirst();
+		instrument3_18_On.getSelectionModel().selectFirst(); 
+		instrument3_19_On.getSelectionModel().selectFirst();
+		
+		
+		
+		
+		
+		
 		// Initialize Configurations
 		
 		cat_valen1A.setValueFactory(cat_valen1A_list);
